@@ -2,6 +2,13 @@
 title: Information Structure - Digital Cocktailbar
 date: 2020-03-24
 description: An information structure project, transforming an XML database into an HTML website, using XSL Tranformation.
+tags:
+  - uni
+  - XML
+  - XSLT
+  - HTML
+  - information structure
+  - cocktails
 ---
 
 Magna adipisicing et aute magna exercitation cupidatat excepteur aliquip aliqua esse do in cillum commodo. Occaecat pariatur dolor magna irure elit fugiat adipisicing exercitation adipisicing. Aliquip tempor eu officia irure quis ad nulla non.
