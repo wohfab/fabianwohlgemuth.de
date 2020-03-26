@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `digital creative.`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `fabian wohlgemuth`,
+      summary: `digital creative.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `fwdc website description`,
+    siteUrl: `https://wohfab.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `wohfab`,
     },
   },
   plugins: [
@@ -66,7 +66,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/logo_sm.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
