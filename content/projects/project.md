@@ -1,7 +1,10 @@
 ---
-title: title
+title: COVID-19
+subtitle: Data Journalism Project
 date: 2020-03-26T12:51:43.565Z
-description: description
+excerpt: Data analysis project for University, analysing the ECDC's COVID-19 dataset.
+category: "development"
+tags: ["python", "uni", "data"]
 ---
 
 Non sit cillum id irure laboris Lorem commodo. Voluptate ex ullamco excepteur magna dolore. Aliquip ullamco cillum nulla pariatur cupidatat proident cupidatat incididunt pariatur Lorem cupidatat. Quis dolor nisi fugiat aliqua minim exercitation culpa deserunt in ullamco proident eu. Sunt in cillum consequat Lorem fugiat deserunt ex culpa amet nisi magna fugiat ut consectetur. Deserunt minim id ex ipsum exercitation dolore exercitation sunt quis est.

@@ -6,16 +6,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark
+const ProjectTemplate = ({ data, pageContext, location }) => {
+  const project = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.excerpt || post.excerpt}
+        title={project.frontmatter.title}
+        description={project.frontmatter.excerpt || project.excerpt}
       />
       <article>
         <header>
@@ -25,7 +25,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: 0,
             }}
           >
-            {post.frontmatter.title}
+            {project.frontmatter.title}
           </h1>
           <p
             style={{
@@ -34,11 +34,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
+            {project.frontmatter.date}
           </p>
-          <p>{post.frontmatter.tags}</p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section dangerouslySetInnerHTML={{ __html: project.html }} />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -79,10 +78,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   )
 }
 
-export default BlogPostTemplate
+export default ProjectTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query ProjectBySlug($slug: String!) {
     site {
       siteMetadata {
         title
@@ -94,9 +93,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        subtitle
         date(formatString: "MMMM DD, YYYY")
         excerpt
-        tags
       }
     }
   }
