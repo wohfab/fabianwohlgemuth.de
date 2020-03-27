@@ -66,7 +66,7 @@ class Layout extends React.Component {
           <main>{children}</main>
         </div>
         <Footer>
-          <a href="/">{title}</a>
+          <Link to="/">{title}</Link>
         </Footer>
       </Wrapper>
     )
@@ -79,7 +79,7 @@ const Wrapper = styled.div`
 
 const Footer = styled.footer`
   text-align: center;
-  margin: 24px;
+  margin: 1.5rem;
 `
 
 export default Layout
