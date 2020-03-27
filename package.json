@@ -38,7 +38,7 @@
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.19",
     "styled-components": "^4.2.0",
-    "typography": "^0.16.19",
+    "typography": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.17.0"
