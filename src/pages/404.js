@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -16,8 +16,8 @@ class NotFoundPage extends React.Component {
         <p>This resource does not (yet) exit (at this place). If you need help, finding a page, consider, checking the Sitemap.</p>
         <p>Here are a few awesome pages on this website, you might be interested in:</p>
         <ul>
-          <li><a href="/">Start</a> - the start page</li>
-          <li><a href="/blog">Blog</a> - overview of the blog posts</li>
+          <li><Link to="/">Start</Link> - the start page</li>
+          <li><Link to="/blog">Blog</Link> - overview of the blog posts</li>
         </ul>
         <p>And here are a few external resources, you might want to check out:</p>
         <ul>
