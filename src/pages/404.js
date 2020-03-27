@@ -17,7 +17,7 @@ class NotFoundPage extends React.Component {
         <p>Here are a few awesome pages on this website, you might be interested in:</p>
         <ul>
           <li><Link to="/">Start</Link> - the start page</li>
-          <li><Link to="/blog">Blog</Link> - overview of the blog posts</li>
+          <li><Link to="/projects">Projects</Link> - overview of the projects</li>
         </ul>
         <p>And here are a few external resources, you might want to check out:</p>
         <ul>

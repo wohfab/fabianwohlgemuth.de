@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/projects`,
+        name: `projects`,
       },
     },
     {
@@ -70,7 +70,7 @@ module.exports = {
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
-    //     name: `Gatsby Starter Blog`,
+    //     name: `Gatsby Starter B log`,
     //     short_name: `GatsbyJS`,
     //     start_url: `/`,
     //     background_color: `#FFFFFF`,
