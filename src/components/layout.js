@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import Footer from "./footer"
 
+import Footer from "./footer"
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
@@ -14,65 +14,57 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath || location.pathname === projectPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={location.pathname === projectPath ? `/projects/` : `/`}
-          >
-            {title}
-          </Link>
-        </h1>
+        <WebsiteTitle style={{
+          ...scale(1.5)
+        }}>
+          <LinkStyled to={location.pathname === projectPath ? `/projects/` : `/`}>{title}</LinkStyled>
+        </WebsiteTitle>
       )
     } else {
       header = (
-        <h3
-          style={{
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/projects/`}
-          >
-            {title}
-          </Link>
-        </h3>
+        <SiteTitle>
+          <LinkStyled to={`/projects/`}>{title}</LinkStyled>
+        </SiteTitle>
       )
     }
     return (
-      <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          <header>{header}</header>
-          <main>{children}</main>
-        </div>
+      <OuterWrapper>
+        <InnerWrapper>
+            <header>{header}</header>
+            <main>{children}</main>
+        </InnerWrapper>
         <Footer />
-      </Wrapper>
+      </OuterWrapper>
     )
   }
 }
 
-const Wrapper = styled.div`
-  min-height: 100vh;
+const OuterWrapper = styled.div`
+  margin: 0;
+  padding: 0;
+  padding: 0;
 `
+
+const InnerWrapper = styled.div`
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: ${rhythm(30)};
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+`
+
+const WebsiteTitle = styled.h1`
+  margin-bottom: ${rhythm(1.5)};
+  margin-top: 0; 
+`
+
+const SiteTitle = styled.h2`
+  margin-top: 0;
+`
+
+const LinkStyled = styled(Link)`
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+`
+
 export default Layout
