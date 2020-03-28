@@ -3,7 +3,7 @@ module.exports = {
     // edit below
     title: `digital creative.`,
     author: `Fabian Wohlgemuth`,
-    description: `Personal website.`,
+    description: 'This website is under heavy development. If you need any consultation, please visit fabianwohlgemuth.de - thanks!',
     siteUrl: `https://wohfab.netlify.com/`,
     social: {
       twitter: `wohfab`,

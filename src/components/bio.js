@@ -34,11 +34,9 @@ function Bio() {
               }}
             />
             <p>
-              Created by <strong>{author}</strong> who loves the possibilites, that <strong>digital technologies</strong> and <strong>design thinking</strong> bring, to solve everyday problems. Check him out on 
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Twitter
-              </a>.
+              Created by <strong>{author}</strong> who loves the possibilites, that <strong>digital technologies</strong> and <strong>design thinking</strong> bring, to solve everyday problems.
+              <br/>
+              Since this website is still under heavy devlopment, consider checking out his <a href="https://www.fabianwohlgemuth.de">current website</a> or follow him on <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>.
             </p>
           </Container>
         )

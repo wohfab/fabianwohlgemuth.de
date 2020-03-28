@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 
+import Bio from "../components/bio"
+
 class IndexPage extends React.Component {
   render() {
     const { data } = this.props
@@ -16,6 +18,7 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
+        <Bio />
         <Link to="/projects/">
           <Button marginTop="2rem">Projects</Button>
         </Link>
