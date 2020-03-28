@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import Footer from "./footer"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -65,9 +66,7 @@ class Layout extends React.Component {
           <header>{header}</header>
           <main>{children}</main>
         </div>
-        <Footer>
-          <Link to="/">{title}</Link>
-        </Footer>
+        <Footer />
       </Wrapper>
     )
   }
@@ -76,10 +75,4 @@ class Layout extends React.Component {
 const Wrapper = styled.div`
   min-height: 100vh;
 `
-
-const Footer = styled.footer`
-  text-align: center;
-  margin: 1.5rem;
-`
-
 export default Layout
