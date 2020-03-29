@@ -1,29 +1,43 @@
 $accent-color: #EE6600;
 $accent-color-tp: transparentize($accent-color, .4);
 
-body {
-  background-color: #222;
-  color: #EEE;
+$dark-bg: #222;
+$dark-fg: #EEE;
+$dark-strong: #FFF;
+$dark-footer-bg: #111;
 
-  strong {
-    color: #FFF;
-  }
+body {
+  background-color: $dark-bg;
+  color: $dark-fg;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+strong {
+  color: $dark-strong;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
 
   a {
-    color: inherit;
-    text-decoration: none;
-  }
+    box-shadow: inset 0 -0.5rem 0 $accent-color-tp;
+    transition: box-shadow 270ms cubic-bezier(0.77, 0, 0.175, 1), color 270ms cubic-bezier(0.77, 0, 0.175, 1);
 
-  p {
-
-    a {
-      padding: 0 .2rem;
-      box-shadow: inset 0 -0.5rem 0 $accent-color-tp;
-      transition: box-shadow 270ms cubic-bezier(0.77, 0, 0.175, 1), color 270ms cubic-bezier(0.77, 0, 0.175, 1);
-
-      &:hover {
-        box-shadow: inset 0 -1.125em 0 $accent-color-tp;
-      }
+    &:hover {
+      box-shadow: inset 0 -1.125em 0 $accent-color-tp;
     }
   }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
 }

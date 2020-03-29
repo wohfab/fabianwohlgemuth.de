@@ -8,7 +8,7 @@ import NavSocial from "./nav-social"
 import Copyright from "./copyright"
 
 const Footer = () => (
-  <FooterWrapper>
+  <FooterWrapper id="footer-wrapper">
     <FooterStyled id="footer">
       <h2>Footer</h2>
       <NavSocial />
@@ -19,7 +19,6 @@ const Footer = () => (
 )
 
 const FooterWrapper = styled.div`
-  background-color: #EFEFEF;
 `
 
 const FooterStyled = styled.footer`
