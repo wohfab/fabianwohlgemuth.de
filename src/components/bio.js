@@ -20,19 +20,10 @@ function Bio() {
         const { author, social } = data.site.siteMetadata
         return (
           <Container>
-            <Image
+            <StyledImage
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
+              />
             <p>
               Created by <strong>{author}</strong> who loves the possibilites, that <strong>digital technologies</strong> and <strong>design thinking</strong> bring, to solve everyday problems.
               <br/>
@@ -64,6 +55,14 @@ const bioQuery = graphql`
     }
   }
 `
+
+const StyledImage = styled(Image)`
+  margin-right: ${rhythm(1)};
+  margin-bottom: 0;
+  min-width: ${rhythm(2)};
+  border-radius: 100%;
+`
+
 
 const Container = styled.div`
   display: flex;
