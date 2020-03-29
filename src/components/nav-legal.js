@@ -8,9 +8,9 @@ const NavLegal = () => (
     <nav id="nav-legal" aria-labelledby="nav-legal">
       <h3>Legal</h3>
       <LegalLinks>
-        <LegalLink><LegalLinkA to="">Terms of Use</LegalLinkA></LegalLink>
-        <LegalLink><LegalLinkA to="">Privacy Policy</LegalLinkA></LegalLink>
-        <LegalLink><LegalLinkA to="">404 Test Page</LegalLinkA></LegalLink>
+        <LegalLink><LegalLinkA to="/">Terms of Use</LegalLinkA></LegalLink>
+        <LegalLink><LegalLinkA to="/">Privacy Policy</LegalLinkA></LegalLink>
+        <LegalLink><LegalLinkA to="/">404 Test Page</LegalLinkA></LegalLink>
       </LegalLinks>
     </nav>
 )
