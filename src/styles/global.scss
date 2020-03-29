@@ -1,5 +1,5 @@
 $accent-color: #EE6600;
-$accent-color-tp: transparentize($accent-color, .4);
+$accent-color-tp: transparentize($accent-color, .7);
 
 $light-bg: #FEFEFE;
 $light-fg: #222;
@@ -9,6 +9,7 @@ $light-code-bg: #FEF5D9;
 $dark-bg: #222;
 $dark-fg: #EEE;
 $dark-strong: #FFF;
+$dark-hr: #666666;
 
 body {
   background-color: $light-bg;
@@ -25,6 +26,10 @@ body.dark {
 
   strong {
     color: $dark-strong;
+  }
+
+  hr {
+    background-color: $dark-hr;
   }
 }
 
@@ -50,7 +55,12 @@ p {
   }
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
+footer div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#copyright {
+  display: grid;
+  grid-template-columns: auto 1rem;
 }

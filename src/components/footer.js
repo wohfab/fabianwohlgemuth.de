@@ -12,15 +12,24 @@ const Footer = () => (
   <FooterWrapper id="footer-wrapper">
     <FooterStyled id="footer">
       <h2>Footer</h2>
+      <Menus>
       <NavSocial />
       <NavLegal />
-      <Copyright />
-      <ThemeToggle />
+      </Menus>
+      <hr />
+      <Copyright>
+        <ThemeToggle />
+      </Copyright>
     </FooterStyled>
   </FooterWrapper>
 )
 
+const Menus = styled.div`
+
+`
+
 const FooterWrapper = styled.div`
+
 `
 
 const FooterStyled = styled.footer`
