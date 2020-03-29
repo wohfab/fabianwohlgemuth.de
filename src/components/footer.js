@@ -6,6 +6,7 @@ import { rhythm } from "../utils/typography"
 import NavLegal from "./nav-legal"
 import NavSocial from "./nav-social"
 import Copyright from "./copyright"
+import ThemeToggle from "./themetoggle"
 
 const Footer = () => (
   <FooterWrapper id="footer-wrapper">
@@ -14,6 +15,7 @@ const Footer = () => (
       <NavSocial />
       <NavLegal />
       <Copyright />
+      <ThemeToggle />
     </FooterStyled>
   </FooterWrapper>
 )

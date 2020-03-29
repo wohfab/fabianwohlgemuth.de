@@ -1,23 +1,36 @@
 $accent-color: #EE6600;
 $accent-color-tp: transparentize($accent-color, .4);
 
+$light-bg: #FEFEFE;
+$light-fg: #222;
+$light-strong: #000;
+$light-code-bg: #FEF5D9;
+
 $dark-bg: #222;
 $dark-fg: #EEE;
 $dark-strong: #FFF;
-$dark-footer-bg: #111;
 
 body {
+  background-color: $light-bg;
+  color: $light-fg;
+
+  strong {
+    color: $light-strong;
+  }
+}
+
+body.dark {
   background-color: $dark-bg;
   color: $dark-fg;
+
+  strong {
+    color: $dark-strong;
+  }
 }
 
 .images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-strong {
-  color: $dark-strong;
 }
 
 a {
