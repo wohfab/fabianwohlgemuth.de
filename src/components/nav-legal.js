@@ -10,7 +10,7 @@ const NavLegal = () => (
       <LegalLinks>
         <LegalLink><LegalLinkA to="">Terms of Use</LegalLinkA></LegalLink>
         <LegalLink><LegalLinkA to="">Privacy Policy</LegalLinkA></LegalLink>
-        <LegalLink><LegalLinkA to="">404</LegalLinkA></LegalLink>
+        <LegalLink><LegalLinkA to="">404 Test Page</LegalLinkA></LegalLink>
       </LegalLinks>
     </nav>
 )
