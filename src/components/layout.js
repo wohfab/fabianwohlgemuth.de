@@ -17,13 +17,13 @@ class Layout extends React.Component {
         <WebsiteTitle style={{
           ...scale(1.5)
         }}>
-          <LinkStyled to={location.pathname === projectPath ? `/projects/` : `/`}>{title}</LinkStyled>
+          <LinkStyled to={location.pathname === projectPath ? `/projects` : `/`}>{title}</LinkStyled>
         </WebsiteTitle>
       )
     } else {
       header = (
         <SiteTitle>
-          <LinkStyled to={`/projects/`}>{title}</LinkStyled>
+          <LinkStyled to={`/`}>{title}</LinkStyled>
         </SiteTitle>
       )
     }
