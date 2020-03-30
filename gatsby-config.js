@@ -85,6 +85,8 @@ module.exports = {
     `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -138,12 +140,12 @@ module.exports = {
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
-    //     name: `Gatsby Starter B log`,
-    //     short_name: `GatsbyJS`,
+    //     name: `fabian wohlgemuth - digital creative.`,
+    //     short_name: `fwdc.`,
     //     start_url: `/`,
-    //     background_color: `#FFFFFF`,
-    //     theme_color: `#663399`,
-    //     display: `minimal-ui`,
+    //     background_color: `#222222`,
+    //     theme_color: `#EE6600`,
+    //     display: `standalone`,
     //     // edit below
     //     icon: `content/assets/logos/fwdc_xl_tp.png`,
     //   },
