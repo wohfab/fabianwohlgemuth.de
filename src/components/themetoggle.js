@@ -6,7 +6,7 @@ class ThemeToggle extends React.Component {
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
-          <div role="hidden">
+          <div aria-hidden="true">
           <label for="themeToggle" class="themeSwitch">
             <input id="themeToggle"
               type="checkbox"
