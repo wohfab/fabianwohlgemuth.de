@@ -14,7 +14,7 @@ const Copyright = ({ children }) => (
 `}
 render={data => (
     <section id="copyright">
-      <p>© 2020 {data.site.siteMetadata.title}</p>
+      <p>© {new Date().getFullYear()} {data.site.siteMetadata.title}</p>
       {children}
     </section>
 )}
