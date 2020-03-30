@@ -6,14 +6,15 @@ class ThemeToggle extends React.Component {
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
-          <div>
-          <label for="themeToggle" class="themeSwitch"></label>
+          <div role="hidden">
+          <label for="themeToggle" class="themeSwitch">
             <input id="themeToggle"
               type="checkbox"
               onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
               checked={theme === 'dark'}
             />
             <div class="themeToggleButton"></div>
+          </label>
           </div>
         )}
       </ThemeToggler>
