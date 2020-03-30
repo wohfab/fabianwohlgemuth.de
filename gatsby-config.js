@@ -62,15 +62,15 @@ module.exports = {
     ],
     menuLegal:[
       {
-        name:'Impressum',
+        name:'Privacy Statement',
         link:'/'
       },
       {
-        name:'Terms of Use',
+        name:'Terms & Conditions',
         link:'/'
       },
       {
-        name:'Privacy Policy',
+        name:'Cookie Policy',
         link:'/'
       },
     ],
