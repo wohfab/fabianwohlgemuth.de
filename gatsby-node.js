@@ -2,58 +2,98 @@ const path = require(`path`)
 
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-exports.createPages = ({ graphql, actions, reporter }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
-  const projectPost = path.resolve(`./src/templates/project.js`)
+  const ProjectTemplate = path.resolve(`./src/templates/project.js`)
+  const PageTemplate = path.resolve(`./src/templates/page.js`)
 
-  return graphql(
-    `
-      {
-        projectsRemark: allMdx(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                tags
-              }
+  const result = await graphql(
+    `{
+
+      pagesRemark: allMdx(
+        filter: {fileAbsolutePath: {regex: "/pages/"}}
+        sort: { fields: [frontmatter___date], order: DESC }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date
+              description
             }
           }
         }
       }
-    `
-  ).then(result => {
-    if (result.errors) {
-      throw result.errors
-    }
 
-    // Create project pages.
-    const projects = result.data.projectsRemark.edges
+      projectsRemark: allMdx(
+        filter: {fileAbsolutePath: {regex: "/projects/"}}
+        sort: { fields: [frontmatter___date], order: DESC }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date
+              description
+              tags
+            }
+          }
+        }
+      }
 
-    projects.forEach((project, index) => {
-      const previous = index === projects.length - 1 ? null : projects[index + 1].node
-      const next = index === 0 ? null : projects[index - 1].node
+    }`)
+    
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
 
-      createPage({
-        path: `projects${project.node.fields.slug}`,
-        component: projectPost,
-        context: {
-          slug: project.node.fields.slug,
-          previous,
-          next,
-        },
-      })
+  // Create project pages.
+  const projects = result.data.projectsRemark.edges
+
+  projects.forEach((project, index) => {
+    const previous = index === projects.length - 1 ? null : projects[index + 1].node
+    const next = index === 0 ? null : projects[index - 1].node
+
+    createPage({
+      path: `projects${project.node.fields.slug}`,
+      component: ProjectTemplate,
+      context: {
+        slug: project.node.fields.slug,
+        previous,
+        next,
+      },
     })
-
-    return null
   })
+
+  // Create pages.
+  const pages = result.data.pagesRemark.edges
+
+  pages.forEach((page, index) => {
+    const previous = index === pages.length - 1 ? null : pages[index + 1].node
+    const next = index === 0 ? null : pages[index - 1].node
+
+    createPage({
+      path: `${page.node.fields.slug}`,
+      component: PageTemplate,
+      context: {
+        slug: page.node.fields.slug,
+      },
+    })
+  })
+
 }
+
+
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions

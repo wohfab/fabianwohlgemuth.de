@@ -87,11 +87,19 @@ module.exports = {
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/projects`,
         name: `projects`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/pages`,
+        name: `pages`,
       },
     },
     {
@@ -134,7 +142,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-97919061-6`,
       },
     },
     // {
