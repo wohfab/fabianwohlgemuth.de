@@ -12,6 +12,7 @@ class ProjectsPostTemplate extends React.Component {
     const project = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const tags = this.props.data.mdx.frontmatter.tags
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -30,6 +31,11 @@ class ProjectsPostTemplate extends React.Component {
         >
           {project.frontmatter.date}
         </p>
+        <ul class="project-tags">
+        {tags.map((tag) => { return(
+          <li>{tag}</li>
+        )})}
+        </ul>
         <MDXRenderer>{project.body}</MDXRenderer>
         <hr
           style={{
@@ -85,6 +91,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }

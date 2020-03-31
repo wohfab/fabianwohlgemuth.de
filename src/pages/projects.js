@@ -35,6 +35,11 @@ class Projects extends React.Component {
                   </Link>
                 </h3>
                 <small>{node.frontmatter.date}</small>
+                <ul class="project-tags">
+                  {node.frontmatter.tags.map((tag) => { return(
+                    <li>{tag}</li>
+                  )})}
+                </ul>
                 <p
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
@@ -72,6 +77,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
         }
       }

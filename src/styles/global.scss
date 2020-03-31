@@ -81,6 +81,28 @@ code {
   font-size: 1rem;
 }
 
+ul {
+  &.project-tags {
+    list-style: none;
+    margin: 0;
+
+    display: flex;
+
+    li {
+      font-size: .8rem;
+      color: $light-fg;
+      background-color: $accent-color-light;
+      padding: 0 .4rem;
+      margin-right: .4rem;
+      border-radius: .3rem;
+    }
+  }
+}
+
+
+
+
+
 
 /** DARK THEME **/
 body.dark {
@@ -101,4 +123,13 @@ body.dark {
       box-shadow: inset 0 -1.125em 0 $accent-color-dark;
     }
   }
+
+  ul {
+    &.project-tags {  
+      li {
+        color: $dark-fg;
+      }
+    }
+  }
 }
+
