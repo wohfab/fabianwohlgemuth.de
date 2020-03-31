@@ -42,16 +42,20 @@ module.exports = {
     ],
     menuLegal:[
       {
-        name:'Privacy Statement',
-        link:'/'
+        name:'Legal Information',
+        link:'/legal'
       },
       {
         name:'Terms & Conditions',
-        link:'/'
+        link:'/legal/terms'
+      },
+      {
+        name:'Privacy Statement',
+        link:'/legal/privacy'
       },
       {
         name:'Cookie Policy',
-        link:'/'
+        link:'/legal/cookies'
       },
     ],
   },
