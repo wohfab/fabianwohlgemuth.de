@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 const Header = ({ siteTitle, menuMain }) => (
   <header>
-    <h1><Link to="/">{siteTitle}</Link></h1>
+    <h2 id="site-title"><Link to="/">{siteTitle}</Link></h2>
     <nav id="nav-main" aria-labelledby="nav-main">
       <ul>
         {menuMain.map(link => (<li key={link.name}><Link to={link.link}>{link.name}</Link></li>))}

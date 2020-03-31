@@ -10,28 +10,12 @@ module.exports = {
     },
     menuMain:[
       {
-        name:'Start',
-        link:'/'
-      },
-      {
         name:'Projects',
         link:'/projects'
       },
       {
-        name:'404',
-        link:'/404'
-      },
-      {
-        name:'Start',
-        link:'/'
-      },
-      {
-        name:'Start',
-        link:'/'
-      },
-      {
-        name:'Start',
-        link:'/'
+        name:'Me',
+        link:'/me'
       },
     ],
     menuSocial:[
@@ -40,19 +24,15 @@ module.exports = {
         link:'/'
       },
       {
-        name:'Facebook',
-        link:'/'
-      },
-      {
-        name:'Instagram',
-        link:'/'
-      },
-      {
         name:'LinkedIn',
         link:'/'
       },
       {
         name:'GitHub',
+        link:'/'
+      },
+      {
+        name:'Instagram',
         link:'/'
       },
       {

@@ -12,13 +12,13 @@ const Footer = ({ menuLegal, menuSocial }) => (
       <h2>Footer</h2>
       <Menus>
       <nav id="nav-social" aria-labelledby="nav-social">
-        <h2 id="nav-social">Social</h2>
+        <h3 id="nav-social">Social</h3>
         <ul>
           {menuSocial.map(link => (<li key={link.name}><Link to={link.link}>{link.name}</Link></li>))}
         </ul>
       </nav>
       <nav id="nav-legal" aria-labelledby="nav-legal">
-        <h2 id="nav-legal">Legal</h2>
+        <h3 id="nav-legal">Legal</h3>
         <ul>
           {menuLegal.map(link => (<li key={link.name}><Link to={link.link}>{link.name}</Link></li>))}
         </ul>
@@ -33,14 +33,14 @@ const Footer = ({ menuLegal, menuSocial }) => (
 )
 
 const Menus = styled.div`
-
+  margin-bottom: ${rhythm(1)};
 `
 
 const FooterWrapper = styled.div`
 `
 
 const FooterStyled = styled.footer`
-  font-size: 1rem;
+  font-size: .9rem;
   display: flex;
   flex-direction: column;
   margin: 0 auto;

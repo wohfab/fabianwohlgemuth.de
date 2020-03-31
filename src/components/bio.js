@@ -10,7 +10,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
 
-import { rhythm } from "../utils/typography"
+import { rhythm, scale } from "../utils/typography"
 
 function Bio() {
   return (
@@ -66,6 +66,7 @@ const StyledImage = styled(Image)`
 
 const Container = styled.div`
   display: flex;
+  font-size: .9rem;
 `
 
 export default Bio

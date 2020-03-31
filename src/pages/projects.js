@@ -5,7 +5,6 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import Button from "../components/button"
 
 class Projects extends React.Component {
   render() {
@@ -45,9 +44,6 @@ class Projects extends React.Component {
             )
           })}
         </div>
-        <Link to="/">
-          <Button marginTop="5rem">Start</Button>
-        </Link>
       </Layout>
     )
   }
