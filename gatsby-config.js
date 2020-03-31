@@ -56,6 +56,10 @@ module.exports = {
       {
         name:'Cookie Policy',
         link:'/legal/cookies'
+      },      
+      {
+        name:'GDPR',
+        link:'/legal/gdpr'
       },
     ],
   },
