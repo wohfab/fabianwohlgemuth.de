@@ -78,10 +78,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create pages.
   const pages = result.data.pagesRemark.edges
 
-  pages.forEach((page, index) => {
-    const previous = index === pages.length - 1 ? null : pages[index + 1].node
-    const next = index === 0 ? null : pages[index - 1].node
-
+  pages.forEach((page) => {
     createPage({
       path: `${page.node.fields.slug}`,
       component: PageTemplate,
@@ -92,8 +89,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 
 }
-
-
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
