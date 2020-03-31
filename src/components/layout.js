@@ -17,6 +17,14 @@ const Layout = ({ children }) => (
               name
               link
             }
+            menuLegal {
+              name
+              link
+            }
+            menuSocial {
+              name
+              link
+            }
           }
         }
       }
@@ -28,7 +36,7 @@ const Layout = ({ children }) => (
         <Header menuMain={data.site.siteMetadata.menuMain} siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         </InnerWrapper>
-        <Footer />
+        <Footer menuLegal={data.site.siteMetadata.menuLegal} menuSocial={data.site.siteMetadata.menuSocial} />
       </OuterWrapper>
       </React.Fragment>
     )}

@@ -5,18 +5,12 @@ import PropTypes from 'prop-types'
 
 const Header = ({ siteTitle, menuMain }) => (
   <header>
-    <div>
-      <div>
-        <h1><Link to="/">{siteTitle}</Link></h1>
-        <div>
-          <nav>
-            <ul>
-              {menuMain.map(link => (<li key={link.name}><Link to={link.link}>{link.name}</Link></li>))}
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
+    <h1><Link to="/">{siteTitle}</Link></h1>
+    <nav id="nav-main" aria-labelledby="nav-main">
+      <ul>
+        {menuMain.map(link => (<li key={link.name}><Link to={link.link}>{link.name}</Link></li>))}
+      </ul>
+    </nav>
   </header>
 )
 

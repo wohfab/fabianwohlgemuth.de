@@ -64,3 +64,30 @@ footer div {
   display: grid;
   grid-template-columns: auto 1rem;
 }
+
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  nav {
+    ul {
+      display: flex;
+      li {
+        padding-right: 1rem;
+      }
+    }
+  }
+}
