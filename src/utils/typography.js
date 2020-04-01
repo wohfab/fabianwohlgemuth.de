@@ -19,30 +19,30 @@ const typography = new Typography({
       name: "Lato",
       styles: ["400", "700"],
     },
-    {
-      name: "Libre Baskerville",
-      styles: ["400", "400i", "700"],
-    },
-    {
-      name: "Roboto Slab",
-      styles: ["400", "400i", "700"],
-    },
-    {
-      name: "Playfair Display",
-      styles: ["400", "400i", "700"],
-    },
-    {
-      name: "Lora",
-      styles: ["400", "400i", "700"],
-    },
-    {
-      name: "Slabo",
-      styles: ["400", "400i", "700"],
-    },
-    {
-      name: "Merriweather",
-      styles: ["400", "400i", "700"],
-    },
+    // {
+    //   name: "Libre Baskerville",
+    //   styles: ["400", "400i", "700"],
+    // },
+    // {
+    //   name: "Roboto Slab",
+    //   styles: ["400", "400i", "700"],
+    // },
+    // {
+    //   name: "Playfair Display",
+    //   styles: ["400", "400i", "700"],
+    // },
+    // {
+    //   name: "Lora",
+    //   styles: ["400", "400i", "700"],
+    // },
+    // {
+    //   name: "Slabo",
+    //   styles: ["400", "400i", "700"],
+    // },
+    // {
+    //   name: "Merriweather",
+    //   styles: ["400", "400i", "700"],
+    // },
   ],
   headerFontFamily: [
     "Oswald",
@@ -55,13 +55,18 @@ const typography = new Typography({
     "sans-serif",
   ],
   bodyFontFamily: [
-    "Libre Baskerville", 
-    "Roboto Slab",
-    "Playfair Display",
-    "Lora",
-    "Slabo",
-    "Merriweather",
-    "serif"],
+    "Open Sans",
+    "Lato",
+    "Helvetica",
+    "Arial",
+    "sans-serif"],
+    // "Libre Baskerville", 
+    // "Roboto Slab",
+    // "Playfair Display",
+    // "Lora",
+    // "Slabo",
+    // "Merriweather",
+    // "serif"],
   headerWeight: 400,
   bodyWeight: 400,
   boldWeight: 700,
