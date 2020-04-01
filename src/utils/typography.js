@@ -8,6 +8,10 @@ const typography = new Typography({
   baseLineHeight: 1.5,
   googleFonts: [
     {
+      name: "Open Sans",
+      styles: ["400", "400i", "700"],
+    },
+    {
       name: "Oswald",
       styles: ["400", "700"],
     },
