@@ -30,7 +30,7 @@ module.exports = {
     ],
     menuLegal:[
       {
-        name:'Rechtliches',
+        name:'Impressum',
         link:'/legal'
       },
       {
