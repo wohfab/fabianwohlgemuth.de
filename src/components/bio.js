@@ -25,9 +25,11 @@ function Bio() {
               alt={author}
               />
             <p>
-              Created by <strong>{author}</strong> who loves the possibilites, that <strong>digital technologies</strong> and <strong>design thinking</strong> bring, to solve everyday problems.
-              <br/>
-              Since this website is still under heavy devlopment, consider checking out his <a href="https://www.fabianwohlgemuth.de">current website</a> or follow him on <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>.
+              Created by <strong>{author}</strong>, who loves the possibilites, <strong>digital technologies</strong> and <strong>design thinking</strong> bring, to solve everyday problems.
+              
+              He loves <strong>music</strong>, especially singing and learning to play his saxophone, <strong>writing</strong> short stories and poetry, and is a passionate <strong>scout</strong>.
+              
+              Consider checking out his <a href="https://linkedin.com/in/fabianwohlgemuth">CV on LinkedIn</a> or follow him on <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>.
             </p>
           </Container>
         )

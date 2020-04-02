@@ -17,23 +17,15 @@ module.exports = {
     menuSocial:[
       {
         name:'Twitter',
-        link:'/'
+        link:'https://twitter.com/wohfab'
       },
       {
         name:'LinkedIn',
-        link:'/'
+        link:'https://linkedin.com/in/fabianwohlgemuth'
       },
       {
         name:'GitHub',
-        link:'/'
-      },
-      {
-        name:'Instagram',
-        link:'/'
-      },
-      {
-        name:'Reddit',
-        link:'/'
+        link:'https://github.com/wohfab'
       },
     ],
     menuLegal:[

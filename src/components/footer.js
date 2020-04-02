@@ -14,7 +14,7 @@ const Footer = ({ menuLegal, menuSocial }) => (
       <nav id="nav-social" aria-labelledby="nav-social">
         <h3 class="footer-heading" id="nav-social">Social</h3>
         <ul>
-          {menuSocial.map(link => (<li key={link.name}><Link to={link.link}>{link.name}</Link></li>))}
+          {menuSocial.map(link => (<li key={link.name}><a href={link.link}>{link.name}</a></li>))}
         </ul>
       </nav>
       <nav id="nav-legal" aria-labelledby="nav-legal">
