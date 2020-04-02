@@ -15,7 +15,7 @@ class Projects extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All projects" />
-        <h1>Projects</h1>
+        <h1>Projekte</h1>
         <Bio />
         <div style={{ margin: "1rem 0 2rem" }}>
           {projects.map(({ node }) => {

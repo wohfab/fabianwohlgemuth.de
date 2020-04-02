@@ -1,7 +1,7 @@
 ---
-title: Information Structure - Digital Cocktailbar
+title: Informationsstrukturierung - Digitale Cocktailbar
 date: 2020-03-24
-description: An information structure project, transforming an XML database into an HTML website, using XSL Tranformation.
+description: Projekt zur Informationsstrukturierung, Transformation einer XML Datenbank in eine HTML Website, mithilfe von XSL Tranformation.
 tags:
   - uni
   - XML

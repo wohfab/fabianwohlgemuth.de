@@ -1,7 +1,7 @@
 ---
 title: Bon Iver - Wayfaring Stranger - A Cappella Cover
 date: 2017-12-08
-description: A Cappella Cover of Bon Iver's Wayfaring Stranger
+description: A Cappella Cover von Bon Ivers Wayfaring Stranger
 tags:
   - music
   - a cappella

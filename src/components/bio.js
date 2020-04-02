@@ -25,11 +25,15 @@ function Bio() {
               alt={author}
               />
             <p>
-              Created by <strong>{author}</strong>, who loves the possibilites, <strong>digital technologies</strong> and <strong>design thinking</strong> bring, to solve everyday problems.
-              
-              He loves <strong>music</strong>, especially singing and learning to play his saxophone, <strong>writing</strong> short stories and poetry, and is a passionate <strong>scout</strong>.
-              
-              Consider checking out his <a href="https://linkedin.com/in/fabianwohlgemuth">CV on LinkedIn</a> or follow him on <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>.
+              Kreiert von <strong>{author}</strong>, der die Möglichkeiten der <strong>Digitalisierung</strong> nutzt, um, gepaart mit überlegter Kreativität, alle im Leben und Schaffen ein kleines Stückchen weiter zu bringen.
+
+              <br />
+
+              Fabian liebt <strong>Musik</strong> über alles, singt für sein Leben gerne, ist bekennender <strong>Technik</strong>-Über-Enthusiast und passionierter <strong>Pfadfinder</strong>, mit einem Hang zu Poesie und dem Blick für <strong>Kreativität</strong>.
+
+              <br />
+            
+              Lies gerne einmal in seinem <a href="https://linkedin.com/in/fabianwohlgemuth">Lebenslauf auf LinkedIn</a> oder schreibe ihm <a href="mailto:fw@fabianwohlgemuth.de">eine Mail</a>.
             </p>
           </Container>
         )
