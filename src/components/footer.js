@@ -10,6 +10,12 @@ const Footer = ({ menuLegal, menuSocial }) => (
   <FooterWrapper id="footer-wrapper">
     <FooterStyled id="footer">
       <hr />
+      <form className="contact-form" data-netlify="true">
+        <input name="name" type="text" className="feedback-input" placeholder="Name" /> 
+        <input name="email" type="text" className="feedback-input" placeholder="Email" />
+        <textarea name="text" className="feedback-input" placeholder="Comment"></textarea>
+        <input type="submit" value="SUBMIT"/>
+      </form>
       <Menus>
       <nav id="nav-social" aria-labelledby="nav-social">
         <h3 class="footer-heading" id="nav-social">Social</h3>
