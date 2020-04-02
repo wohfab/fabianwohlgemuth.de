@@ -45,7 +45,7 @@ const FooterStyled = styled.footer`
   flex-direction: column;
   margin: 0 auto;
   max-width: ${rhythm(30)};
-  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  padding: 0 ${rhythm(3 / 4)};
 `
 
 export default Footer

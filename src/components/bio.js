@@ -19,7 +19,7 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <Container>
+          <Container className="bio">
             <StyledImage
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}

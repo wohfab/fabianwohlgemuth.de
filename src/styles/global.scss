@@ -27,6 +27,7 @@ $media-bp-xl: 1200px;
 }
 
 footer div {
+  padding-top: 0;
   display: grid;
   grid-template-columns: 1fr;
 
@@ -76,6 +77,11 @@ ul {
   }
 }
 
+.bio {
+  display: flex;
+  flex-direction: column;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: $media-bp-sm) {
@@ -93,6 +99,10 @@ ul {
     nav ul {
       flex-direction: column;
     }
+  }
+
+  .bio {
+    flex-direction: row;
   }
 }
 
