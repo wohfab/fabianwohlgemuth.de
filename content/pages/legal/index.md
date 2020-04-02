@@ -1,6 +1,6 @@
 ---
 title: Impressum
-description: Legal Information (Impressum) - Fabian Wohlgemuth - digital creative.
+description: Impressum (Legal Information) - Fabian Wohlgemuth - digital creative.
 bio: false
 ---
 

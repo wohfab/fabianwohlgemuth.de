@@ -1,6 +1,6 @@
 ---
-title: GDPR - General Data Protection Regulation (DSGVO - Datenschutz-Grundverordnung)
-description: GDPR introduction
+title: DSGVO - Datenschutz-Grundverordnung (GDPR - General Data Protection Regulation)
+description: DSGVO - Datenschutz-Grundverordnung - Einführung
 ---
 
 Nach geltender EU-Verordnung 2016/679 (Datenschutz-Grundverordnung) sind Webseiten-Betreiber zu umfangreichen Datenschutz-Maßnahmen verpflichtet. Den Gesetzestext ([DE](https://dsgvo-gesetz.de/)|[EN](https://gdpr-info.eu/)) gilt es zu studieren und/oder sich juristische Hilfestellung zu suchen.

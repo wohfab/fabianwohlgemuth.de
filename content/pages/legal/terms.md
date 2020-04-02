@@ -1,6 +1,6 @@
 ---
 title: Nutzungsbedingungen
-description: Legal Terms and Conditions (Nutzungsbedingungen) - Fabian Wohlgemuth - digital creative.
+description: Nutzungsbedingungen (Terms and Conditions) - Fabian Wohlgemuth - digital creative.
 bio: false
 ---
 

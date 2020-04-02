@@ -1,6 +1,6 @@
 ---
-title: Cookie Policy
-description: Cookie Policy - Fabian Wohlgemuth - digital creative.
+title: Cookies
+description: Cookies - Fabian Wohlgemuth - digital creative.
 bio: false
 ---
 

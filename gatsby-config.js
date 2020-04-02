@@ -3,14 +3,14 @@ module.exports = {
     // edit below
     title: `digital creative.`,
     author: `Fabian Wohlgemuth`,
-    description: 'This website is under heavy development. If you need any consultation, please visit fabianwohlgemuth.de - thanks!',
-    siteUrl: `https://wohfab.netlify.com/`,
+    description: 'Fabian Wohlgemuth - digital creative. - Individuelle, kreative und digitale Lösungen auf Ihre Fragen und Probleme.',
+    siteUrl: `https://fabianwohlgemuthd.e/`,
     social: {
       twitter: `wohfab`,
     },
     menuMain:[
       {
-        name:'Projects',
+        name:'Projekte',
         link:'/projects'
       },
     ],
@@ -30,23 +30,23 @@ module.exports = {
     ],
     menuLegal:[
       {
-        name:'Legal Information',
+        name:'Rechtliches',
         link:'/legal'
       },
       {
-        name:'Terms & Conditions',
+        name:'Nutzungsbedingungen',
         link:'/legal/terms'
       },
       {
-        name:'Privacy Statement',
+        name:'Datenschutzerklärung',
         link:'/legal/privacy'
       },
       {
-        name:'Cookie Policy',
+        name:'Cookies',
         link:'/legal/cookies'
       },      
       {
-        name:'GDPR',
+        name:'DSGVO',
         link:'/legal/gdpr'
       },
     ],

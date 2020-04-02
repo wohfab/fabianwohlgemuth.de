@@ -1,6 +1,6 @@
 ---
 title: Datenschutzerklärung
-description: Privacy Statement (Datenschutzerklärung) - Fabian Wohlgemuth - digital creative.
+description: Datenschutzerklärung (Privacy Statement) - Fabian Wohlgemuth - digital creative.
 bio: false
 ---
 
