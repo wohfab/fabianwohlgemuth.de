@@ -9,16 +9,16 @@ import ThemeToggle from "./themetoggle"
 const Footer = ({ menuLegal, menuSocial }) => (
   <FooterWrapper id="footer-wrapper">
     <FooterStyled id="footer">
-      <h2>Footer</h2>
+      <hr />
       <Menus>
       <nav id="nav-social" aria-labelledby="nav-social">
-        <h3 id="nav-social">Social</h3>
+        <h3 class="footer-heading" id="nav-social">Social</h3>
         <ul>
           {menuSocial.map(link => (<li key={link.name}><Link to={link.link}>{link.name}</Link></li>))}
         </ul>
       </nav>
       <nav id="nav-legal" aria-labelledby="nav-legal">
-        <h3 id="nav-legal">Legal</h3>
+        <h3 class="footer-heading" id="nav-legal">Legal</h3>
         <ul>
           {menuLegal.map(link => (<li key={link.name}><Link to={link.link}>{link.name}</Link></li>))}
         </ul>

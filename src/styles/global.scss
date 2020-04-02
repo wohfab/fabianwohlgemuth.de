@@ -28,7 +28,21 @@ $media-bp-xl: 1200px;
 
 footer div {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+
+  h3 {
+    margin-bottom: 0;
+    margin-top: .5rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      padding-right: .5rem;
+    }
+  }
 }
 
 #copyright {
@@ -67,6 +81,18 @@ ul {
 @media only screen and (min-width: $media-bp-sm) {
   .images {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer div {
+    grid-template-columns: repeat(2, 1fr);
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
   }
 }
 
