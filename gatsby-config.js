@@ -13,10 +13,6 @@ module.exports = {
         name:'Projects',
         link:'/projects'
       },
-      {
-        name:'Me',
-        link:'/me'
-      },
     ],
     menuSocial:[
       {
