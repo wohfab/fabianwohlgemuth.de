@@ -12,16 +12,12 @@ Bon Iver's *Wayfaring Stranger* is kinf od popular in the *Single A Cappella* sc
 
 I recorded the song in my home 'studio' and put it up for everyone to hear:
 
-https://soundcloud.com/wohfab/wayfaring-stranger
+https://open.spotify.com/track/0MDiyZFv2kikRLuRAmtwpO
+
+If you want to use a service other than [Spotify](https://open.spotify.com/track/0MDiyZFv2kikRLuRAmtwp0), there is also [SoundCloud](https://soundcloud.com/wohfab/wayfaring-stranger), [Google Play Music](https://play.google.com/store/music/album?id=Bar6vq3a7x7pzjxxgymzhuf4ybe), and the possibility to buy on [Amazon Music](http://amzn.to/2BKGVNk)
 
 ----
 
-## More Music
+## More Music on SoundCloud
 
 https://soundcloud.com/wohfab
-
-http://amzn.to/2BKGVNk
-
-https://play.google.com/store/music/album?id=Bar6vq3a7x7pzjxxgymzhuf4ybe
-
-https://open.spotify.com/track/0MDiyZFv2kikRLuRAmtwpO
