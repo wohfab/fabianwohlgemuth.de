@@ -6,6 +6,7 @@ tags:
   - music
   - a cappella
   - singing
+  - en
 ---
 
 Bon Iver's *Wayfaring Stranger* is kinf od popular in the *Single A Cappella* scene, since its structure lets you easily make a looping session, adding more and more *buzz* to the song.
