@@ -87,6 +87,12 @@ ul {
   }
 }
 
+.intro {
+  .portrait {
+    border-radius: .2rem;
+  }
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: $media-bp-sm) {
@@ -113,10 +119,28 @@ ul {
       margin: 0 1.5rem 0 0;
     }
   }
+
+  .intro {
+    .portrait {
+      width: 50%;
+    }
+  }
 }
 
 @media only screen and (min-width: $media-bp-md) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
+    .portrait {
+      border-radius: .2rem;
+      width: 100%;
+    }
+
+    .intro-text {
+      padding-left: 2rem;
+    }
+  }
 }
 
 @media only screen and (min-width: $media-bp-lg) {
