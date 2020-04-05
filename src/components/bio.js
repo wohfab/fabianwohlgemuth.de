@@ -25,7 +25,7 @@ function Bio() {
               alt={author}
               />
             <p>
-              Hej! Ich bin Fabian Wohlgemuth, lebe im Norden von NRW und begeistere mich für digital Kreativität.
+              Heyj! Ich bin <strong>Fabian Wohlgemuth</strong>, lebe im Norden von NRW und begeistere mich für <strong>digital Kreativität</strong>. Wenn Du irgendwas wissen magst, schreib' mir doch einfach <a href="mailto:fw@fabianwohlgemuth.de" title="Mail an fw@fabianwohlgemuth.de">eine Mail an fw@fabianwohlgemuth.de</a>.
             </p>
           </Container>
         )
@@ -38,7 +38,7 @@ const bioQuery = graphql`
   query BioQuery {
     avatar: file(absolutePath: { regex: "/images/fw_portrait.jpg/" }) {
       childImageSharp {
-        fixed(width: 100, height: 100) {
+        fixed(width: 160, height: 160) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -61,9 +61,7 @@ const StyledImage = styled(Image)`
   border-radius: 100%;
 `
 
-
 const Container = styled.div`
-  display: flex;
   font-size: .9rem;
 `
 

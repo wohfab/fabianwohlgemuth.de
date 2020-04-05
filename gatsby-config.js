@@ -92,14 +92,6 @@ module.exports = {
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-embedder`,
-            options: {
-              customTransformers: [
-                // Your custom transformers
-              ],
-              services: {
-                // The service-specific options by the name of the service
-              },
-            },
           },
           {
             resolve: `gatsby-remark-relative-images`,
@@ -107,8 +99,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 576,
+              maxWidth: 768,
               linkImagesToOriginal: false,
+              withWebp: true,
               tracedSVG: true,
             },
           },
