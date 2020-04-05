@@ -4,9 +4,11 @@ description: Fabian Wohlgemuth - digital creative.
 bio: false
 ---
 
+![TEST](../assets/images/fw_portrait.jpg)
+
 <div class="intro">
 
-<img src="./fw_portrait.jpg" alt="Fabian Wohlgemuth Portrait" class="portrait" />
+<img src="./images/fw_portrait.jpg" alt="Fabian Wohlgemuth Portrait" class="portrait" />
 
 <div class="intro-text">
 <p>Kreiert von Fabian Wohlgemuth, der die Möglichkeiten der <strong>Digitalisierung</strong> nutzt, um, gepaart mit überlegter Kreativität, alle im Leben und Schaffen ein kleines Stückchen weiter zu bringen.</p>
