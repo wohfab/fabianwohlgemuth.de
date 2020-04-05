@@ -4,9 +4,6 @@ description: Fabian Wohlgemuth - digital creative.
 bio: false
 ---
 
-
-
-
 <div class="intro">
 
 <div style="display:block" class="note portrait">
