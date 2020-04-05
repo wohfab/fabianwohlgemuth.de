@@ -4,7 +4,7 @@ module.exports = {
     title: `digital creative.`,
     author: `Fabian Wohlgemuth`,
     description: 'Fabian Wohlgemuth - digital creative. - Individuelle, kreative und digitale Lösungen auf Ihre Fragen und Probleme.',
-    siteUrl: `https://fabianwohlgemuthd.e/`,
+    siteUrl: `https://fabianwohlgemuth.de/`,
     social: {
       twitter: `wohfab`,
     },
@@ -102,9 +102,14 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 576,
+              linkImagesToOriginal: false,
+              tracedSVG: true,
             },
           },
           {
