@@ -14,7 +14,7 @@ bio: false
 
 <div class="intro-text" class="note intro-text">
 
-Kreiert von Fabian Wohlgemuth, der die Möglichkeiten der **Digitalisierung** nutzt, um, gepaart mit überlegter Kreativität, alle im Leben und Schaffen ein kleines Stückchen weiter zu bringen.
+Diese Seiten wurden kreiert von Fabian Wohlgemuth, der die Möglichkeiten der **Digitalisierung** nutzt, um, gepaart mit überlegter Kreativität, alle im Leben und Schaffen ein kleines Stückchen weiter zu bringen.
 
 Fabian liebt **Musik** über alles, singt für sein Leben gerne, ist bekennender **Technik**-Über-Enthusiast und passionierter **Pfadfinder**, mit einem Hang zu Poesie und dem Blick für **Kreativität**.
 
