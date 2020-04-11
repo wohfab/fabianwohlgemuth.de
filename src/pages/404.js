@@ -21,8 +21,8 @@ class NotFoundPage extends React.Component {
         </ul>
         <p>And here are a few external resources, you might want to check out:</p>
         <ul>
-        <li><a href="https://twitter.com">Twitter</a> - because people live there</li>
-        <li><a href="https://reddit.com">Reddit</a> - because people <em>actually</em> live there</li>
+        <li><a href="https://twitter.com/wohfab">Fabian's Twitter Account</a></li>
+        <li><a href="https://linkedin.com/in/fabianwohlgemuth">Fabian's CV on LinkedIn</a></li>
         </ul>
       </Layout>
     )
