@@ -8,7 +8,7 @@ bio: false
 
 <div style="display:block" class="note portrait">
 
-![TEST](../assets/images/fw_portrait.jpg)
+![TEST](../assets/images/fw_portrait_sm.jpg)
 
 </div>
 
