@@ -25,7 +25,7 @@ function Bio() {
               alt={author}
               />
             <p>
-              Hej! Ich bin <strong>Fabian Wohlgemuth</strong>, lebe im Norden von NRW und begeistere mich für <strong>digital Kreativität</strong>. Wenn Du irgendwas wissen magst, schreib' mir doch einfach <a href="mailto:fw@fabianwohlgemuth.de" title="Mail an fw@fabianwohlgemuth.de">eine Mail an fw@fabianwohlgemuth.de</a>.
+              Hej! Ich bin <strong>Fabian Wohlgemuth</strong>, lebe im Norden von NRW und begeistere mich für <strong>digitale Kreativität</strong>. Wenn Du irgendwas wissen magst, schreib' mir doch einfach <a href="mailto:fw@fabianwohlgemuth.de" title="Mail an fw@fabianwohlgemuth.de">eine Mail an fw@fabianwohlgemuth.de</a>.
             </p>
           </Container>
         )
