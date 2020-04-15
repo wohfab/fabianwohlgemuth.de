@@ -6,11 +6,13 @@ $light-bg: #FEFEFE;
 $light-fg: #222;
 $light-strong: #000;
 $light-code-bg: #FEF5D9;
+$light-footer: #FCCA46;
 
-$dark-bg: #222;
+$dark-bg: #233D4D;
 $dark-fg: #EEE;
 $dark-strong: #FFF;
 $dark-hr: #666666;
+$dark-footer: #222;
 
 $media-bp-sm: 576px;
 $media-bp-md: 768px;
@@ -49,6 +51,7 @@ footer div {
 #copyright {
   display: grid;
   grid-template-columns: auto 1.5rem;
+
 }
 
 nav {
@@ -120,7 +123,7 @@ span.gatsby-resp-image-wrapper {
 
   .intro {
     .portrait {
-      width: 50%;
+      width: 33%;
     }
   }
 }
@@ -128,7 +131,8 @@ span.gatsby-resp-image-wrapper {
 @media only screen and (min-width: $media-bp-md) {
   .intro {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 1fr;
 
     .portrait {
       border-radius: .2rem;
@@ -187,6 +191,9 @@ a {
   }
 }
 
+footer div {
+  color: $dark-bg;
+}
 
 
 header {
@@ -203,7 +210,6 @@ header {
     }
   }
 }
-
 
 
 ul {
@@ -224,7 +230,9 @@ ul {
   }
 }
 
-
+#footer-wrapper {
+  background-color: $light-footer;
+}
 
 
 /** DARK THEME **/
@@ -253,5 +261,13 @@ body.dark {
         color: $dark-fg;
       }
     }
+  }
+
+  #footer-wrapper {
+    background-color: $dark-footer;
+  }
+
+  footer div {
+    color: $dark-fg;
   }
 }

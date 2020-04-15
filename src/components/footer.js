@@ -9,7 +9,6 @@ import ThemeToggle from "./themetoggle"
 const Footer = ({ menuLegal, menuSocial }) => (
   <FooterWrapper id="footer-wrapper">
     <FooterStyled id="footer">
-      <hr />
       <Menus>
       <nav id="nav-social" aria-labelledby="nav-social">
         <h3 class="footer-heading" id="nav-social">Soziales</h3>
@@ -33,7 +32,7 @@ const Footer = ({ menuLegal, menuSocial }) => (
 )
 
 const Menus = styled.div`
-  margin-bottom: ${rhythm(1)};
+  margin: ${rhythm(1.5)} 0;
 `
 
 const FooterWrapper = styled.div`
