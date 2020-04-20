@@ -1,7 +1,7 @@
 ---
-title: Bon Iver - Wayfaring Stranger - A Cappella Cover
+title: Johnny Cash - Wayfaring Stranger - A Cappella Cover
 date: 2017-12-08
-description: A Cappella Cover von Bon Ivers Wayfaring Stranger
+description: A Cappella Cover von Johnny Cashs Wayfaring Stranger
 tags:
   - music
   - a cappella
@@ -9,7 +9,7 @@ tags:
   - en
 ---
 
-Bon Iver's *Wayfaring Stranger* is kinf od popular in the *Single A Cappella* scene, since its structure lets you easily make a looping session, adding more and more *buzz* to the song.
+Johnny Cash's *Wayfaring Stranger* is kinf od popular in the *Single A Cappella* scene, since its structure lets you easily make a looping session, adding more and more *buzz* to the song.
 
 I recorded the song in my home 'studio' and put it up for everyone to hear:
 
