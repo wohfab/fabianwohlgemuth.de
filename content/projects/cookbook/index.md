@@ -13,4 +13,4 @@ tags:
 
 Layout eines Kochbuches. Hier: Beispielseiten
 
-![Lauchquiche](./lauchquiche.jpg)
+![Lauchquiche](./lauchquiche_mockup.jpg)
