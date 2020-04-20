@@ -11,6 +11,6 @@ tags:
   - drinks
 ---
 
-Layout eines Kochbuches. Hier: Beispielseiten
+Layout eines Kochbuches. Hier: Lauchquiche mit Käse überbacken
 
 ![Lauchquiche](./lauchquiche_mockup.jpg)
