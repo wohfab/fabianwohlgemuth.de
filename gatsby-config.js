@@ -103,8 +103,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 900,
-              linkImagesToOriginal: true,
+              maxWidth: 2000,
+              linkImagesToOriginal: false,
               withWebp: true,
               tracedSVG: true,
             },
@@ -153,6 +153,19 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              linkImagesToOriginal: false,
+            },
+          },
+          `gatsby-remark-images-zoom`,
+        ],
+      },
+    },
   ],
 }
