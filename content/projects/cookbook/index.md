@@ -14,3 +14,5 @@ tags:
 Layout eines Kochbuches. Hier: Lauchquiche mit Käse überbacken
 
 ![Lauchquiche](./lauchquiche_mockup.jpg)
+
+![Lauchquiche Nummer 2](./lauchquiche_mockup_2.jpg)
