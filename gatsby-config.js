@@ -88,6 +88,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
+        defaultLayouts: {
+          pages: require.resolve("./src/templates/project.js"),
+          default: require.resolve("./src/templates/page.js"),
+        },
         extensions: [".mdx", ".md"],
         gatsbyRemarkPlugins: [
           {
@@ -100,7 +104,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 900,
-              linkImagesToOriginal: false,
+              linkImagesToOriginal: true,
               withWebp: true,
               tracedSVG: true,
             },
