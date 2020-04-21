@@ -9,7 +9,7 @@ tags:
   - en
 ---
 
-Johnny Cash's *Wayfaring Stranger* is kinf od popular in the *Single A Cappella* scene, since its structure lets you easily make a looping session, adding more and more *buzz* to the song.
+Johnny Cash's *Wayfaring Stranger* is kinf of popular in the *Single A Cappella* scene, since its structure lets you easily make a looping session, adding more and more *buzz* to the song.
 
 I recorded the song in my home 'studio' and put it up for everyone to hear:
 
