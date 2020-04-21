@@ -1,7 +1,7 @@
 ---
 title: See Problem. Solve Problem. Grow.
 date: 2020-04-21
-description: Quote Poster
+description: Quote Poster - Problems by Aastha Gaur
 tags:
   - quote
   - design
