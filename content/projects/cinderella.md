@@ -3,6 +3,7 @@ title: Anna-Sophie Rost - Cinderella - Cover
 date: 2019-05-03
 description: Piano und Gesang -  Cover von Anna-Sophie Rosts Cinderella
 tags:
+  - audio
   - music
   - singing
   - piano

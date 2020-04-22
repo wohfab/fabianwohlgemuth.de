@@ -10,7 +10,19 @@ module.exports = {
     },
     menuMain:[
       {
-        name:'Projekte',
+        name:'design',
+        link:'/design'
+      },
+      {
+        name:'code',
+        link:'/code'
+      },
+      {
+        name:'audio',
+        link:'/audio'
+      },
+      {
+        name:'alle',
         link:'/projects'
       },
     ],
