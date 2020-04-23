@@ -371,6 +371,8 @@ def plot_boxplot(plot_value, data=data_sum, width=600, date=date_used, plot_type
 plot_boxplot(plot_value='Cases', data=data_sum_top_c)
 ```
 
+![Boxplot - Infizierte](./plot_box_cases.png)
+
 
 ##### Verteilung der Todeszahlen
 
@@ -379,12 +381,17 @@ plot_boxplot(plot_value='Cases', data=data_sum_top_c)
 plot_boxplot(plot_value='Deaths', data=data_sum_top_d)
 ```
 
+![Boxplot - Tode](./plot_box_deaths.png)
+
+
 ##### Verteilung des Verhältnisses zwischen Todes- und Infiziertenzahlen
 
 
 ```python
 plot_boxplot(plot_value='Ratio')
 ```
+
+![Boxplot - Verhältnis](./plot_box_ratio.png)
 
 
 #### Balkendiagramm
@@ -461,6 +468,8 @@ def plot_bar_horizontal(data=data_sum, sort=True, limit=15, ratio=False, date=da
 plot_bar_horizontal()
 ```
 
+![Balkendiagramm - Infizierte und Tode](./plot_bar_cases_deaths.png)
+
 
 ##### Verhältnis zwischen Todes- und Infiziertenzahlen in %
 
@@ -470,6 +479,8 @@ Sortiert sind die Daten dennoch nach Infiziertenzahlen und nicht nach dem Verhä
 ```python
 plot_bar_horizontal(ratio=True)
 ```
+
+![Balkendiagramm - Verhältnis](./plot_bar_ratio.png)
 
 
 ### Verläufe
@@ -500,6 +511,9 @@ def plot_line(data, date=date_used):
 ```python
 plot_line(data_subset_country('DEU'))
 ```
+
+![Liniendiagramm - Infizierte und Tode](./plot_line_cases_deaths.png)
+
 
 ### Karten
 
@@ -546,34 +560,38 @@ def plot_map(trend=True, plot_value='Cases', date=date_used):
 
 ##### Gesamtzahlen der Infizierten
 
-
 ```python
 plot_map(trend=False)
 ```
 
-##### Gesamtzahlen der Todesfälle
+![Weltkarte - Infizierte](./plot_map_cases.png)
 
+
+##### Gesamtzahlen der Todesfälle
 
 ```python
 plot_map(trend=False, plot_value='Deaths')
 ```
 
+![Weltkarte - Tode](./plot_map_deaths_.png)
+
 
 #####  Gesamtzahlen des Verhältnisses zwischen Todesfällen und Infizierten in %
-
 
 ```python
 plot_map(trend=False, plot_value='Ratio')
 ```
 
+![Weltkarte - Verhältnis](./plot_map_ratio.png)
 
 
 #### Verlaufs-Karten mit Zeitstrahl
 
+**Hinweis: Die interaktiven Karten mit Zeitstrahl sind nur in der [interaktiven Version auf GitHub](https://wohfab.github.io/datajournalism) verfügbar**
+
 Die Verlaufs-Karten beginnen mit dem frühsten Eintrag der Daten. Daher ist über die Karte bis zu den Einträgen von März nur wenig Bewegung. Da wir dennoch ein unverfälschtes Bild auf den Datensatz gewähren wollen, werden die Daten weiterhin angezeigt.
 
 ##### Verlauf der Infiziertenzahlen
-
 
 ```python
 plot_map()
@@ -581,12 +599,9 @@ plot_map()
 
 ##### Verlauf der Todeszahlen
 
-
 ```python
 plot_map(plot_value='Deaths')
 ```
-
-
 
 ## Ausblick
 
