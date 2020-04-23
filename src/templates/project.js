@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import Image from 'gatsby-image'
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -13,6 +14,7 @@ class ProjectsPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
     const tags = this.props.data.mdx.frontmatter.tags
+    const thumbnailSource = this.props.data.mdx.frontmatter.thumbnail.childImageSharp.fluid.src
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -21,6 +23,7 @@ class ProjectsPostTemplate extends React.Component {
           description={project.frontmatter.description || project.excerpt}
         />
         <h1>{project.frontmatter.title}</h1>
+        <Image fluid={thumbnailSource} alt="thumbnail" />
         <p class="project-date"
           style={{
             ...scale(-1 / 5),
@@ -93,7 +96,15 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        category
         tags
+        thumbnail {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
       }
     }
   }

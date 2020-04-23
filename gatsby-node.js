@@ -44,7 +44,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               title
               date
               description
+              category
               tags
+              featured
+              thumbnail {
+                childImageSharp {
+                  fluid {
+                    src
+                  }
+                }
+              }
             }
           }
         }

@@ -2,6 +2,9 @@
 title: See Problem. Solve Problem. Grow.
 date: 2020-04-21
 description: Quote Poster / Calendar Cover Art - 'Problems' by Aastha Gaur
+thumbnail: ./problems.jpg
+featured: true
+category: design
 tags:
   - quote
   - design

@@ -2,6 +2,9 @@
 title: Data Journalism - COVID-19
 date: 2020-03-25
 description: Datenanalyse mit Python Pandas, auf den COVID-19 Daten des ECDC.
+thumbnail: ./plot_map_deaths.png
+featured: false
+category: code
 tags:
   - code
   - uni

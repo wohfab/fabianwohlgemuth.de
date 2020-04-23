@@ -2,6 +2,9 @@
 title: Johnny Cash - Wayfaring Stranger - A Cappella Cover
 date: 2017-12-08
 description: A Cappella Cover von Johnny Cashs Wayfaring Stranger
+featured: false
+thumbnail: ./cookbook/lauchquiche_mockup.jpg
+category: audio
 tags:
   - audio
   - music

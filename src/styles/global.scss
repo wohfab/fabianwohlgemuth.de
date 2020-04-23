@@ -59,6 +59,20 @@ footer div {
 
 }
 
+.projects {
+  & .project {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    & .thumbnail {
+      & img {
+        margin: 0;
+      }
+    }
+  }
+}
+
 nav {
   ul {
     list-style: none;
@@ -102,6 +116,16 @@ span.gatsby-resp-image-wrapper {
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: $media-bp-sm) {
+  .projects {
+    & .project {
+      grid-template-columns: 1fr 2fr;
+  
+      & .info {
+        padding-left: 1rem;
+      }
+    }
+  }
+
   .images {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -228,6 +252,7 @@ ul {
       background-color: $theme-yellow;
       padding: 0 .4rem;
       margin-right: .5rem;
+      margin-bottom: .5rem;
       box-shadow: .2rem .2rem .1rem $theme-blue-dark;
     }
   }

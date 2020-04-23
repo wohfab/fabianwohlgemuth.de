@@ -2,6 +2,9 @@
 title: Kochbuch
 date: 2020-04-20
 description: DTP/Layout Projekt für ein Kochbuch
+thumbnail: ./lauchquiche_mockup.jpg
+featured: false
+category: design
 tags:
   - design
   - layout

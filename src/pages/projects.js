@@ -1,10 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Image from 'gatsby-image'
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+
 
 class Projects extends React.Component {
   render() {
@@ -15,13 +17,17 @@ class Projects extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All projects" />
-        <h1>Projekte</h1>
+        <h1>Alle Projekte</h1>
         <Bio />
-        <div style={{ margin: "1rem 0 2rem" }}>
+        <div className="projects" style={{ margin: "1rem 0 2rem" }}>
           {projects.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <div key={node.fields.slug}>
+              <div key={node.fields.slug} class="project">
+                <div class="thumbnail">
+                <img src={node.frontmatter.thumbnail.childImageSharp.fluid.src} alt={title} />
+                </div>
+                <div class="info">
                 <h3
                   style={{
                     marginBottom: rhythm(1 / 4),
@@ -45,6 +51,7 @@ class Projects extends React.Component {
                     __html: node.frontmatter.description || node.excerpt,
                   }}
                 />
+              </div>
               </div>
             )
           })}
@@ -78,6 +85,15 @@ export const pageQuery = graphql`
             title
             description
             tags
+            category
+            featured
+            thumbnail {
+                childImageSharp {
+                  fluid {
+                    src
+                  }
+                }
+              }
           }
         }
       }

@@ -2,6 +2,9 @@
 title: Anna-Sophie Rost - Cinderella - Cover
 date: 2019-05-03
 description: Piano und Gesang -  Cover von Anna-Sophie Rosts Cinderella
+featured: true
+thumbnail: ./cookbook/lauchquiche_mockup.jpg
+category: audio
 tags:
   - audio
   - music
