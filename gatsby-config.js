@@ -146,19 +146,19 @@ module.exports = {
         trackingId: `UA-97919061-6`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `fabian wohlgemuth - digital creative.`,
-    //     short_name: `fwdc.`,
-    //     start_url: `/`,
-    //     background_color: `#222222`,
-    //     theme_color: `#EE6600`,
-    //     display: `standalone`,
-    //     // edit below
-    //     icon: `content/assets/logos/fwdc_xl_tp.png`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `fabian wohlgemuth - digital creative.`,
+        short_name: `fwdc.`,
+        start_url: `/`,
+        //background_color: `#222222`,
+        //theme_color: `#EE6600`,
+        //display: `standalone`,
+        // edit below
+        icon: `content/assets/logos/fwdc_xl_tp.png`,
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
