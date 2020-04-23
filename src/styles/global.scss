@@ -2,17 +2,22 @@ $accent-color: #EE6600;
 $accent-color-dark: transparentize($accent-color, .4);
 $accent-color-light: transparentize($accent-color, .7);
 
+$theme-yellow: #FCCA46;
+$theme-gray-dark: #222;
+$theme-blue-dark: #233D4D;
+
+
 $light-bg: #FEFEFE;
-$light-fg: #222;
+$light-fg: $theme-gray-dark;
 $light-strong: #000;
 $light-code-bg: #FEF5D9;
-$light-footer: #FCCA46;
+$light-footer: $theme-yellow;
 
-$dark-bg: #233D4D;
+$dark-bg: $theme-blue-dark;
 $dark-fg: #EEE;
 $dark-strong: #FFF;
 $dark-hr: #666666;
-$dark-footer: #222;
+$dark-footer: $theme-gray-dark;
 
 $media-bp-sm: 576px;
 $media-bp-md: 768px;
@@ -154,7 +159,6 @@ span.gatsby-resp-image-wrapper {
 }
 
 
-
 /* FONT STYLES */
 
 code {
@@ -165,7 +169,6 @@ pre {
     font-size: .8rem;
   }
 }
-
 
 
 /* LIGHT THEME */
@@ -221,11 +224,11 @@ ul {
 
     li {
       font-size: .8rem;
-      color: $light-fg;
-      background-color: $accent-color-light;
+      color: $theme-gray-dark;
+      background-color: $theme-yellow;
       padding: 0 .4rem;
       margin-right: .4rem;
-      border-radius: .3rem;
+      box-shadow: .2rem .2rem .1rem $theme-blue-dark;
     }
   }
 }
@@ -258,7 +261,7 @@ body.dark {
   ul {
     &.project-tags {  
       li {
-        color: $dark-fg;
+        box-shadow: .2rem .2rem .1rem $theme-gray-dark;
       }
     }
   }
