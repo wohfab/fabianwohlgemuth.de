@@ -21,7 +21,7 @@ class ProjectsPostTemplate extends React.Component {
           description={project.frontmatter.description || project.excerpt}
         />
         <h1>{project.frontmatter.title}</h1>
-        <p
+        <p class="project-date"
           style={{
             ...scale(-1 / 5),
             display: `block`,
@@ -36,7 +36,9 @@ class ProjectsPostTemplate extends React.Component {
           <li>{tag}</li>
         )})}
         </ul>
+        <div class="project-body">
         <MDXRenderer>{project.body}</MDXRenderer>
+        </div>
         <hr
           style={{
             marginBottom: rhythm(1),
