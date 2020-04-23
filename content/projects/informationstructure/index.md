@@ -2,11 +2,10 @@
 title: Informationsstrukturierung - Digitale Cocktailbar
 date: 2020-03-24
 description: Projekt zur Informationsstrukturierung, Transformation einer XML Datenbank in eine HTML Website, mithilfe von XSL Tranformation.
-thumbnail: ../cookbook/lauchquiche_mockup.jpg
+thumbnail: ../../assets/logos/fwdc_sm_tp.png
 featured: false
 category: code
 tags:
-  - code
   - uni
   - XML
   - XSLT

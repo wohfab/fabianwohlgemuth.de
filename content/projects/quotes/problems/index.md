@@ -7,7 +7,6 @@ featured: true
 category: design
 tags:
   - quote
-  - design
   - growth
   - en
 ---

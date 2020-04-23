@@ -6,7 +6,6 @@ thumbnail: ./plot_map_deaths.png
 featured: false
 category: code
 tags:
-  - code
   - uni
   - data analysis
   - python

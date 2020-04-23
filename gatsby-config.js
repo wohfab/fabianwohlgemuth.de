@@ -9,20 +9,20 @@ module.exports = {
       twitter: `wohfab`,
     },
     menuMain:[
+      // {
+      //   name:'design',
+      //   link:'/design'
+      // },
+      // {
+      //   name:'code',
+      //   link:'/code'
+      // },
+      // {
+      //   name:'audio',
+      //   link:'/audio'
+      // },
       {
-        name:'design',
-        link:'/design'
-      },
-      {
-        name:'code',
-        link:'/code'
-      },
-      {
-        name:'audio',
-        link:'/audio'
-      },
-      {
-        name:'alle',
+        name:'projekte',
         link:'/projects'
       },
     ],

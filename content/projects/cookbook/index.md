@@ -6,7 +6,6 @@ thumbnail: ./lauchquiche_mockup.jpg
 featured: false
 category: design
 tags:
-  - design
   - layout
   - dtp
   - cooking

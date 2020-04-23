@@ -109,7 +109,7 @@ ul {
   }
 }
 
-span.gatsby-resp-image-wrapper {
+span.gatsby-resp-image-wrapper, .thumbnail img {
   box-shadow: 0 4px 8px 0 transparentize($light-strong, .6), 0 6px 20px 0 transparentize($light-strong, .8);
 }
 
@@ -254,6 +254,11 @@ ul {
       margin-right: .5rem;
       margin-bottom: .5rem;
       box-shadow: .2rem .2rem .1rem $theme-blue-dark;
+
+      &.project-category {
+        background-color: $accent-color-dark;
+        font-weight: bold;
+      }
     }
   }
 }
@@ -292,6 +297,11 @@ body.dark {
     &.project-tags {  
       li {
         box-shadow: .2rem .2rem .1rem $theme-gray-dark;
+
+        &.project-category {
+          background-color: $accent-color;
+          font-weight: bold;
+        }
       }
     }
   }
