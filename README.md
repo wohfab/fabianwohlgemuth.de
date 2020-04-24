@@ -12,6 +12,8 @@
 
 - [ ] Tags
 - [ ] Categories
+- [ ] Setting up branch system
+- [ ] Custom Domain for dev and prod environemtn
 
 ## Deploy Status
 
