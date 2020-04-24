@@ -8,6 +8,11 @@
   digital creative.
 </h1>
 
+## DEV LOG
+
+[] Tags
+[] Categories
+
 ## Deploy Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3b9021a1-ee46-4920-a520-44281f4923ed/deploy-status)](https://app.netlify.com/sites/wohfab/deploys)
