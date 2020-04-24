@@ -12,14 +12,18 @@
 
 I am trying to create Tags Pages for my 'Blog Posts' aka *Projects*. I am using [the official Gatsby Docs Tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/). This tutorial has the following steps:
 
-### Add tags to your markdown files
+### 1 Add tags to your markdown files
 
 Done.
 
-### Write a query to get all tags for your posts
+### 2 Write a query to get all tags for your posts
 
 <details>
-<summary>The [query from the tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#write-a-query-to-get-all-tags-for-your-posts) works</summary>
+<summary>
+
+The [query from the tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#write-a-query-to-get-all-tags-for-your-posts) works
+
+</summary>
 
 ``` GRAPHQL
 {
@@ -142,10 +146,10 @@ Done.
 
 </details>
 
-### Make a tags page template (for /tags/{tag})
-### Modify gatsby-node.js to render pages using that template
-### Make a tags index page (/tags) that renders a list of all tags
-### (optional) Render tags inline with your blog posts
+### 3 Make a tags page template (for /tags/{tag})
+### 4 Modify gatsby-node.js to render pages using that template
+### 5 Make a tags index page (/tags) that renders a list of all tags
+### 6 (optional) Render tags inline with your blog posts
 
 ## DEV TODO
 
