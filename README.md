@@ -10,8 +10,8 @@
 
 ## DEV LOG
 
-[] Tags
-[] Categories
+- [ ] Tags
+- [ ] Categories
 
 ## Deploy Status
 
