@@ -20,8 +20,8 @@ Done.
 
 <details>
 <summary>
-The [query from the tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#write-a-query-to-get-all-tags-for-your-posts) works
 
+The [query from the tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#write-a-query-to-get-all-tags-for-your-posts) works
 </summary>
 
 ``` GRAPHQL
