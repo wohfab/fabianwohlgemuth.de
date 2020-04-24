@@ -18,7 +18,8 @@ Done.
 
 ### Write a query to get all tags for your posts
 
-The [query from the tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#write-a-query-to-get-all-tags-for-your-posts) works:
+<details>
+<summary>The [query from the tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#write-a-query-to-get-all-tags-for-your-posts) works</summary>
 
 ``` GRAPHQL
 {
@@ -30,6 +31,8 @@ The [query from the tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-cate
   }
 }
 ```
+
+</details>
 
 <details>
 <summary>Query Results</summary>
