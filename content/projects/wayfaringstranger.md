@@ -4,12 +4,17 @@ date: 2017-12-08
 description: A Cappella Cover von Johnny Cashs Wayfaring Stranger
 featured: false
 thumbnail: ../assets/logos/fwdc_sm_tp.png
-category: audio
+categories: 
+  - audio
 tags:
   - music
   - a cappella
   - singing
   - en
+tools:
+  - ardour
+  - adobe audition
+  - audacity
 ---
 
 Johnny Cash's *Wayfaring Stranger* is kinf of popular in the *Single A Cappella* scene, since its structure lets you easily make a looping session, adding more and more *buzz* to the song.

@@ -4,7 +4,8 @@ date: 2020-03-24
 description: Projekt zur Informationsstrukturierung, Transformation einer XML Datenbank in eine HTML Website, mithilfe von XSL Tranformation.
 thumbnail: ../../assets/logos/fwdc_sm_tp.png
 featured: false
-category: code
+categories:
+  - code
 tags:
   - uni
   - XML
@@ -13,6 +14,10 @@ tags:
   - information structure
   - cocktails
   - de
+tools:
+  - VS Code
+  - xsltproc
+  - LaTeX
 ---
 
 The following project is documented in German. The text down below shows a stripped version of the full documentation. You can find the [complete and well structured documentation](https://github.com/wohfab/informationsstrukturierung/blob/master/dokumentation.pdf), the [interactive project results](https://wohfab.github.io/informationsstrukturierung), and the [source code](https://github.com/wohfab/informationsstrukturierung) on GitHub.

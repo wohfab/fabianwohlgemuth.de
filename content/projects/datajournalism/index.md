@@ -4,7 +4,8 @@ date: 2020-03-25
 description: Datenanalyse mit Python Pandas, auf den COVID-19 Daten des ECDC.
 thumbnail: ./plot_map_deaths.png
 featured: false
-category: code
+categories: 
+  - code
 tags:
   - uni
   - data analysis
@@ -12,6 +13,10 @@ tags:
   - pandas
   - COVID-19
   - de
+tools:
+  - python
+  - jupyter notebook
+  - plotly
 ---
 
 The following project is documented in German. You can find the [interactive project with all plots and maps](https://wohfab.github.io/datajournalism) and the [source code](https://github.com/wohfab/datajournalism) on GitHub.

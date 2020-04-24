@@ -44,7 +44,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               title
               date
               description
-              category
+              categories
+              tools
               tags
               featured
               thumbnail {

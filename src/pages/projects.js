@@ -24,7 +24,12 @@ class Projects extends React.Component {
             return (
               <div key={node.fields.slug} class="project">
                 <div class="thumbnail">
+                <Link
+                    style={{ boxShadow: `none` }}
+                    to={`projects${node.fields.slug}`}
+                  >
                 <img src={node.frontmatter.thumbnail.childImageSharp.fluid.src} alt={title} />
+                </Link>
                 </div>
                 <div class="info">
                 <h3
@@ -41,9 +46,14 @@ class Projects extends React.Component {
                 </h3>
                 <small>{node.frontmatter.date}</small>
                 <ul class="project-tags">
-                <li class="project-category">{node.frontmatter.category}</li>
+                  {node.frontmatter.categories.map((category) => { return(
+                    <li class="project-category">{category}</li>
+                  )})}
                   {node.frontmatter.tags.map((tag) => { return(
-                    <li>{tag}</li>
+                    <li class="project-tag">{tag}</li>
+                  )})}
+                  {node.frontmatter.tools.map((tool) => { return(
+                    <li class="project-tool">{tool}</li>
                   )})}
                 </ul>
                 <p
@@ -85,7 +95,8 @@ export const pageQuery = graphql`
             title
             description
             tags
-            category
+            categories
+            tools
             featured
             thumbnail {
                 childImageSharp {

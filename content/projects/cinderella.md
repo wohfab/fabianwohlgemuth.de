@@ -4,12 +4,17 @@ date: 2019-05-03
 description: Piano und Gesang -  Cover von Anna-Sophie Rosts Cinderella
 featured: true
 thumbnail: ../assets/logos/fwdc_sm_tp.png
-category: audio
+categories: 
+  - audio
 tags:
   - music
   - singing
   - piano
   - de
+tools:
+  - ardour
+  - adobe audition
+  - audacity
 ---
 
 Cinderella is a song, written and sung originally by Anna-Sophie Rost. Discovered on YouTube, I had to make my own cover out of this beauty of poetry. 

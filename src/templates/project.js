@@ -14,6 +14,8 @@ class ProjectsPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
     const tags = this.props.data.mdx.frontmatter.tags
+    const tools = this.props.data.mdx.frontmatter.tools
+    const categories = this.props.data.mdx.frontmatter.categories
     const thumbnailSource = this.props.data.mdx.frontmatter.thumbnail.childImageSharp.fluid.src
 
     return (
@@ -35,9 +37,15 @@ class ProjectsPostTemplate extends React.Component {
           {project.frontmatter.date}
         </p>
         <ul class="project-tags">
-        {tags.map((tag) => { return(
-          <li>{tag}</li>
-        )})}
+          {categories.map((category) => { return(
+            <li class="project-category">{category}</li>
+          )})}
+          {tags.map((tag) => { return(
+            <li class="project-tag">{tag}</li>
+          )})}
+          {tools.map((tool) => { return(
+            <li class="project-tool">{tool}</li>
+          )})}
         </ul>
         <div class="project-body">
         <MDXRenderer>{project.body}</MDXRenderer>
@@ -96,8 +104,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        category
+        categories
         tags
+        tools
         thumbnail {
           childImageSharp {
             fluid {
