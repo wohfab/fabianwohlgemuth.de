@@ -145,7 +145,7 @@ Done.
 ### [3 Make a tags page template (for /tags/{tag})](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#make-a-tags-page-template-for-tagstag)
 
 <details>
-<summary>Create file <code></code>src/templates/tags.js</code></summary>
+<summary>Create file <code>src/templates/tags.js</code></summary>
 
 ``` JS
 import React from "react"
