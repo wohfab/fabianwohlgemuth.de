@@ -33,6 +33,7 @@ The [query from the tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-cate
 
 <details>
 <summary>Query Results</summary>
+
 ``` JSON
 {
   "data": {
@@ -135,6 +136,7 @@ The [query from the tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-cate
   }
 }
 ```
+
 </details>
 
 ### Make a tags page template (for /tags/{tag})
