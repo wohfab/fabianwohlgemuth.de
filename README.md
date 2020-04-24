@@ -234,7 +234,115 @@ export const pageQuery = graphql`
 
 </details>
 
-### 4 Modify gatsby-node.js to render pages using that template
+### [4 Modify gatsby-node.js to render pages using that template](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#modify-gatsby-nodejs-to-render-pages-using-that-template)
+
+<details>
+<summary>Adding stuff to <pre>gatsby-node.js</pre></summary>
+
+``` JS
+const path = require("path")
+const _ = require("lodash")
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
+
+  const blogPostTemplate = path.resolve("src/templates/blog.js")
+  const tagTemplate = path.resolve("src/templates/tags.js")
+
+  const result = await graphql(`
+    {
+      postsRemark: allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 2000
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              tags
+            }
+          }
+        }
+      }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
+    }
+  `)
+
+  // handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  const posts = result.data.postsRemark.edges
+
+  // Create post detail pages
+  posts.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: blogPostTemplate,
+    })
+  })
+
+  // Extract tag data from query
+  const tags = result.data.tagsGroup.group
+
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
+}
+```
+
+</details>
+
+Since I already have stuff in the `gatsby-node.js`, I kind of fail to pass this step already. How would I go about migrating the code above and my already existing code? You say, I should make it a single query in the code. How would I do this? Where would I afterwards split the pages vs. projects?
+
+I think I got the idea of the split query in exactly this tutorial:
+
+``` JS
+  const result = await graphql(`
+    {
+      postsRemark: allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 2000
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              tags
+            }
+          }
+        }
+      }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
+    }
+  `)
+```
+
+There it says:
+
+> You have referenced two `allMarkdownRemark` fields in your query. To avoid naming collisions you must **alias** one of them. You alias both to make your code more human-readable.
+
 ### 5 Make a tags index page (/tags) that renders a list of all tags
 ### 6 (optional) Render tags inline with your blog posts
 
