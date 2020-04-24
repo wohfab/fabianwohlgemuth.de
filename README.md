@@ -19,8 +19,7 @@ Done.
 ### 2 Write a query to get all tags for your posts
 
 <details>
-<summary>
-
+<summary class="note">
 The [query from the tutorial](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#write-a-query-to-get-all-tags-for-your-posts) works
 </summary>
 
