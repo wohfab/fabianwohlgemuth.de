@@ -145,7 +145,7 @@ Done.
 ### [3 Make a tags page template (for /tags/{tag})](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#make-a-tags-page-template-for-tagstag)
 
 <details>
-<summary>Create file <pre>src/templates/tags.js</pre></summary>
+<summary>Create file <code></code>src/templates/tags.js</code></summary>
 
 ``` JS
 import React from "react"
@@ -237,7 +237,7 @@ export const pageQuery = graphql`
 ### [4 Modify gatsby-node.js to render pages using that template](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/#modify-gatsby-nodejs-to-render-pages-using-that-template)
 
 <details>
-<summary>Adding stuff to <pre>gatsby-node.js</pre></summary>
+<summary>Adding stuff to <code>gatsby-node.js</code></summary>
 
 ``` JS
 const path = require("path")
