@@ -2,7 +2,7 @@
 title: Naturschutzgroßprojekt Senne
 date: 2020-04-26
 description: Ochsenpfad des Naturschutzgroßprojektes Senne
-thumbnail: ./falter_flug.png
+thumbnail: ./falter_flug.jpg
 featured: false
 categories: 
   - design
