@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Naturschutzgroßprojekt Senne
 date: 2020-04-26
 description: Ochsenpfad des Naturschutzgroßprojektes Senne
