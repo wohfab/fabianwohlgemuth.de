@@ -16,9 +16,9 @@ class TagRoute extends React.Component {
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMdx.totalCount
-    const tagHeader = `${totalCount} project${
-      totalCount === 1 ? "" : "s"
-    } tagged with “${tag}”`
+    const tagHeader = `${totalCount} Projekt${
+      totalCount === 1 ? "" : "e"
+    } mit Tag: “${tag}”`
 
     return (
       <Layout>

@@ -16,9 +16,9 @@ class CategoryRoute extends React.Component {
     const category = this.props.pageContext.category
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMdx.totalCount
-    const categoryHeader = `${totalCount} project${
-      totalCount === 1 ? "" : "s"
-    } posted in: “${category}”`
+    const categoryHeader = `${totalCount} Projekt${
+      totalCount === 1 ? "" : "e"
+    } in: “${category}”`
 
     return (
       <Layout>

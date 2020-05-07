@@ -16,9 +16,9 @@ class ToolRoute extends React.Component {
     const tool = this.props.pageContext.tool
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMdx.totalCount
-    const toolHeader = `${totalCount} project${
-      totalCount === 1 ? "" : "s"
-    } made with “${tool}”`
+    const toolHeader = `${totalCount} Projekt${
+      totalCount === 1 ? "" : "e"
+    } erstellt mit Hilfe von: “${tool}”`
 
     return (
       <Layout>
