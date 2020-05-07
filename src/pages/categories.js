@@ -14,11 +14,11 @@ const CategoriesPage = ({
 }) => (
   <Layout>
     <section className="">
-      <Helmet title={`Categories | ${title}`} />
+      <Helmet title={`Kategorien | ${title}`} />
       <div className="">
         <div className="">
           <div className="">
-            <h1 className="">Categories</h1>
+            <h1 className="">Kategorien</h1>
             <ul className="">
               {group.map(category => (
                 <li key={category.fieldValue}>
