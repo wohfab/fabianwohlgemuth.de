@@ -4,7 +4,7 @@ date: 2020-03-25
 description: Datenanalyse mit Python Pandas, auf den COVID-19 Daten des ECDC.
 thumbnail: ./plot_map_deaths.png
 featured: false
-categories: 
+categories:
   - code
 tags:
   - uni
@@ -44,7 +44,6 @@ Für die Ausführung des Projektes benötigen wir folgende Python-Pakete:
 - `urllib.requests`, um die aktuellsten Zahlen herunterzuladen.
 - `datetime`, um das heutige Datum herauszufinden.
 
-
 ```python
 ## dataframes
 import pandas as pd
@@ -60,7 +59,6 @@ from datetime import datetime, timedelta, date
 ```
 
 ## Konstanten
-
 
 ```python
 ## constants to be used through out the project
@@ -97,17 +95,16 @@ Die Daten befinden sich auf der Website des ECDC im `.xlsx`-Format. Zunächst wi
 
 Nach dem Versuch, die Tagesaktuellen Zahlen herunterzuladen, wird die Variable `data_file` auf die aktuellste Datei festgelegt.
 
-
 ```python
 def get_data(filetype=SOURCE_FILETYPE):
     """
     Getting data downloaded from the given source (ECDC)
-    
+
     filetype: .xlsx (.csv became available later but is not yet incorporated into the project)
-    
+
     returns: File
     """
-    
+
     try:
         url_today = SOURCE_FILENAME.format(DATE_TODAY) + filetype
         url = SOURCE_URL + url_today
@@ -138,18 +135,16 @@ data_file, date_used = get_data()
     Genutzte Datei:
     COVID-19-geographic-disbtribution-worldwide-2020-03-25.xlsx
 
-
 Im Anschluss wird die Datei über `pandas` eingelesen und als `DataFrame`-Objekt gespeichert, damit wir die Daten tabellarisch auswerten können. Bevor wir Änderungen an den Daten vornehmen, werden wir diese in einer weiteren Variable zwischenspeichern. Auf diese Art und Weise können wir auch nach Veränderungen immer auf die Ausgangsdaten zurückgreifen, um etwaige Fehler zu finden.
-
 
 ```python
 def read_data(directory=DIR_ASSETS, data_file=data_file):
     """
     Reading given file from directory into a Pandas DataFrame Object
-    
+
     directory: Relative Path to directory of the file
     data_file: File name
-    
+
     returns: Two identical DataFrames. One for manipulation and one one for the raw data.
     """
     data = pd.read_excel(directory + data_file)
@@ -166,7 +161,6 @@ data, data_raw = read_data()
 
 Um die Befehle für das weitere Projekt etwas zu vereinfachen, ändern wir den Namen der Spalte `Countries and territories`.
 
-
 ```python
 ## renaming columns
 data = data.rename(columns={"Countries and territories": "Area"})
@@ -174,18 +168,17 @@ data = data.rename(columns={"Countries and territories": "Area"})
 
 Dann lassen wir uns mögliche "Fehler" in unserem Datensatz ausgeben. Da ein entscheidender Teil des Projektes auf die Richtigkeit der Länder-Codes im Datendatz baut, prüfen wir, welche der gesetzten Codes womöglich nicht in unser System passen.
 
-Dazu erstellen wir eine Menge der Länder-Codes und lassen uns diese -und die dazugehörigen `Area`-Namen- ausgeben, die *nicht* zweistellig sind.
-
+Dazu erstellen wir eine Menge der Länder-Codes und lassen uns diese -und die dazugehörigen `Area`-Namen- ausgeben, die _nicht_ zweistellig sind.
 
 ```python
 def show_unique_values(value='GeoId', data=data, print_values=False):
     """
     Listing unique values, given a dataset and the value name.
-    
+
     value: Value that should be listed
     data: dataset (Pandas DataFrame)
     print_values: Boolean; if true, value list is created and printed out
-    
+
     returns: Array of unique values
     """
     values = data[value].unique()
@@ -206,17 +199,15 @@ for area in data['Area'][data['GeoId'].str.len() != 2].unique():
     PYF - French_Polynesia
     nan - Namibia
 
-
 #### Bereinigung
 
-Wirft man einen Blick auf diese Einträge, stellt man fest, dass für *Namibia* keine Einträge in der `GeoId` vorhanden sind (`nan`), *French_Polynesia* bereits einen dreistelligen Länder-Code eingetragen hat und *Cases_on_an_international_conveyance_Japan* eine spezielle achtstellige `GeoId` zugewiesen bekommen hat.
+Wirft man einen Blick auf diese Einträge, stellt man fest, dass für _Namibia_ keine Einträge in der `GeoId` vorhanden sind (`nan`), _French_Polynesia_ bereits einen dreistelligen Länder-Code eingetragen hat und _Cases_on_an_international_conveyance_Japan_ eine spezielle achtstellige `GeoId` zugewiesen bekommen hat.
 
-Über eine kurze Recherche lässt sich schnell herausfinden, dass der `Alpha-3`-Code für *Namibia* `NAM` ist. Bei *Cases_on_an_international_conveyance_Japan* handelt es sich um das Passagier-Schiff *Diamond Princess*, welches vor dem Hafen von Yokohama in Japan liegt/lag und in den Daten nicht zu Japans Fällen dazugezählt wird.
+Über eine kurze Recherche lässt sich schnell herausfinden, dass der `Alpha-3`-Code für _Namibia_ `NAM` ist. Bei _Cases_on_an_international_conveyance_Japan_ handelt es sich um das Passagier-Schiff _Diamond Princess_, welches vor dem Hafen von Yokohama in Japan liegt/lag und in den Daten nicht zu Japans Fällen dazugezählt wird.
 
-Die Einträge zur *Diamond Princess* werden wir beibehalten. Sie werden auf späteren Weltkarten nicht angezeigt, da sie keinen dreistelligen Länder-Code haben. Auf diese Weise können die Zahlen dennoch in die statistischen Berechnungen einfließen.
+Die Einträge zur _Diamond Princess_ werden wir beibehalten. Sie werden auf späteren Weltkarten nicht angezeigt, da sie keinen dreistelligen Länder-Code haben. Auf diese Weise können die Zahlen dennoch in die statistischen Berechnungen einfließen.
 
 Für Namibia können wir den entsprechenden Länder-Code in die `GeoId`-Spalte einfügen.
-
 
 ```python
 ## change Namibia's GeoId from 'nan' to 'NA'
@@ -229,7 +220,6 @@ data.replace('nan', 'NA', inplace=True)
 
 Die Datumsspalte `DateRep` ist vom Format `timestamp`. Für einige Plots benötigen wir das Datum als Zeichenkette, weshalb wir eine weitere Spalte `Date` hinzufügen.
 
-
 ```python
 data['Date'] = data['DateRep'].dt.strftime('%Y-%m-%d')
 ```
@@ -237,7 +227,6 @@ data['Date'] = data['DateRep'].dt.strftime('%Y-%m-%d')
 #### GeoIds nach ISO3166 Alpha-3
 
 Um die Daten im späteren Verlauf per `plotly` auf einer Weltkarte darstellen zu können, benötigen wir Länder-Codes im Format `ISO3166 Alpha-3`. Die `GeoId` aus den vorhanden Daten nutzt jedoch `ISO3166 Alpha-2`, weshalb wir eine weitere Spalte zu unseren Daten hinzufügen werden, die die entsprechenden Codes enthält. Hier bedienen wir uns einer [Liste](assets/iso3166.csv), die sowohl `Alpha-2`- als auch `Alpha-3`-Codes enthält.
-
 
 ```python
 ## read ISO3166 CSV file
@@ -255,7 +244,6 @@ Die vorliegenden Zahlen sind aufgeschlüsselt nach Tagen. Um Verläufe zu plotte
 
 Außerdem erstellen wir ebenfalls eine Spalte mit dem Verhältnis von Todesfall- zu Infiziertenzahlen.
 
-
 ```python
 ## creating columns for cumulated sums
 data['CumCases'] = data.sort_values(by='Date').groupby('GeoId3')['Cases'].cumsum()
@@ -271,7 +259,6 @@ Für die Darstellung der Gesamtsummen, erstellen wir ein Sub-Set unseres Datensa
 
 Zusätzlich erstellen wir ein weiteres Sub-Set, welches die summierten Daten absteigend nach Fallzahlen sortiert und und die "Top"-Einträge speichert. Da wir ansonsten eine sehr hohe Varianz haben, ließen sich keine sinnigen Box-Plots generieren.
 
-
 ```python
 ## cases and deaths summarized
 data_sum = data.groupby(['GeoId3', "Area"], as_index=False).sum()[['GeoId3', 'Area', 'Cases', 'Deaths']]
@@ -286,15 +273,13 @@ data_sum_top_d = data_sum.sort_values('Deaths', ascending=False).head(15)
 
 Im Anschluss werden auch für die Sub-Sets Spalten für das Verhältnis angelegt.
 
-
 ```python
 data_sum['Ratio'] = data_sum['Deaths'] / data_sum['Cases'] * 100
 data_sum_top_c['Ratio'] = data_sum_top_c['Deaths'] / data_sum_top_c['Cases'] * 100
 data_sum_top_d['Ratio'] = data_sum_top_d['Deaths'] / data_sum_top_d['Cases'] * 100
 ```
 
-Die folgende Hilfsfunktion macht es einfacher, Sub-Sets für Länder anzulegen. Als Beispiel für das Projekt, legen wir hier *Deutschland* fest.
-
+Die folgende Hilfsfunktion macht es einfacher, Sub-Sets für Länder anzulegen. Als Beispiel für das Projekt, legen wir hier _Deutschland_ fest.
 
 ```python
 def data_subset_country(geoid3):
@@ -309,10 +294,9 @@ Für die Erstellung der Grafiken erstellen wir im Folgenden eine Funktion, die n
 
 Dies machen wir, damit wir nicht für jeden Plot ein extra Layout erstellen müssen und sich so Code unnötig vielfach kopieren lassen muss.
 
-
 ```python
-def build_layout(plot_type, plot_value, date=date_used, plot_map=False):      
-    
+def build_layout(plot_type, plot_value, date=date_used, plot_map=False):
+
     if plot_value == 'Cases':
         title_value = 'Infizierte'
         axis_value = 'Infizierte'
@@ -325,19 +309,19 @@ def build_layout(plot_type, plot_value, date=date_used, plot_map=False):
     elif plot_value == 'CasesDeaths':
         title_value = 'Infizierte und Tode'
         axis_value = 'Infizierte und Tode'
-    
+
     if plot_type == 'verteilung':
         title_type = title_value
     elif plot_type == 'verlauf':
-        title_type = title_value  
+        title_type = title_value
     elif plot_type == 'gesamt':
         if plot_value == 'Ratio':
             title_type = title_value + ' - sortiert nach Infizierten'
         else:
             title_type = 'Anzahl - {}'.format(title_value)
-    
+
     subtitle = 'Stand: {}'.format(date.strftime('%d.%m.%Y'))
-       
+
     layout = go.Layout(
             title=title_type,
             title_x=.5,
@@ -349,7 +333,7 @@ def build_layout(plot_type, plot_value, date=date_used, plot_map=False):
             ),
             annotations = [dict(xref='paper', yref='paper', x=1, y=-0.14, showarrow=False, text=subtitle)]
         )
-    
+
     if plot_map:
         colorbar = dict(title=axis_value)
         return layout, colorbar
@@ -361,10 +345,9 @@ def build_layout(plot_type, plot_value, date=date_used, plot_map=False):
 
 #### Boxplot
 
-
 ```python
-def plot_boxplot(plot_value, data=data_sum, width=600, date=date_used, plot_type='verteilung'): 
-    fig = px.box(data, y=plot_value, points="all", hover_name="Area", 
+def plot_boxplot(plot_value, data=data_sum, width=600, date=date_used, plot_type='verteilung'):
+    fig = px.box(data, y=plot_value, points="all", hover_name="Area",
                  color_discrete_sequence = px.colors.colorbrewer.Paired, width=width)
 
     fig.update_layout(build_layout(plot_type, plot_value, date))
@@ -373,16 +356,13 @@ def plot_boxplot(plot_value, data=data_sum, width=600, date=date_used, plot_type
 
 ##### Verteilung der Infiziertenzahlen
 
-
 ```python
 plot_boxplot(plot_value='Cases', data=data_sum_top_c)
 ```
 
 ![Boxplot - Infizierte](./plot_box_cases.png)
 
-
 ##### Verteilung der Todeszahlen
-
 
 ```python
 plot_boxplot(plot_value='Deaths', data=data_sum_top_d)
@@ -390,9 +370,7 @@ plot_boxplot(plot_value='Deaths', data=data_sum_top_d)
 
 ![Boxplot - Tode](./plot_box_deaths.png)
 
-
 ##### Verteilung des Verhältnisses zwischen Todes- und Infiziertenzahlen
-
 
 ```python
 plot_boxplot(plot_value='Ratio')
@@ -400,30 +378,28 @@ plot_boxplot(plot_value='Ratio')
 
 ![Boxplot - Verhältnis](./plot_box_ratio.png)
 
-
 #### Balkendiagramm
-
 
 ```python
 def plot_bar_horizontal(data=data_sum, sort=True, limit=15, ratio=False, date=date_used, plot_type='gesamt'):
     """
     Plot horizon bar graph
-    
+
     data: dataset
     sort: Boolean; sort by cases
     limit: int; number of countries to show
     ratio: Boolean; if True, instead of cases and deaths, ratio will be plotted
     """
-    
-    
+
+
     if sort:
         if limit:
             data = data.sort_values('Cases').tail(limit)
         else:
             data = data.sort_values('Cases')
-            
+
     fig = go.Figure()
-    
+
     ## add cases
     fig.add_trace(go.Bar(
         y=data['Cases'],
@@ -431,7 +407,7 @@ def plot_bar_horizontal(data=data_sum, sort=True, limit=15, ratio=False, date=da
         orientation='v',
         name='Infizierte',
         marker_color=COLOR_CASES))
-    
+
     ## add deaths
     fig.add_trace(go.Bar(
         y=data['Deaths'],
@@ -439,12 +415,12 @@ def plot_bar_horizontal(data=data_sum, sort=True, limit=15, ratio=False, date=da
         orientation='v',
         name='Tode',
         marker_color=COLOR_DEATHS))
-     
+
     fig.update_layout(barmode='group')
 
     if ratio:
         fig = go.Figure()
-        
+
         ## add ratio
         fig.add_trace(go.Bar(
             y=data['Ratio'],
@@ -454,22 +430,21 @@ def plot_bar_horizontal(data=data_sum, sort=True, limit=15, ratio=False, date=da
             marker_color=COLOR_RATIO,
             hoverinfo='x+y'))
         texttemplate='%{y:.2f}'
-        
+
         fig.update_yaxes(range=[0, 12])
     else:
         texttemplate='%{y:.2s}'
-        
-    plot_value = 'CasesDeaths' if not ratio else 'Ratio' 
+
+    plot_value = 'CasesDeaths' if not ratio else 'Ratio'
     fig.update_layout(build_layout(plot_type, plot_value, date))
-    
+
     fig.update_traces(texttemplate=texttemplate, textposition='outside')
     fig.update_layout(uniformtext_minsize=10, uniformtext_mode='show')
-    
+
     fig.show()
 ```
 
 ##### Bestätigte Infizierten- und Todesfälle
-
 
 ```python
 plot_bar_horizontal()
@@ -477,11 +452,9 @@ plot_bar_horizontal()
 
 ![Balkendiagramm - Infizierte und Tode](./plot_bar_cases_deaths.png)
 
-
 ##### Verhältnis zwischen Todes- und Infiziertenzahlen in %
 
 Sortiert sind die Daten dennoch nach Infiziertenzahlen und nicht nach dem Verhältnis, da hier besonders schön deutlich wird, dass die Infiziertenzahlen nicht in jedem Land gleich mit dem Verhältnis zu den Todenzahlen korrelieren.
-
 
 ```python
 plot_bar_horizontal(ratio=True)
@@ -489,31 +462,28 @@ plot_bar_horizontal(ratio=True)
 
 ![Balkendiagramm - Verhältnis](./plot_bar_ratio.png)
 
-
 ### Verläufe
 
 #### Liniendiagramm
 
-
 ```python
-def plot_line(data, date=date_used):    
+def plot_line(data, date=date_used):
     fig = make_subplots(rows=2, cols=1)
 
     fig.add_trace(
-        go.Scatter(x=data['DateRep'], y=data['CumCases'], name="Infizierte", marker_color=COLOR_CASES), 
+        go.Scatter(x=data['DateRep'], y=data['CumCases'], name="Infizierte", marker_color=COLOR_CASES),
         row=1, col=1,)
 
     fig.add_trace(
-        go.Scatter(x=data['DateRep'], y=data['CumDeaths'], name="Tode", marker_color=COLOR_DEATHS), 
+        go.Scatter(x=data['DateRep'], y=data['CumDeaths'], name="Tode", marker_color=COLOR_DEATHS),
         row=2, col=1)
-    
+
     fig.update_layout(build_layout(date=date, plot_type='verlauf', plot_value='CasesDeaths'))
-    
+
     fig.show()
 ```
 
 ##### Verlauf der Infizierten- und Todesfälle in Deutschland
-
 
 ```python
 plot_line(data_subset_country('DEU'))
@@ -521,9 +491,7 @@ plot_line(data_subset_country('DEU'))
 
 ![Liniendiagramm - Infizierte und Tode](./plot_line_cases_deaths.png)
 
-
 ### Karten
-
 
 ```python
 def plot_map(trend=True, plot_value='Cases', date=date_used):
@@ -539,23 +507,23 @@ def plot_map(trend=True, plot_value='Cases', date=date_used):
         color_trend = 'CumRatio'
         color_static = 'Ratio'
         color_scale = SCALE_RATIO
-    
+
     if trend:
         fig = px.choropleth(data_date,
-                            locations='GeoId3', 
-                            hover_name='Area', 
-                            animation_frame='Date', 
+                            locations='GeoId3',
+                            hover_name='Area',
+                            animation_frame='Date',
                             color=color_trend,
                             color_continuous_scale=color_scale)
         plot_type = 'verlauf'
     else:
         fig = px.choropleth(data_sum,
-                            locations='GeoId3', 
+                            locations='GeoId3',
                             hover_name='Area',
                             color=color_static,
                             color_continuous_scale=color_scale)
         plot_type = 'gesamt'
-        
+
     layout = build_layout(date=date, plot_type=plot_type, plot_value=plot_value, plot_map=True)
     fig.update_layout(layout[0])
     fig.update_layout(coloraxis_colorbar=layout[1])
@@ -573,24 +541,21 @@ plot_map(trend=False)
 
 ![Weltkarte - Infizierte](./plot_map_cases.png)
 
-
 ##### Gesamtzahlen der Todesfälle
 
 ```python
 plot_map(trend=False, plot_value='Deaths')
 ```
 
-![Weltkarte - Tode](./plot_map_deaths_.png)
+![Weltkarte - Tode](./plot_map_deaths.png)
 
-
-#####  Gesamtzahlen des Verhältnisses zwischen Todesfällen und Infizierten in %
+##### Gesamtzahlen des Verhältnisses zwischen Todesfällen und Infizierten in %
 
 ```python
 plot_map(trend=False, plot_value='Ratio')
 ```
 
 ![Weltkarte - Verhältnis](./plot_map_ratio.png)
-
 
 #### Verlaufs-Karten mit Zeitstrahl
 
@@ -614,5 +579,5 @@ plot_map(plot_value='Deaths')
 
 Möglichkeiten, das Projekt zu erweitern:
 
-- Der Datensatz des ECDC beschränkt sich auf wesentliche geografische Informationen. Eine Aufschlüsselung in kleinere geografische Einheiten war mir nicht möglich. Das Robert-Koch-Institut besitzt solche Daten, macht diese jedoch nicht für die Allgemeinheit zugänglich. 
+- Der Datensatz des ECDC beschränkt sich auf wesentliche geografische Informationen. Eine Aufschlüsselung in kleinere geografische Einheiten war mir nicht möglich. Das Robert-Koch-Institut besitzt solche Daten, macht diese jedoch nicht für die Allgemeinheit zugänglich.
 - Außerdem wäre interessant, ein Datensatz zu nutzen, der über die geografischen Daten hinaus auch Personendaten umfasst. Dabei ist das Alter der PatientInnen vermutlich besonders interessant.
