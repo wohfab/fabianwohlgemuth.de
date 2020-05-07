@@ -109,7 +109,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     createPage({
       path: tagPath,
-      component: path.resolve(`src/templates/tags.js`),
+      component: path.resolve(`src/templates/tag.js`),
       context: {
         tag,
       },
@@ -133,7 +133,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     createPage({
       path: categoryPath,
-      component: path.resolve(`src/templates/categories.js`),
+      component: path.resolve(`src/templates/category.js`),
       context: {
         category,
       },
@@ -157,7 +157,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     createPage({
       path: toolPath,
-      component: path.resolve(`src/templates/tools.js`),
+      component: path.resolve(`src/templates/tool.js`),
       context: {
         tool,
       },
