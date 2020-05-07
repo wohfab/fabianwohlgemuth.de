@@ -332,3 +332,11 @@ body.dark {
     color: $dark-fg;
   }
 }
+
+a.no-style {
+  box-shadow: none !important;
+
+  &:hover {
+    box-shadow: none !important;
+  }
+}

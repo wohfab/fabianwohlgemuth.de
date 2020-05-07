@@ -1,8 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import Image from 'gatsby-image'
-
+import Image from "gatsby-image"
+import { kebabCase } from "lodash"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -16,7 +16,8 @@ class ProjectsPostTemplate extends React.Component {
     const tags = this.props.data.mdx.frontmatter.tags
     const tools = this.props.data.mdx.frontmatter.tools
     const categories = this.props.data.mdx.frontmatter.categories
-    const thumbnailSource = this.props.data.mdx.frontmatter.thumbnail.childImageSharp.fluid.src
+    const thumbnailSource = this.props.data.mdx.frontmatter.thumbnail
+      .childImageSharp.fluid.src
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -26,7 +27,8 @@ class ProjectsPostTemplate extends React.Component {
         />
         <h1>{project.frontmatter.title}</h1>
         <Image fluid={thumbnailSource} alt="thumbnail" />
-        <p class="project-date"
+        <p
+          class="project-date"
           style={{
             ...scale(-1 / 5),
             display: `block`,
@@ -37,18 +39,39 @@ class ProjectsPostTemplate extends React.Component {
           {project.frontmatter.date}
         </p>
         <ul class="project-tags">
-          {categories.map((category) => { return(
-            <li class="project-category">{category}</li>
-          )})}
-          {tags.map((tag) => { return(
-            <li class="project-tag">{tag}</li>
-          )})}
-          {tools.map((tool) => { return(
-            <li class="project-tool">{tool}</li>
-          )})}
+          {categories.map(category => {
+            return (
+              <li class="project-category">
+                <Link
+                  className="no-style"
+                  to={`/categories/${kebabCase(category)}/`}
+                >
+                  {category}
+                </Link>
+              </li>
+            )
+          })}
+          {tags.map(tag => {
+            return (
+              <li class="project-tag">
+                <Link className="no-style" to={`/tags/${kebabCase(tag)}/`}>
+                  {tag}
+                </Link>
+              </li>
+            )
+          })}
+          {tools.map(tool => {
+            return (
+              <li class="project-tool">
+                <Link className="no-style" to={`/tools/${kebabCase(tool)}/`}>
+                  {tool}
+                </Link>
+              </li>
+            )
+          })}
         </ul>
         <div class="project-body">
-        <MDXRenderer>{project.body}</MDXRenderer>
+          <MDXRenderer>{project.body}</MDXRenderer>
         </div>
         <hr
           style={{

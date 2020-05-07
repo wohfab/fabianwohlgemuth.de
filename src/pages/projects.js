@@ -1,11 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import { kebabCase } from "lodash"
+
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-
 
 class Projects extends React.Component {
   render() {
@@ -24,44 +25,74 @@ class Projects extends React.Component {
             return (
               <div key={node.fields.slug} class="project">
                 <div class="thumbnail">
-                <Link
-                    style={{ boxShadow: `none` }}
-                    to={`projects${node.fields.slug}`}
-                  >
-                <img src={node.frontmatter.thumbnail.childImageSharp.fluid.src} alt={title} />
-                </Link>
-                </div>
-                <div class="info">
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
                   <Link
                     style={{ boxShadow: `none` }}
                     to={`projects${node.fields.slug}`}
                   >
-                    {title}
+                    <img
+                      src={node.frontmatter.thumbnail.childImageSharp.fluid.src}
+                      alt={title}
+                    />
                   </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-                <ul class="project-tags">
-                  {node.frontmatter.categories.map((category) => { return(
-                    <li class="project-category">{category}</li>
-                  )})}
-                  {node.frontmatter.tags.map((tag) => { return(
-                    <li class="project-tag">{tag}</li>
-                  )})}
-                  {node.frontmatter.tools.map((tool) => { return(
-                    <li class="project-tool">{tool}</li>
-                  )})}
-                </ul>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </div>
+                </div>
+                <div class="info">
+                  <h3
+                    style={{
+                      marginBottom: rhythm(1 / 4),
+                    }}
+                  >
+                    <Link
+                      style={{ boxShadow: `none` }}
+                      to={`projects${node.fields.slug}`}
+                    >
+                      {title}
+                    </Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <ul class="project-tags">
+                    {node.frontmatter.categories.map(category => {
+                      return (
+                        <li class="project-category">
+                          <Link
+                            className="no-style"
+                            to={`/categories/${kebabCase(category)}/`}
+                          >
+                            {category}
+                          </Link>
+                        </li>
+                      )
+                    })}
+                    {node.frontmatter.tags.map(tag => {
+                      return (
+                        <li class="project-tag">
+                          <Link
+                            className="no-style"
+                            to={`/tags/${kebabCase(tag)}/`}
+                          >
+                            {tag}
+                          </Link>
+                        </li>
+                      )
+                    })}
+                    {node.frontmatter.tools.map(tool => {
+                      return (
+                        <li class="project-tool">
+                          <Link
+                            className="no-style"
+                            to={`/tools/${kebabCase(tool)}/`}
+                          >
+                            {tool}
+                          </Link>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                </div>
               </div>
             )
           })}
@@ -82,8 +113,11 @@ export const pageQuery = graphql`
     }
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: {frontmatter: {draft: {ne: true}}, fileAbsolutePath: {regex: "/projects/"}}
-      ) {
+      filter: {
+        frontmatter: { draft: { ne: true } }
+        fileAbsolutePath: { regex: "/projects/" }
+      }
+    ) {
       edges {
         node {
           excerpt
@@ -99,12 +133,12 @@ export const pageQuery = graphql`
             tools
             featured
             thumbnail {
-                childImageSharp {
-                  fluid {
-                    src
-                  }
+              childImageSharp {
+                fluid {
+                  src
                 }
               }
+            }
           }
         }
       }
