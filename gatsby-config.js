@@ -17,10 +17,10 @@ module.exports = {
       //   name:'code',
       //   link:'/code'
       // },
-      // {
-      //   name:'audio',
-      //   link:'/audio'
-      // },
+      {
+        name:'audio',
+        link:'/audio'
+      },
       {
         name:'projekte',
         link:'/projects'
@@ -106,6 +106,15 @@ module.exports = {
         },
         extensions: [".mdx", ".md"],
         gatsbyRemarkPlugins: [
+          // {
+          //   resolve: `gatsby-remark-embed-soundcloud`,
+          //   options: {
+          //     width: 500, // default is "100%"
+          //     height: 100, // default is 300
+          //     color: `#ee6600`, // default is #ff5500
+          //     autoplay: false, // default is false
+          //   }
+          // },
           {
             resolve: `gatsby-remark-embedder`,
           },
@@ -184,6 +193,5 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-remark`,
   ],
 }
