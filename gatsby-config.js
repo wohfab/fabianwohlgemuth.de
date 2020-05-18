@@ -13,10 +13,10 @@ module.exports = {
       //   name:'design',
       //   link:'/design'
       // },
-      // {
-      //   name:'code',
-      //   link:'/code'
-      // },
+      {
+        name:'leistungen',
+        link:'/service'
+      },
       {
         name:'audio',
         link:'/audio'
