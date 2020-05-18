@@ -21,6 +21,9 @@ module.exports = {
         'fwdc-yellow': {
           '900': '#FCCA46',
         },
+        'fwdc-blue-dark': {
+          '900': '#233D4D',
+        },
       },
       boxShadow: {
         'fwdc-orange': '.1rem .1rem 0 #EE6600',

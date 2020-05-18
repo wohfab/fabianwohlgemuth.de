@@ -9,9 +9,6 @@ body {
 small {
   @apply text-gray-700 leading-4;
 }
-body.dark small {
-  @apply text-gray-400;
-}
 
 h1,
 h2,
@@ -54,4 +51,19 @@ iframe {
 
 nav ul li {
   @apply my-0;
+}
+
+footer {
+  @apply bg-fwdc-yellow-900;
+}
+
+/* DARK THEME */
+body.dark {
+  small {
+    @apply text-gray-500;
+  }
+
+  footer {
+    @apply bg-fwdc-blue-dark-900;
+  }
 }
