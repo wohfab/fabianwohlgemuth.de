@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply leading-7;
+  @apply leading-7 text-fwdc-gray-dark-900 bg-fwdc-white-900;
 }
 
 small {
@@ -59,11 +59,13 @@ footer {
 
 /* DARK THEME */
 body.dark {
+  @apply bg-fwdc-blue-dark-900 text-fwdc-white-900;
+
   small {
     @apply text-gray-500;
   }
 
   footer {
-    @apply bg-fwdc-blue-dark-900;
+    @apply bg-fwdc-gray-dark-900;
   }
 }

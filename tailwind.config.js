@@ -1,12 +1,10 @@
 module.exports = {
-  purge: [
-    './src/**/*.js',
-  ],
+  purge: ["./src/**/*.js"],
   theme: {
     extend: {
       container: {
         center: true,
-        padding: '1rem',
+        padding: "1rem",
       },
       fontFamily: {
         sans: `sans-serif`,
@@ -15,21 +13,30 @@ module.exports = {
         display: ``,
       },
       colors: {
-        'fwdc-orange': {
-          '900': '#EE6600',
+        "fwdc-orange": {
+          "900": "#EE6600",
         },
-        'fwdc-yellow': {
-          '900': '#FCCA46',
+        "fwdc-yellow": {
+          "900": "#FCCA46",
         },
-        'fwdc-blue-dark': {
-          '900': '#233D4D',
+        "fwdc-blue-dark": {
+          "900": "#233D4D",
+        },
+        "fwdc-white": {
+          "900": "#FEFEFE",
+        },
+        "fwdc-gray-dark": {
+          "900": "#222222",
+        },
+        "fwdc-blue-light": {
+          "900": "#619B8A",
         },
       },
       boxShadow: {
-        'fwdc-orange': '.1rem .1rem 0 #EE6600',
+        "fwdc-orange": ".1rem .1rem 0 #EE6600",
       },
       gridTemplateColumns: {
-        blogRoll: '10rem auto',
+        blogRoll: "10rem auto",
       },
     },
   },
