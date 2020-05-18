@@ -6,12 +6,12 @@ bio: false
 
 ## Experience
 
-|Time|Action|
+|||
 |--|--|
 |since 2017|**Design, Development, Consulting** <br/> *Freelancing* <br/> digital creative.|
 |2019|**Digital Project Assistant** <br/> [Pioneers Club](https://pioneers.club)|
 |2018--2019|**Quality Assurance** <br/> *Content Management & Testing* <br/> [u+i interact](https://uandi.com)|
-|2013--2018|**Multiple Roles** <br/> Bielefeld University <br/><br/> **Web Officer** <br/> English Department (2018) <br/> **Organizational Team** <br/> Orientation Week at Faculty of Linguistics and Literature (2017--2018) <br/> **Webteam LiLi** <br/>  Web Officer for all websites of the Faculty of Linguistics and Literature (2016--2018) <br/> **Peer Tutor** <br/>  Orientation Week at Faculty of Linguistics and Literature (2016--2017) <br/> **Teaching Assistant** <br/>  Remedial Computer Course (Markup languages, EDP, Shell, HTML) (2015--2016) <br/> **Student Assistant** <br/>  Python Programming at The Bielefeld Dialogue Systems Group (2013--2015) |
+|2013--2018|**Multiple Roles** <br/> [Bielefeld University](https://uni-bielefeld.de) <br/><br/> **Web Officer** <br/> [English Department](https://www.uni-bielefeld.de/lili/studium/faecher/anglistik/portal/) (2018) <br/> **Organizational Team** <br/> [Orientation Week](https://www.uni-bielefeld.de/fakultaeten/linguistik-literaturwissenschaft/studium-lehre/studium/willkommen/) at Faculty of Linguistics and Literature (2017--2018) <br/> **Webteam LiLi** <br/>  [Web Officer](https://www.uni-bielefeld.de/lili/webteam/) for all websites of the Faculty of Linguistics and Literature (2016--2018) <br/> **Peer Tutor** <br/> [Orientation Week](https://www.uni-bielefeld.de/fakultaeten/linguistik-literaturwissenschaft/studium-lehre/studium/willkommen/) at Faculty of Linguistics and Literature (2016--2017) <br/> **Teaching Assistant** <br/>  Remedial Computer Course (Markup languages, EDP, Shell, HTML) (2015--2016) <br/> **Student Assistant** <br/>  Python Programming at [The Bielefeld Dialogue Systems Group](http://www.dsg-bielefeld.de/dsg_wp/) (2013--2015) |
 
 ## Education
 

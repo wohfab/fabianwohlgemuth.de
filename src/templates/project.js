@@ -1,12 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import Image from "gatsby-image"
 import { kebabCase } from "lodash"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 
 class ProjectsPostTemplate extends React.Component {
   render() {
@@ -16,8 +14,6 @@ class ProjectsPostTemplate extends React.Component {
     const tags = this.props.data.mdx.frontmatter.tags
     const tools = this.props.data.mdx.frontmatter.tools
     const categories = this.props.data.mdx.frontmatter.categories
-    const thumbnailSource = this.props.data.mdx.frontmatter.thumbnail
-      .childImageSharp.fluid.src
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -26,22 +22,13 @@ class ProjectsPostTemplate extends React.Component {
           description={project.frontmatter.description || project.excerpt}
         />
         <h1>{project.frontmatter.title}</h1>
-        <Image fluid={thumbnailSource} alt="thumbnail" />
-        <p
-          class="project-date"
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
+        <p className="">
           {project.frontmatter.date}
         </p>
-        <ul class="project-tags">
+        <ul className="project-tags">
           {categories.map(category => {
             return (
-              <li class="project-category">
+              <li className="project-category">
                 <Link
                   className="no-style"
                   to={`/categories/${kebabCase(category)}/`}
@@ -70,33 +57,20 @@ class ProjectsPostTemplate extends React.Component {
             )
           })}
         </ul>
-        <div class="project-body">
+        <div className="project-body">
           <MDXRenderer>{project.body}</MDXRenderer>
         </div>
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr/>
         <Bio />
-
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
+        <ul className="">
+          <li className="">
             {previous && (
               <Link to={`projects${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
-          <li>
+          <li className="">
             {next && (
               <Link to={`projects${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →

@@ -27,7 +27,7 @@ class CategoryRoute extends React.Component {
           <div className="">
             <div className="">
               <div className="" style={{ marginBottom: "6rem" }}>
-                <h3 className="">{categoryHeader}</h3>
+                <h1>{categoryHeader}</h1>
                 <ul className="">{projectLinks}</ul>
                 <p>
                   <Link to="/categories/">Alle Kategorien anschauen...</Link>

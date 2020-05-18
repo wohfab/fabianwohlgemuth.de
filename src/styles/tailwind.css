@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply leading-7;
+}
+
+small {
+  @apply text-gray-700 leading-4;
+}
+body.dark small {
+  @apply text-gray-400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mt-6 mb-3;
+}
+
+h1 {
+  @apply text-3xl;
+}
+h2 {
+  @apply text-2xl;
+}
+h3 {
+  @apply text-xl;
+}
+h4,
+h5,
+h6 {
+  @apply text-lg;
+}
+h5,
+h6 {
+  @apply italic;
+}
+h6 {
+  @apply underline;
+}
+
+p, ul {
+  @apply mb-3;
+}
+
+iframe {
+  @apply max-w-sm mx-auto;
+}
+
+nav ul li {
+  @apply my-0;
+}

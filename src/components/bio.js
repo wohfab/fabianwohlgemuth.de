@@ -8,9 +8,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import styled from "styled-components"
-
-import { rhythm } from "../utils/typography"
 
 function Bio() {
   return (
@@ -19,15 +16,26 @@ function Bio() {
       render={data => {
         const { author } = data.site.siteMetadata
         return (
-          <Container className="bio">
-            <StyledImage
+          <div className="my-6 grid grid-cols-1 sm:grid-cols-4">
+            <Image
+              className="mx-auto rounded-full"
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
-              />
-            <p>
-              Hej! Ich bin <strong>Fabian Wohlgemuth</strong>, lebe im Norden von NRW und begeistere mich für <strong>digitale Kreativität</strong>. Wenn Du irgendwas wissen magst, schreib' mir doch einfach <a href="mailto:fw@fabianwohlgemuth.de" title="Mail an fw@fabianwohlgemuth.de">eine Mail an fw@fabianwohlgemuth.de</a>.
+            />
+            <p className="sm:col-span-3 sm:ml-6">
+              Hej! Ich bin <strong>Fabian Wohlgemuth</strong>, lebe im Norden
+              von NRW und begeistere mich für{" "}
+              <strong>digitale Kreativität</strong>. Wenn Du irgendwas wissen
+              magst, schreib' mir doch einfach{" "}
+              <a
+                href="mailto:fw@fabianwohlgemuth.de"
+                title="Mail an fw@fabianwohlgemuth.de"
+              >
+                eine Mail an fw@fabianwohlgemuth.de
+              </a>
+              .
             </p>
-          </Container>
+          </div>
         )
       }}
     />
@@ -52,17 +60,6 @@ const bioQuery = graphql`
       }
     }
   }
-`
-
-const StyledImage = styled(Image)`
-  margin-right: ${rhythm(1)};
-  margin-bottom: 0;
-  min-width: ${rhythm(2)};
-  border-radius: 100%;
-`
-
-const Container = styled.div`
-  font-size: .9rem;
 `
 
 export default Bio

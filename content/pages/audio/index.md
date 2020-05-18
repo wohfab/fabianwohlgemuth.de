@@ -6,10 +6,6 @@ bio: false
 
 On this site, you can listen to my audio projects. Songs I love, songs I covered. I love singing and am eagerly practicing on my tenor sax. If you want to listen to all my recordings, you can check out my [SoundCloud Profile](https://soundcloud.com/wohfab). A few selected songs are also on [Spotify](https://open.spotify.com/artist/1eq9AZpkHEDREFTV1hfS8u?si=29Ml2v0xSG28Ac0WWucLTQ).
 
-https://soundcloud.com/wohfab
-
-For specific songs and a few words to introduce the project, just scroll down. (This section will be extended in the near future)
-
 ## Cinderella
 
 https://soundcloud.com/wohfab/cinderella

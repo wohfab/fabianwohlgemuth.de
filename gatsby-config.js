@@ -3,67 +3,68 @@ module.exports = {
     // edit below
     title: `digital creative.`,
     author: `Fabian Wohlgemuth`,
-    description: 'Fabian Wohlgemuth - digital creative. - Individuelle, kreative und digitale Lösungen auf Ihre Fragen und Probleme.',
+    description:
+      "Fabian Wohlgemuth - digital creative. - Individuelle, kreative und digitale Lösungen auf Ihre Fragen und Probleme.",
     siteUrl: `https://fabianwohlgemuth.de/`,
     social: {
       twitter: `wohfab`,
     },
-    menuMain:[
+    menuMain: [
       // {
       //   name:'design',
       //   link:'/design'
       // },
       {
-        name:'leistungen',
-        link:'/service'
+        name: "leistungen",
+        link: "/service",
       },
       {
-        name:'audio',
-        link:'/audio'
+        name: "audio",
+        link: "/audio",
       },
       {
-        name:'photos',
-        link:'/photos'
+        name: "photos",
+        link: "/photos",
       },
       {
-        name:'projekte',
-        link:'/projects'
-      },
-    ],
-    menuSocial:[
-      {
-        name:'Twitter',
-        link:'https://twitter.com/wohfab'
-      },
-      {
-        name:'LinkedIn',
-        link:'https://linkedin.com/in/fabianwohlgemuth'
-      },
-      {
-        name:'GitHub',
-        link:'https://github.com/wohfab'
+        name: "projekte",
+        link: "/projects",
       },
     ],
-    menuLegal:[
+    menuSocial: [
       {
-        name:'Impressum',
-        link:'/legal'
+        name: "Twitter",
+        link: "https://twitter.com/wohfab",
       },
       {
-        name:'Nutzungsbedingungen',
-        link:'/legal/terms'
+        name: "LinkedIn",
+        link: "https://linkedin.com/in/fabianwohlgemuth",
       },
       {
-        name:'Datenschutzerklärung',
-        link:'/legal/privacy'
+        name: "GitHub",
+        link: "https://github.com/wohfab",
+      },
+    ],
+    menuLegal: [
+      {
+        name: "Impressum",
+        link: "/legal",
       },
       {
-        name:'Cookies',
-        link:'/legal/cookies'
-      },      
+        name: "Nutzungsbedingungen",
+        link: "/legal/terms",
+      },
       {
-        name:'DSGVO',
-        link:'/legal/gdpr'
+        name: "Datenschutzerklärung",
+        link: "/legal/privacy",
+      },
+      {
+        name: "Cookies",
+        link: "/legal/cookies",
+      },
+      {
+        name: "DSGVO",
+        link: "/legal/gdpr",
       },
     ],
   },
@@ -75,10 +76,19 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"),
+        ],
+      },
+    },
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -183,7 +193,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               linkImagesToOriginal: false,
             },
@@ -192,7 +202,7 @@ module.exports = {
             resolve: `gatsby-remark-images-zoom`,
             options: {
               background: `rgba(0, 0, 0, 0.8)`,
-            }
+            },
           },
         ],
       },

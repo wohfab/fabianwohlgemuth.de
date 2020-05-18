@@ -27,7 +27,7 @@ class ToolRoute extends React.Component {
           <div className="">
             <div className="">
               <div className="" style={{ marginBottom: "6rem" }}>
-                <h3 className="">{toolHeader}</h3>
+                <h1>{toolHeader}</h1>
                 <ul className="">{projectLinks}</ul>
                 <p>
                   <Link to="/tools/">Alle Tools anschauen...</Link>

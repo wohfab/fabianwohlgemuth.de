@@ -6,7 +6,6 @@ import { kebabCase } from "lodash"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 class Projects extends React.Component {
   render() {
@@ -25,28 +24,16 @@ class Projects extends React.Component {
             return (
               <div key={node.fields.slug} class="project">
                 <div class="thumbnail">
-                  <Link
-                    style={{ boxShadow: `none` }}
-                    to={`projects${node.fields.slug}`}
-                  >
+                  <Link to={`projects${node.fields.slug}`}>
                     <img
                       src={node.frontmatter.thumbnail.childImageSharp.fluid.src}
                       alt={title}
                     />
                   </Link>
                 </div>
-                <div class="info">
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                    <Link
-                      style={{ boxShadow: `none` }}
-                      to={`projects${node.fields.slug}`}
-                    >
-                      {title}
-                    </Link>
+                <div class="info ml-6">
+                  <h3>
+                    <Link to={`projects${node.fields.slug}`}>{title}</Link>
                   </h3>
                   <small>{node.frontmatter.date}</small>
                   <ul class="project-tags">

@@ -23,6 +23,7 @@
     "gatsby-plugin-mdx": "^1.0.52",
     "gatsby-plugin-netlify-cms": "^4.0.0",
     "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-postcss": "^2.3.1",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sass": "^2.2.1",
@@ -58,7 +59,8 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "tailwindcss": "^1.4.6"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
