@@ -28,9 +28,9 @@ I recorded the song in my home 'studio' and put it up for everyone to hear: List
 
 ## Evening Rise
 
-This full A Cappella version of *Evening Rise*, a song that is said to be of indian origin. The following recording is made up of 16 single tracks, stacking more and more voices as the song goes on.
-
 https://soundcloud.com/wohfab/evening-rise
+
+This full A Cappella version of *Evening Rise*, a song that is said to be of indian origin. The following recording is made up of 16 single tracks, stacking more and more voices as the song goes on.
 
 ## Jenny of Oldstones (Game of Thrones)
 

@@ -22,6 +22,10 @@ module.exports = {
         link:'/audio'
       },
       {
+        name:'photos',
+        link:'/photos'
+      },
+      {
         name:'projekte',
         link:'/projects'
       },
