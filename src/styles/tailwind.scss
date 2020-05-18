@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply leading-7;
+  @apply leading-7 max-w-screen-md mx-auto;
 }
 
 small {
