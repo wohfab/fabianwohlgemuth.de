@@ -13,7 +13,7 @@ const Copyright = ({ children }) => (
       }
     `}
     render={data => (
-      <section id="copyright" className="mt-6 flex justify-between">
+      <section id="copyright" className="mt-6 flex justify-between max-w-screen-md mx-auto">
         <p>
           © {new Date().getFullYear()} {data.site.siteMetadata.title}
         </p>

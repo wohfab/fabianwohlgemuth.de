@@ -6,8 +6,8 @@ import ThemeToggle from "./themetoggle"
 
 const Footer = ({ menuLegal, menuSocial }) => (
   <div id="footer-wrapper" className="">
-    <footer id="footer" className="p-6 ">
-      <div className="flex flex-col sm:flex-row gap-12">
+    <footer id="footer" className="p-6">
+      <div className="flex flex-col sm:flex-row gap-12 max-w-screen-md mx-auto">
         <nav id="nav-social" aria-labelledby="nav-social">
           <h3 class="footer-heading" id="nav-social">
             Soziales
