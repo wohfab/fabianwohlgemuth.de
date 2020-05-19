@@ -17,9 +17,9 @@ function Bio() {
             />
             <p className="sm:col-span-3 sm:ml-6">
               Hej! Ich bin <strong>Fabian Wohlgemuth</strong>, lebe im Norden
-              von NRW und begeistere mich für
+              von NRW und begeistere mich für{" "}
               <strong>digitale Kreativität</strong>. Wenn Du irgendwas wissen
-              magst, schreib' mir doch einfach
+              magst, schreib' mir doch einfach{" "}
               <a
                 href="mailto:fw@fabianwohlgemuth.de"
                 title="Mail an fw@fabianwohlgemuth.de"

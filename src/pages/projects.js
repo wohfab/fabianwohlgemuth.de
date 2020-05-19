@@ -31,7 +31,7 @@ class Projects extends React.Component {
                     />
                   </Link>
                 </div>
-                <div class="info ml-6">
+                <div class="info sm:ml-6">
                   <h3>
                     <Link to={`projects${node.fields.slug}`}>{title}</Link>
                   </h3>
