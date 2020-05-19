@@ -8,13 +8,13 @@ On this site, you can listen to my audio projects. Songs I love, songs I covered
 
 ## Cinderella
 
-<div class="grid grid-cols-1 sm:grid-cols-4">
+<div class="grid sm:grid-cols-3">
 <div class="note mb-6 mr-6">
 
 https://soundcloud.com/wohfab/cinderella
 </div>
 
-<div class="note sm:col-span-3">
+<div class="note sm:col-span-2">
 
 Cinderella is a song, written and sung originally by Anna-Sophie Rost. Discovered on YouTube, I had to make my own cover out of this beauty of poetry.
 
@@ -24,13 +24,13 @@ I recorded the song in my home 'studio' and put it up for everyone to hear: You 
 
 ## Wayfaring Stranger
 
-<div class="grid grid-cols-1 sm:grid-cols-4">
+<div class="grid sm:grid-cols-3">
 <div class="note mb-6 mr-6">
 
 https://soundcloud.com/wohfab/wayfaring-stranger
 </div>
 
-<div class="note sm:col-span-3">
+<div class="note sm:col-span-2">
 
 Johnny Cash's *Wayfaring Stranger* is kind of popular in the *Single A Cappella* scene, since its structure lets you easily make a looping session, adding more and more *buzz* to the song.
 
@@ -40,13 +40,13 @@ I recorded the song in my home 'studio' and put it up for everyone to hear: List
 
 ## Evening Rise
 
-<div class="grid grid-cols-1 sm:grid-cols-4">
+<div class="grid sm:grid-cols-3">
 <div class="note mb-6 mr-6">
 
 https://soundcloud.com/wohfab/evening-rise
 </div>
 
-<div class="note sm:col-span-3">
+<div class="note sm:col-span-2">
 
 Th A Cappella version of *Evening Rise*, a song that is said to be of indian origin. The following recording is made up of 16 single tracks, stacking more and more voices as the song goes on.
 </div>
@@ -54,13 +54,13 @@ Th A Cappella version of *Evening Rise*, a song that is said to be of indian ori
 
 ## Jenny of Oldstones (Game of Thrones)
 
-<div class="grid grid-cols-1 sm:grid-cols-4">
+<div class="grid sm:grid-cols-3">
 <div class="note mb-6 mr-6">
 
 https://soundcloud.com/wohfab/jenny-of-oldstones-punk
 </div>
 
-<div class="note sm:col-span-3">
+<div class="note sm:col-span-2">
 
 *Jenny of Oldstones*, by Florence + the Machine, is a song, premiered in Season 8, Episode 2, of *Game of Thrones*, shortly before the Battle of Winterfell. There it was [sung by Podrick Payne](https://soundcloud.com/kevinofmartin/podrick-singing-jenny-of-oldstones). Jenny of Oldstones was the wife of Duncan Targaryen, first son of King Aegon V Targaryen.
 
