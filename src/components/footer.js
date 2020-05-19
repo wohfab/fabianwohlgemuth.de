@@ -14,7 +14,7 @@ const Footer = ({ menuLegal, menuSocial }) => (
           </h3>
           <ul>
             {menuSocial.map(link => (
-              <li key={link.name}>
+              <li key={link.name} className="pr-3 sm:pr-0">
                 <a href={link.link}>{link.name}</a>
               </li>
             ))}
