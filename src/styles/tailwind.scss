@@ -6,6 +6,10 @@ body {
   @apply leading-7 text-fwdc-gray-dark-900 bg-fwdc-white-900;
 }
 
+main {
+  @apply mb-6;
+}
+
 small {
   @apply text-gray-700 leading-4;
 }
@@ -41,12 +45,9 @@ h6 {
   @apply underline;
 }
 
-p, ul {
+p,
+ul {
   @apply mb-3;
-}
-
-iframe {
-  @apply max-w-sm mx-auto;
 }
 
 nav ul li {
@@ -55,6 +56,14 @@ nav ul li {
 
 footer {
   @apply bg-fwdc-yellow-900;
+}
+
+blockquote {
+  @apply mx-6 pl-3 leading-snug mb-3 border-solid border-l-4 text-sm italic;
+
+  p:last-child {
+    @apply not-italic;
+  }
 }
 
 /* DARK THEME */
@@ -68,4 +77,10 @@ body.dark {
   footer {
     @apply bg-fwdc-gray-dark-900;
   }
+}
+
+span.gatsby-resp-image-wrapper,
+.thumbnail img {
+  // box-shadow: 0 4px 8px 0 transparentize(black, .6), 0 6px 20px 0 transparentize(black, .8);
+  @apply shadow-2xl;
 }

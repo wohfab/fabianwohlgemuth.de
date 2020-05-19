@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 
 const Header = ({ siteTitle, menuMain }) => (
-  <header className="mb-4 px-6 pt-6 flex justify-between max-w-screen-md mx-auto">
+  <header className="mb-4 px-6 pt-6 flex flex-wrap justify-between max-w-screen-md mx-auto">
     <h2 id="site-title" className="text-2xl mt-0 pt-1"><Link to="/">{siteTitle}</Link></h2>
     <nav id="nav-main" className="" aria-labelledby="nav-main">
       <ul className="flex flex-wrap">

@@ -175,9 +175,9 @@ module.exports = {
         name: `fabian wohlgemuth - digital creative.`,
         short_name: `fwdc.`,
         start_url: `/`,
-        //background_color: `#222222`,
-        //theme_color: `#EE6600`,
-        //display: `standalone`,
+        background_color: `#FEFEFE`,
+        theme_color: `#EE6600`,
+        display: `standalone`,
         // edit below
         icon: `content/assets/logos/fwdc_xl_tp.png`,
       },

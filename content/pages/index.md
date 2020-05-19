@@ -4,15 +4,13 @@ description: Fabian Wohlgemuth - digital creative.
 bio: false
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-3">
-
-<div class="note mb-6">
+<div class="flex flex-col sm:flex-row">
+<div class="note mb-6 sm:flex-initial w-full">
 
 ![Fabian Wohlgemuth](../assets/images/fw_portrait_sm.jpg)
-
 </div>
 
-<div class="note sm:col-span-2 sm:ml-8">
+<div class="note sm:flex-initial sm:ml-6">
 
 Diese Seiten wurden kreiert von Fabian Wohlgemuth, der die Möglichkeiten der **Digitalisierung** nutzt, um, gepaart mit überlegter Kreativität, alle im Leben und Schaffen ein kleines Stückchen weiter zu bringen. Hier geht es zu seinen [angebotenen Dienstleisungen](/service).
 
@@ -23,8 +21,6 @@ Ansonsten kannst Du auch gerne einmal einen Blick in seinen [Lebenslauf](/cv) we
 <small>
 
 **Hinweis:** Die Seiten befinden sich in stetiger Entwicklung und sind deshalb (vor allem in der DE/EN Übersetzung) nicht immer konsistent.
-
 </small>
-
 </div>
 </div>
