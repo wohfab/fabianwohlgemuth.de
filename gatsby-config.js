@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         name: "photos",
-        link: "/photos",
+        link: "https://wohfab.myportfolio.com",
       },
       {
         name: "projekte",
