@@ -23,10 +23,6 @@ module.exports = {
         link: "/audio",
       },
       {
-        name: "photos",
-        link: "https://wohfab.myportfolio.com",
-      },
-      {
         name: "projekte",
         link: "/projects",
       },
