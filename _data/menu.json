@@ -1,7 +1,0 @@
-{
-  "main": [
-    { "label": "Home", "link": "/" },
-    { "label": "Writing", "link": "/writing/" }
-  ],
-  "legal": [{ "label": "Impressum", "link": "/impressum/" }]
-}
