@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum und Datenschutz | digital creative.</title>
+  <link rel="stylesheet" href="/assets/css/tailwind.css" />
+  <meta name="Description" content="Fabian Wohlgemuth - digital creative.">
+</head>
+
+<body>
+  <header>
+    <h1>Impressum und Datenschutz</h1>
+
+    <nav>
+      
+      <a href="/" title="Home">Home</a>
+      
+      <a href="/writing/" title="Writing">Writing</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <p>
+      <span role="img" aria-label="Timer Clock">⏲</span> about <strong>0 min</strong> read time.
+    </p>
+
+    <p>TEST</p>
+
+  </main>
+
+  <footer>
+    <nav>
+      
+      <a href="/impressum/" title="Impressum">Impressum</a>
+      
+    </nav>
+  </footer>
+</body>
+</html>
