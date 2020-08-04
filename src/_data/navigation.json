@@ -1,19 +1,31 @@
 {
-  "items": [
+  "main": [
     {
-      "text": "Home",
-      "url": "/",
+      "text": "Services",
+      "url": "/services",
       "external": false
     },
     {
-      "text": "GitHub",
-      "url": "https://github.com/hankchizljaw/hylia",
+      "text": "CV",
+      "url": "/cv",
+      "external": false
+    }
+  ],
+  "footer": [
+    {
+      "text": "Legal",
+      "url": "/legal",
+      "external": false
+    },
+    {
+      "text": "Instagram",
+      "url": "https://instagram.com/fabianwohlgemuth",
       "external": true
     },
     {
-      "text": "Example Contact Page",
-      "url": "/contact",
-      "external": false
+      "text": "LinkedIn",
+      "url": "https://linkedin.com/in/fabianwohlgemuth",
+      "external" : true
     }
   ]
 }

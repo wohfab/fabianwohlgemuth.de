@@ -1,4 +1,4 @@
 ---
-title: 'Posts Archive'
-layout: 'layouts/archive.njk'
+title: 'Writing'
+layout: 'layouts/writing.njk'
 ---
