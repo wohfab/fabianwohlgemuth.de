@@ -43,6 +43,9 @@ module.exports = (config) => {
     return [...collection.getFilteredByGlob('./src/writing/*.md')].reverse();
   });
 
+  // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
+  config.setUseGitIgnore(false);
+
   return {
     /* use Nunjucks templating engine */
     markdownTemplateEngine: "njk",
