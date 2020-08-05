@@ -1,31 +1,56 @@
 {
   "main": [
     {
-      "text": "Services",
-      "url": "/services",
-      "external": false
+      "text": "Home",
+      "url": "/"
     },
     {
-      "text": "CV",
-      "url": "/cv",
-      "external": false
+      "text": "Services",
+      "url": "/services/"
+    },
+    {
+      "text": "Writing",
+      "url": "/writing/"
+    },
+    {
+      "text": "Projects",
+      "url": "/projects/"
+    },
+    {
+      "text": "Photos",
+      "url": "/photos/"
     }
   ],
-  "footer": [
+  "social": [
     {
-      "text": "Legal",
-      "url": "/legal",
-      "external": false
+      "text": "LinkedIn",
+      "url": ""
+    },
+    {
+      "text": "Twitter",
+      "url": ""
     },
     {
       "text": "Instagram",
-      "url": "https://instagram.com/fabianwohlgemuth",
-      "external": true
+      "url": ""
     },
     {
-      "text": "LinkedIn",
-      "url": "https://linkedin.com/in/fabianwohlgemuth",
-      "external" : true
+      "text": "GitHub",
+      "url": ""
+    }
+  ],
+  "legal": [
+    {
+      "text": "Legal Information",
+      "url": "/legal"
+    },
+    {
+      "text": "Data Privacy",
+      "url": "/legal/dataprivacy"
+    },
+    {
+      "text": "GDPR",
+      "url": "/legal/gdpr"
     }
   ]
 }

@@ -1,13 +1,4 @@
 {
-  "showThemeCredit": false,
   "name": "digital creative.",
-  "shortDesc": "**information. education. empowerment.** <br/>by [**Fabian A Wohlgemuth**](/)",
-  "url": "https://fabianwohlgemuth.de",
-  "authorEmail": "fw@fabianwohlgemuth.de",
-  "authorHandle": "@wohfab",
-  "authorName": "Fabian A Wohlgemuth",
-  "enableThirdPartyComments": false,
-  "maxPostsPerPage": 2,
-  "paymentPointer": "$ilp.uphold.com/2PAJh2bMrJer",
-  "faviconPath": "/images/favicon.png"
+  "url": "https://fabianwohlgemuth.de"
 }

@@ -1,12 +1,14 @@
 ---
-layout: home
-title: Fabian Wohlgemuth
-postsHeading: Latest posts
-archiveButtonText: See all posts
-metaDesc: 'Fabian Wohlgemuth - digital creative.'
-socialImage: ''
+title: 'Fabian Wohlgemuth'
+layout: 'layouts/home.html'
+intro:
+  eyebrow: 'Fabian Wohlgemuth is the'
+  main: 'digital creative.'
+  summary: 'I am a multi disciplinary creative, experienced in photography, graphic design, web development, and teaching & consulting.'
+  buttonText: 'See past projects'
+  buttonUrl: '/projects'
+  image: '/images/fw_portrait.jpg'
+  imageAlt: 'Fabian Wohlgemuth Portrait'
 ---
 
-Proident elit nisi aute in consectetur eu ipsum sit esse. Amet labore **occaecat** et culpa. Velit commodo irure aute ex aute reprehenderit non exercitation tempor. Non ut culpa et ut occaecat [consectetur](https://google.com) dolore aute minim. Ad **Lorem** exercitation laboris non mollit nostrud est exercitation mollit.
-
-Officia in id adipisicing excepteur. Voluptate minim occaecat aute laborum **occaecat** nisi incididunt qui. Duis fugiat reprehenderit occaecat ipsum sint enim commodo consectetur voluptate adipisicing consequat veniam.
+_RAD_, isn't it?

@@ -1,17 +1,15 @@
+# Misc
 *.log
 npm-debug.*
 *.scssc
-*.log
 *.swp
 .DS_Store
+Thumbs.db
 .sass-cache
+.env
+.cache
+
+# Node modules and output
 node_modules
-dist 
-
-# Specifics
-
-# Hide design tokens
-src/scss/_tokens.scss
-
-# Hide compiled CSS
-src/_includes/assets/*
+dist
+src/_includes/css
