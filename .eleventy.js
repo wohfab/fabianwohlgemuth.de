@@ -18,6 +18,11 @@ module.exports = (config) => {
     ).filter((x) => x.data.featured);
   });
 
+  // Returns a collection of posts in reverse date order
+  config.addCollection('writing', collection => {
+    return [...collection.getFilteredByGlob('./src/writing/*.md')].reverse();
+  });
+
   return {
     /* use Nunjucks templating engine */
     markdownTemplateEngine: "njk",
