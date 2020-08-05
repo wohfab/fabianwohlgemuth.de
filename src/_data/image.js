@@ -1,7 +1,7 @@
 const Cache = require('@11ty/eleventy-cache-assets');
 
 /**
- * Grabs the remote data for studio images and returns back
+ * Grabs the remote data for images and returns back
  * an array of objects
  *
  * @returns {Array} Empty or array of objects
