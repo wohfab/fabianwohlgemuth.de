@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/post.html",
+  "permalink": "/writing/{{ title | slug }}/index.html"
+}

@@ -1,5 +1,6 @@
 ---
 title: 'Fabian Wohlgemuth'
+metaDesc: 'digital creative. | Creative design and development work by Fabian Wohlgemuth.'
 layout: 'layouts/home.html'
 intro:
   eyebrow: 'Fabian Wohlgemuth is the'
@@ -15,5 +16,3 @@ featuredProjects:
 imageFeed:
   title: 'Latest images'
 ---
-
-_RAD_, isn't it?

@@ -19,6 +19,8 @@
   "homepage": "https://github.com/wohfab/wohfab.github.io#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-cache-assets": "^2.0.3"
+    "@11ty/eleventy-cache-assets": "^2.0.3",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "moment": "^2.27.0"
   }
 }
