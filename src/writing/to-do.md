@@ -27,3 +27,4 @@ This list is supposed to motivate me to not let the development sleep, but actua
 - Internationalization (i18n), German/English
 - Extending the website to be a progressive web app (PWA)
 - Get that perfect 100 100 100 100 lighthouse score
+- Secondary theme (dark theme)
