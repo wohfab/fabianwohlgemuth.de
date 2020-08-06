@@ -5,7 +5,7 @@ layout: 'layouts/home.html'
 intro:
   eyebrow: 'Fabian Wohlgemuth is the'
   main: 'digital creative.'
-  summary: 'I am a multi disciplinary creative, experienced in photography, graphic design, web development, and teaching & consulting.'
+  summary: 'I am a multidisciplinary creative, experienced in photography, graphic design, web development, and coaching & consulting.'
   buttonText: 'See what I offer'
   buttonUrl: '/services'
   image: '/images/fw_beard.jpg'
