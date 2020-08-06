@@ -36,5 +36,8 @@
     {% endif %}
   </article>
 
+  {% if primaryCTA %}
+  {% set ctaContent = primaryCTA %} 
+  {% endif %}
   {% include "partials/cta.html" %}
 {% endblock %}

@@ -1,6 +1,6 @@
 ---
 title: 'Photography'
-summary: 'As I convert my past projects into the right format, this little showcase of my photography setup will function as a placeholder.'
+summary: 'A small selection of photos that I took with my new lenses. The selfmade restriction of going with prime lenses over the kit zoom lense was a small hurdle at the beginning but turned out to be an incredible motivation to get creative.'
 displayOrder: 2
 featured: true
 hero:
@@ -31,4 +31,10 @@ gallery:
     summary: 'Not the beach, unfortunately. Just a rain retension basin (Regenrückhaltebecken) inmidst the city center of Bielefeld, Germany.'
     image: '/images/featured/sea.jpg'
 team: [1]
+primaryCTA:
+  title: 'You like what you see or need photos yourself? Shoot me a message'
+  summary: 'I am open to photography gigs of all sorts. Whether you need product shots, portraits for your next job application (or just for yourself), or you want to just hang around with me in Bielefeld or sorroundings, to take pictures, please write me!'
+  buttonText: 'Write me a mail'
+  buttonUrl: 'mailto:fw@fabianwohlgemuth.de?subject=Photography'
+---
 ---

@@ -62,7 +62,9 @@
     </article>
   {% endif %}
 </section>
-
+{% if primaryCTA %}
+{% set ctaContent = primaryCTA %} 
+{% endif %}
 {% include "partials/cta.html" %} 
 
 {% endblock %}
