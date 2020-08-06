@@ -5,7 +5,7 @@ permalink: '/privacy-policy/'
 pageHeaderSummary: 'Please be aware, that the privacy policy is <strong>only available in German</strong>. If you have questions, concerning your data privacy while visiting and using this websites, please feel free to contact me.'
 primaryCTA:
   title: 'Wow. That is a lot of text'
-  summary: 'Compliing with the GDPR and other laws and guidelines, this document is full of important information. If you have a question about any of its contents, please do not hesitate to write.'
+  summary: 'Complying with the GDPR and other laws and guidelines, this document is full of important information. If you have a question about any of its contents, please do not hesitate to write.'
   buttonText: 'Write me a mail'
   buttonUrl: 'mailto:fw@fabianwohlgemuth.de?subject=About%20your%20privacy%20policy'
 ---
