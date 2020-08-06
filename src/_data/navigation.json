@@ -18,7 +18,7 @@
     },
     {
       "text": "Photos",
-      "url": "/photos/"
+      "url": "https://photos.fabianwohlgemuth.de"
     }
   ],
   "social": [
@@ -27,12 +27,12 @@
       "url": "https://linkedin.com/in/fabianwohlgemuth"
     },
     {
-      "text": "Twitter",
-      "url": "https://twotter.com/wohfab"
-    },
-    {
       "text": "Instagram",
       "url": "https://instagram.com/fabianwohlgemuth"
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/wohfab"
     },
     {
       "text": "GitHub",
@@ -41,16 +41,12 @@
   ],
   "legal": [
     {
-      "text": "Legal Information",
-      "url": "/legal"
+      "text": "Legal terms",
+      "url": "/legal-terms"
     },
     {
-      "text": "Data Privacy",
-      "url": "/legal/dataprivacy"
-    },
-    {
-      "text": "GDPR",
-      "url": "/legal/gdpr"
+      "text": "Privacy Statement",
+      "url": "/privacy-policy"
     }
   ]
 }

@@ -8,7 +8,7 @@ intro:
   summary: 'I am a multi disciplinary creative, experienced in photography, graphic design, web development, and teaching & consulting.'
   buttonText: 'See what I offer'
   buttonUrl: '/services'
-  image: '/images/fw_portrait.jpg'
+  image: '/images/fw_beard.jpg'
   imageAlt: 'Fabian Wohlgemuth Portrait'
 featuredProjects:
   title: 'Selected projects'
