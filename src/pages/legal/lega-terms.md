@@ -3,6 +3,11 @@ title: 'Legal terms'
 layout: 'layouts/page.html'
 permalink: '/legal-terms/'
 pageHeaderSummary: 'Please be aware, that the legal terms and conditions are <strong>only available in German</strong>. If you have questions, concerning this site, please feel free to contact me.'
+primaryCTA:
+  title: 'Data privacy is important'
+  summary: 'Whether you want to become a customer or just want to browse this websites, your privacy is incredibly important to me. Please request the privacy policy below.'
+  buttonText: 'See privacy statement'
+  buttonUrl: '/privacy-policy'
 ---
 
 Fabian Wohlgemuth  
