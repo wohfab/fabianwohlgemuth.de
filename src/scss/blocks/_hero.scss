@@ -1,4 +1,10 @@
 .hero {
+    // This is a dark panel, so we need to flip the selection styles - taken from _cta.scss
+  ::selection {
+    background: rgba(get-color('light'), 0.99);
+    color: get-color('dark-shade');
+  }
+
   position: relative;
   padding: 50vh 0 get-size('800') 0;
 
