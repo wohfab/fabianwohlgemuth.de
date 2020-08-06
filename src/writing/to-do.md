@@ -24,4 +24,6 @@ This list is supposed to motivate me to not let the development sleep, but actua
 - Convert past projects to markdown format and get them online
 - Convert past blog posts, so that their format fits the requirements of the new website
 - **Create more**—more text, more designs, more websites, more photos
-- ...
+- Internationalization (i18n), German/English
+- Extending the website to be a progressive web app (PWA)
+- Get that perfect 100 100 100 100 lighthouse score
