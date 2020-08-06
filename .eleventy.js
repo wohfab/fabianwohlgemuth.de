@@ -48,7 +48,7 @@ module.exports = (config) => {
 
   // Returns a collection of posts in reverse date order
   config.addCollection('writing', collection => {
-    return [...collection.getFilteredByGlob('./src/writing/*.md')].reverse();
+    return [...collection.getFilteredByGlob('./src/writing/*.md')].filter( x => ! x.data.draft).reverse();
   });
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
