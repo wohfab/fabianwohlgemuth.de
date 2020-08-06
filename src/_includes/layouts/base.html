@@ -39,7 +39,7 @@
             <ul class="nav__list">
               {% for item in navigation.social %}
               <li>
-                <a href="{{ item.url }}">{% include "partials/icons/" + item.text | lower + ".svg" %}</a>
+                <a href="{{ item.url }}" title="{{ item.text }}">{% include "partials/icons/" + item.text | lower + ".svg" %}</a>
               </li>
               {% endfor %}
               {% for item in navigation.legal %}
