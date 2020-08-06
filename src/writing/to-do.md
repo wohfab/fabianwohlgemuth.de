@@ -19,6 +19,7 @@ This list is supposed to motivate me to not let the development sleep, but actua
 - ~~Customize the structure of the website and each single page~~
 - ~~Create a photography project~~
 - ~~Start a to do list~~
+- ~~Exclude drafts from blog posts~~
 - Build a gallery to house my photos. _They live on an Adobe Portfolio right now,_ but this is neither beautiful nor does it perform well enough for me (or the lighthouse scores, for that matter)
 - Convert past projects to markdown format and get them online
 - Convert past blog posts, so that their format fits the requirements of the new website
