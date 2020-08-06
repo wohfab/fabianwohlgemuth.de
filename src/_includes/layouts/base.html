@@ -35,7 +35,22 @@
 
       <footer role="contentinfo" class="site-foot">
         <div class="wrapper">
-          <p>This is a made up agency for the course, <a href="https://piccalil.li/course/learn-eleventy-from-scratch/">“Learn Eleventy From Scratch”</a>.</p>
+          <nav class="[ nav ] [ site-head__nav ] [ font-sans ]" aria-label="Footer">
+            <ul class="nav__list">
+              {% for item in navigation.social %}
+              <li>
+                <a href="{{ item.url }}">{% include "partials/icons/" + item.text | lower + ".svg" %}</a>
+              </li>
+              {% endfor %}
+              {% for item in navigation.legal %}
+              <li>
+                <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+                  >{{ item.text }}</a
+                >
+              </li>
+              {% endfor %}
+            </ul>
+          </nav>
         </div>
       </footer>
     </div>

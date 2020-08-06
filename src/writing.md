@@ -10,4 +10,4 @@ paginationNextText: 'Older posts'
 paginationAnchor: '#post-list'
 ---
 
-READ. READ. READ.
+Some of my written pieces. Those are as wide spread as my knowledege and expertise.
