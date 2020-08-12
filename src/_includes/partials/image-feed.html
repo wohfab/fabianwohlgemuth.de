@@ -8,13 +8,13 @@
       {{ imageFeed.title }}
     </h2>
     <p class="" id="image-feed-desc">
-      You can view and download more photos on <a href="https://unsplash.com/@wohfab">my Unsplash profile</a>. It would make me really happy, if you credit me, when using my photos. If you want to use my photos commercially, please also consider, <a href="mailto:fw@fabianwohlgemuth.de?subject=Photo%20License%20-%20">contacting me to buy licenses</a>.
+      You can view and download more photos on <a href="https://unsplash.com/@wohfab" rel="noopener">my Unsplash profile</a>. It would make me really happy, if you credit me, when using my photos. If you want to use my photos commercially, please also consider, <a href="mailto:fw@fabianwohlgemuth.de?subject=Photo%20License%20-%20">contacting me to buy licenses</a>.
     </p>
     <div class="[ image-feed__items ] [ flow-space-700 ]">
       <ul class="image-feed__list">
       {% for i in range(0, 5) -%}
         <li>
-          <a href="{{ image[i].links.html }}" title="Download: {{ image[i].description }}" target="_blank">
+          <a href="{{ image[i].links.html }}" rel="noopener" title="Download: {{ image[i].description }}" target="_blank">
             <img
             src="{{ image[i].urls.regular }}"
             alt="{{ image[i].id }}"
