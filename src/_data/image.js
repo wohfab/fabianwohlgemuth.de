@@ -18,7 +18,7 @@ module.exports = async () => {
     );
     return items;
   } catch (ex) {
-    console.log(ex);
+    //console.log(ex);
 
     // If failed, return back an empty array
     return [];

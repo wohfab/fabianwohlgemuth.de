@@ -22,6 +22,5 @@ const images = () => {
     .pipe(webp())
     .pipe(dest('./dist/images'));
 };
-console.log("HELLO");
 
 module.exports = images;
