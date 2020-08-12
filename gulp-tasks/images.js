@@ -1,5 +1,6 @@
 const {dest, src} = require('gulp');
 const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
 
 // Grabs all images, runs them through imagemin
 // and plops them in the dist folder
@@ -10,15 +11,17 @@ const images = () => {
     .pipe(
       imagemin(
         [
-          imagemin.mozjpeg({quality: 60, progressive: true}),
-          imagemin.optipng({optimizationLevel: 5, interlaced: null})
+          imagemin.mozjpeg({quality: 30, progressive: true}),
+          imagemin.optipng({optimizationLevel: 6, interlaced: null})
         ],
         {
           silent: true
         }
       )
     )
+    .pipe(webp())
     .pipe(dest('./dist/images'));
 };
+console.log("HELLO");
 
 module.exports = images;
