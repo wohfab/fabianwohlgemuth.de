@@ -12,12 +12,12 @@
     </p>
     <div class="[ image-feed__items ] [ flow-space-700 ]">
       <ul class="image-feed__list">
-      {% for i in range(0, 5) -%}
+      {% for item in image %}
         <li>
-          <a href="{{ image[i].links.html }}" rel="noopener" title="Download: {{ image[i].description }}" target="_blank">
+          <a href="{{ item.links.html }}" rel="noopener" title="Download: {{ item.description }}" target="_blank">
             <img
-            src="{{ image[i].urls.regular }}"
-            alt="{{ image[i].id }}"
+            src="{{ item.urls.regular }}"
+            alt="{{ item.id }}"
             draggable="false"
             class="radius"
             />

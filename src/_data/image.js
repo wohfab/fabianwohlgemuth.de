@@ -10,7 +10,7 @@ module.exports = async () => {
   try {
     // Grabs either the fresh remote data or cached data (will always be fresh live)
     const items = await Cache(
-      `https://api.unsplash.com/users/wohfab/photos?client_id=${process.env.UNSPLASH_API_KEY}`,
+      `https://api.unsplash.com/users/wohfab/photos?per_page=5&order_by=popular&client_id=${process.env.UNSPLASH_API_KEY}`,
       {
         duration: '1d', // 1 day
         type: 'json'
