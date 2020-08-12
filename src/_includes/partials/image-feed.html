@@ -7,21 +7,23 @@
     >
       {{ imageFeed.title }}
     </h2>
-    <p class="visually-hidden" id="image-feed-desc">
-      A collection of images from around our image and the people who work here.
+    <p class="" id="image-feed-desc">
+      You can view and download more photos on <a href="https://unsplash.com/@wohfab">my Unsplash profile</a>. It would make me really happy, if you credit me, when using my photos. If you want to use my photos commercially, please also consider, <a href="mailto:fw@fabianwohlgemuth.de?subject=Photo%20License%20-%20">contacting me to buy licenses</a>.
     </p>
     <div class="[ image-feed__items ] [ flow-space-700 ]">
       <ul class="image-feed__list">
-        {% for item in image %}
+      {% for i in range(0, 5) -%}
         <li>
-          <img
-            src="{{ item.medium }}"
-            alt="{{ item.alt }}"
+          <a href="{{ image[i].links.html }}" title="Download: {{ image[i].description }}" target="_blank">
+            <img
+            src="{{ image[i].urls.regular }}"
+            alt="{{ image[i].id }}"
             draggable="false"
             class="radius"
-          />
-        </li>
-        {% endfor %}
+            />
+          </a>
+        </li>       
+      {% endfor %}
       </ul>
     </div>
   </div>

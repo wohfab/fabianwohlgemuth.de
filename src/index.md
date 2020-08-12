@@ -14,5 +14,5 @@ featuredProjects:
   title: 'Selected projects'
   summary: 'Are you interested in working with me? See some example projects I did for clients or for fun.'
 imageFeed:
-  title: 'Selected photos'
+  title: 'Latest photos'
 ---
