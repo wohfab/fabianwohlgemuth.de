@@ -19,7 +19,7 @@ Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung pers
 
 ## DATENERFASSUNG BEIM BESUCH UNSERER WEBSITE
 
-Bei der bloß informatorischen Nutzung unserer Website, also wenn Sie sich nicht registrieren oder uns anderweitig Informationen übermitteln, erheben wir nur solche Daten, die Ihr Browser an unseren Server übermittelt (sog. „Server-Logfiles“). Wenn Sie unsere Website aufrufen, erheben wir die folgenden Daten, die für uns technisch erforderlich sind, um Ihnen die Website anzuzeigen:
+Bei der bloß informatorischen Nutzung unserer Website, also wenn Sie sich nicht registrieren oder uns anderweitig Informationen übermitteln, erheben wir nur solche Daten, die Ihr Browser an unseren Server übermittelt (sog. "Server-Logfiles"). Wenn Sie unsere Website aufrufen, erheben wir die folgenden Daten, die für uns technisch erforderlich sind, um Ihnen die Website anzuzeigen:
 
 - Unsere besuchte Website
 - Datum und Uhrzeit zum Zeitpunkt des Zugriffes
@@ -65,15 +65,15 @@ Sie können der Speicherung und Nutzung Ihrer Daten zu diesem Zweck jederzeit du
 
 ### Verwendung von Youtube-Videos
 
-Diese Website nutzt die Youtube-Einbettungsfunktion zur Anzeige und Wiedergabe von Videos des Anbieters „Youtube“, der zu der Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA („Google“) gehört.
+Diese Website nutzt die Youtube-Einbettungsfunktion zur Anzeige und Wiedergabe von Videos des Anbieters "Youtube", der zu der Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA ("Google") gehört.
 
-Hierbei wird der erweiterte Datenschutzmodus verwendet, der nach Anbieterangaben eine Speicherung von Nutzerinformationen erst bei Wiedergabe des/der Videos in Gang setzt. Wird die Wiedergabe eingebetteter Youtube-Videos gestartet, setzt der Anbieter „Youtube“ Cookies ein, um Informationen über das Nutzerverhalten zu sammeln. Hinweisen von „Youtube“ zufolge dienen diese unter anderem dazu, Videostatistiken zu erfassen, die Nutzerfreundlichkeit zu verbessern und missbräuchliche Handlungsweisen zu unterbinden. Wenn Sie bei Google eingeloggt sind, werden Ihre Daten direkt Ihrem Konto zugeordnet, wenn Sie ein Video anklicken. Wenn Sie die Zuordnung mit Ihrem Profil bei YouTube nicht wünschen, müssen Sie sich vor Aktivierung des Buttons ausloggen. Google speichert Ihre Daten (selbst für nicht eingeloggte Nutzer) als Nutzungsprofile und wertet diese aus. Eine solche Auswertung erfolgt insbesondere gemäß Art. 6 Abs. 1 lit.f DSGVO auf Basis der berechtigten Interessen von Google an der Einblendung personalisierter Werbung, Marktforschung und/oder bedarfsgerechten Gestaltung seiner Website. Ihnen steht ein Widerspruchsrecht zu gegen die Bildung dieser Nutzerprofile, wobei Sie sich zur Ausübung dessen an YouTube richten müssen.
+Hierbei wird der erweiterte Datenschutzmodus verwendet, der nach Anbieterangaben eine Speicherung von Nutzerinformationen erst bei Wiedergabe des/der Videos in Gang setzt. Wird die Wiedergabe eingebetteter Youtube-Videos gestartet, setzt der Anbieter "Youtube" Cookies ein, um Informationen über das Nutzerverhalten zu sammeln. Hinweisen von "Youtube" zufolge dienen diese unter anderem dazu, Videostatistiken zu erfassen, die Nutzerfreundlichkeit zu verbessern und missbräuchliche Handlungsweisen zu unterbinden. Wenn Sie bei Google eingeloggt sind, werden Ihre Daten direkt Ihrem Konto zugeordnet, wenn Sie ein Video anklicken. Wenn Sie die Zuordnung mit Ihrem Profil bei YouTube nicht wünschen, müssen Sie sich vor Aktivierung des Buttons ausloggen. Google speichert Ihre Daten (selbst für nicht eingeloggte Nutzer) als Nutzungsprofile und wertet diese aus. Eine solche Auswertung erfolgt insbesondere gemäß Art. 6 Abs. 1 lit.f DSGVO auf Basis der berechtigten Interessen von Google an der Einblendung personalisierter Werbung, Marktforschung und/oder bedarfsgerechten Gestaltung seiner Website. Ihnen steht ein Widerspruchsrecht zu gegen die Bildung dieser Nutzerprofile, wobei Sie sich zur Ausübung dessen an YouTube richten müssen.
 
-Unabhängig von einer Wiedergabe der eingebetteten Videos wird bei jedem Aufruf dieser Website eine Verbindung zum Google-Netzwerk „DoubleClick“ aufgenommen, was ohne unseren Einfluss weitere Datenverarbeitungsvorgänge auslösen kann.
+Unabhängig von einer Wiedergabe der eingebetteten Videos wird bei jedem Aufruf dieser Website eine Verbindung zum Google-Netzwerk "DoubleClick" aufgenommen, was ohne unseren Einfluss weitere Datenverarbeitungsvorgänge auslösen kann.
 
-Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
+Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen "Privacy Shield" zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
 
-Weitere Informationen zum Datenschutz bei „YouTube“ finden Sie in der [Datenschutzerklärung von Google](https://www.google.de/intl/de/policies/privacy).
+Weitere Informationen zum Datenschutz bei "YouTube" finden Sie in der [Datenschutzerklärung von Google](https://www.google.de/intl/de/policies/privacy).
 
 ## ONLINE-MARKETING
 
@@ -103,7 +103,7 @@ https://tools.google.com/dlpage/gaoptout?hl=de
 
 Alternativ zum Browser-Plugin oder innerhalb von Browsern auf mobilen Geräten klicken Sie bitte auf den folgenden Link, um ein Opt-Out-Cookie zu setzen, der die Erfassung durch Google Analytics innerhalb dieser Website zukünftig verhindert (dieses Opt-Out-Cookie funktioniert nur in diesem Browser und nur für diese Domain, löschen Sie Ihre Cookies in diesem Browser, müssen Sie diesen Link erneut klicken): Google Analytics deaktivieren.
 
-Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
+Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen "Privacy Shield" zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
 
 Mehr Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in der [Datenschutzerklärung von Google](https://support.google.com/analytics/answer/6004245?hl=de).
 
@@ -121,9 +121,9 @@ https://tools.google.com/dlpage/gaoptout?hl=de
 
 Alternativ zum Browser-Plugin oder innerhalb von Browsern auf mobilen Geräten klicken Sie bitte auf den folgenden Link, um ein Opt-Out-Cookie zu setzen, der die Erfassung durch Google Analytics innerhalb dieser Website zukünftig verhindert (dieses Opt-Out-Cookie funktioniert nur in diesem Browser und nur für diese Domain, löschen Sie Ihre Cookies in diesem Browser, müssen Sie diesen Link erneut klicken): Google Analytics deaktivieren
 
-Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
+Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen "Privacy Shield" zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
 
-Diese Website verwendet Google Analytics zudem für eine geräteübergreifende Analyse von Besucherströmen, die über eine User-ID durchgeführt wird. Sie können in Ihrem Kundenkonto unter „Meine Daten“, „persönliche Daten“ die geräteübergreifende Analyse Ihrer Nutzung deaktivieren.
+Diese Website verwendet Google Analytics zudem für eine geräteübergreifende Analyse von Besucherströmen, die über eine User-ID durchgeführt wird. Sie können in Ihrem Kundenkonto unter "Meine Daten", "persönliche Daten" die geräteübergreifende Analyse Ihrer Nutzung deaktivieren.
 
 Mehr Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in der [Datenschutzerklärung von Google](https://support.google.com/analytics/answer/6004245?hl=de).
 
@@ -131,34 +131,34 @@ Mehr Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in
 
 ### Google reCAPTCHA
 
-Auf dieser Website verwenden wir auch die reCAPTCHA Funktion von Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA („Google“). Diese Funktion dient vor allem zur Unterscheidung, ob eine Eingabe durch eine natürliche Person erfolgt oder missbräuchlich durch maschinelle und automatisierte Verarbeitung erfolgt. Der Dienst inkludiert den Versand der IP-Adresse und ggf. weiterer von Google für den Dienst reCAPTCHA benötigter Daten an Google und erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der Feststellung der individuellen Willensgetragenheit von Handlungen im Internet und der Vermeidung von Missbrauch und Spam.
+Auf dieser Website verwenden wir auch die reCAPTCHA Funktion von Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA ("Google"). Diese Funktion dient vor allem zur Unterscheidung, ob eine Eingabe durch eine natürliche Person erfolgt oder missbräuchlich durch maschinelle und automatisierte Verarbeitung erfolgt. Der Dienst inkludiert den Versand der IP-Adresse und ggf. weiterer von Google für den Dienst reCAPTCHA benötigter Daten an Google und erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der Feststellung der individuellen Willensgetragenheit von Handlungen im Internet und der Vermeidung von Missbrauch und Spam.
 
-Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
+Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen "Privacy Shield" zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
 
 [Weiterführende Informationen zu Google reCAPTCHA sowie die Datenschutzerklärung von Google](https://www.google.com/intl/de/policies/privacy/).
 
 ### Google Maps
 
-Auf unserer Website verwenden wir Google Maps (API) von Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (“Google”). Google Maps ist ein Webdienst zur Darstellung von interaktiven (Land-)Karten, um geographische Informationen visuell darzustellen. Über die Nutzung dieses Dienstes wird Ihnen unser Standort angezeigt und eine etwaige Anfahrt erleichtert.
+Auf unserer Website verwenden wir Google Maps (API) von Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA ("Google”). Google Maps ist ein Webdienst zur Darstellung von interaktiven (Land-)Karten, um geographische Informationen visuell darzustellen. Über die Nutzung dieses Dienstes wird Ihnen unser Standort angezeigt und eine etwaige Anfahrt erleichtert.
 
 Bereits beim Aufrufen derjenigen Unterseiten, in die die Karte von Google Maps eingebunden ist, werden Informationen über Ihre Nutzung unserer Website (wie z.B. Ihre IP-Adresse) an Server von Google in den USA übertragen und dort gespeichert. Dies erfolgt unabhängig davon, ob Google ein Nutzerkonto bereitstellt, über das Sie eingeloggt sind, oder ob kein Nutzerkonto besteht. Wenn Sie bei Google eingeloggt sind, werden Ihre Daten direkt Ihrem Konto zugeordnet. Wenn Sie die Zuordnung mit Ihrem Profil bei Google nicht wünschen, müssen Sie sich vor Aktivierung des Buttons ausloggen. Google speichert Ihre Daten (selbst für nicht eingeloggte Nutzer) als Nutzungsprofile und wertet diese aus. Eine solche Auswertung erfolgt insbesondere gemäß Art. 6 Abs. 1 lit.f DSGVO auf Basis der berechtigten Interessen von Google an der Einblendung personalisierter Werbung, Marktforschung und/oder bedarfsgerechten Gestaltung seiner Website. Ihnen steht ein Widerspruchsrecht zu gegen die Bildung dieser Nutzerprofile, wobei Sie sich zur Ausübung dessen an Google richten müssen.
 
-Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
+Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen "Privacy Shield" zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
 
 Wenn Sie mit der künftigen Übermittlung Ihrer Daten an Google im Rahmen der Nutzung von Google Maps nicht einverstanden sind, besteht auch die Möglichkeit, den Webdienst von Google Maps vollständig zu deaktivieren, indem Sie die Anwendung JavaScript in Ihrem Browser ausschalten. Google Maps und damit auch die Kartenanzeige auf dieser Internetseite kann dann nicht genutzt werden.
 
 Die [Nutzungsbedingungen von Google](http://www.google.de/intl/de/policies/terms/regional.html).  
 Die [zusätzlichen Nutzungsbedingungen für Google Maps](https://www.google.com/intl/de_US/help/terms_maps.html).
 
-Ausführliche Informationen zum Datenschutz im Zusammenhang mit der Verwendung von Google Maps finden Sie auf der [Internetseite von Google („Google Privacy Policy“)](http://www.google.de/intl/de/policies/privacy/).
+Ausführliche Informationen zum Datenschutz im Zusammenhang mit der Verwendung von Google Maps finden Sie auf der [Internetseite von Google ("Google Privacy Policy")](http://www.google.de/intl/de/policies/privacy/).
 
 ### Google Web Fonts
 
-Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts die von der Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA („Google“) bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren Browser-Cache, um Texte und Schriftarten korrekt anzuzeigen.
+Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts die von der Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA ("Google") bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren Browser-Cache, um Texte und Schriftarten korrekt anzuzeigen.
 
 Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse unsere Website aufgerufen wurde. Die Nutzung von Google Web Fonts erfolgt im Interesse einer einheitlichen und ansprechenden Darstellung unserer Online-Angebote. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar. Wenn Ihr Browser Web Fonts nicht unterstützt, wird eine Standardschrift von Ihrem Computer genutzt.
 
-Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
+Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen "Privacy Shield" zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
 
 [Weitere Informationen zu Google Web Fonts](https://developers.google.com/fonts/faq) und [Datenschutzerklärung von Google](https://www.google.com/policies/privacy/)
 
