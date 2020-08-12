@@ -1,6 +1,5 @@
 const Cache = require('@11ty/eleventy-cache-assets');
 require('dotenv').config();
-const API_KEY = process.env.UNSPLASH_API_KEY;
 /**
  * Grabs the remote data for images and returns back
  * an array of objects
@@ -11,7 +10,7 @@ module.exports = async () => {
   try {
     // Grabs either the fresh remote data or cached data (will always be fresh live)
     const items = await Cache(
-      `https://api.unsplash.com/users/wohfab/photos?client_id=${API_KEY}`,
+      `https://api.unsplash.com/users/wohfab/photos?client_id=${process.env.UNSPLASH_API_KEY}`,
       {
         duration: '1d', // 1 day
         type: 'json'
