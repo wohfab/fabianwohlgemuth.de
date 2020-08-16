@@ -16,10 +16,12 @@ primaryCTA:
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 .img-grid p img {
-  max-width: 4rem;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .img-portrait p img {
