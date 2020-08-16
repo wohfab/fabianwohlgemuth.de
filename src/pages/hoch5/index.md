@@ -88,4 +88,4 @@ Meine Freizeit verbringe ich entweder hinter der Kamera, um **Fotos** zu machen,
 
 Meine Zeit an der Universität habe ich durch viel Ehrenamt, einige schöne Spaß-Projekte und den ein oder anderen Job, mehr in die Länge gezogen als mir lieb ist. Jetzt steht jedoch nur noch die Abgabe einer letzten Hausarbeit an, sodass ich **ab Anfang September vollzeit zur Verfügung stehe**.
 
-Wenn Ihr noch mehr lesen möchtet, findet Ihr hier noch meinen [**vollständigen Lebenslauf**](/images/hoch5/wohlgemuth_fabian_cv_hoch5.pdf).
+Wenn Ihr noch mehr lesen möchtet, findet Ihr hier noch meinen [**vollständigen Lebenslauf**](/assets/wohlgemuth_fabian_cv_hoch5.pdf).

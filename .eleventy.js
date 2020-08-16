@@ -51,6 +51,8 @@ module.exports = (config) => {
     return [...collection.getFilteredByGlob('./src/writing/*.md')].filter( x => ! x.data.draft).reverse();
   });
 
+  config.addPassthroughCopy("./src/assets");
+
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
 
