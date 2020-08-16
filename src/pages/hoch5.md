@@ -53,7 +53,7 @@ Sehr schnell habe ich dann gemerkt, dass mir der kreative Teil der Arbeit viel m
 
 Nun bin ich auf der Suche nach einer Festanstellung, um meine kreative Ader erweitern und meine Ideen in reale Projekte einbringen zu können.
 
-## Was bring ich mit
+## Was bringe ich mit
 
 Aufgrund hoher technischer Affinität und entsprechend schneller Auffassungsgabe und Lernbereitschaft für Tools und Gadgets, versuche ich mich so viel wie möglich mit neuesten Programmen auseinaderzusetzen und alteingesessene Software zu hinterfragen. Daher finden sich in meinem Repertoire neben den Adobe-Klassikern zum Beispiel auch die Affinity Suite und Kollaborationssoftware, wie Figma und Miro.
 
@@ -73,8 +73,6 @@ Aufgrund hoher technischer Affinität und entsprechend schneller Auffassungsgabe
 Darüber hinaus bringe ich ein umfangreiches technisches Skillset für die (Web-)Entwicklung mit. Dazu gehören fortgeschrittene Kenntnisse in **Python**, **HTML**, **CSS** und Static Site Generators, wie **Hugo**, **Jekyll** und **Eleventy**.
 
 Im Bereich Content Management Systeme konnte ich unter anderem bereits mit **WordPress**, **TYPO3**, **Ghost** und **NetlifyCMS** arbeiten.
-
-Ansonsten nutze ich die Pandemie-Zeit, um regelmäßig draußen mit der Kamera unterwegs zu sein und Bielefeld und sein Umland in **Fotos** festzuhalten.
 
 ## Warum HOCH5
 
