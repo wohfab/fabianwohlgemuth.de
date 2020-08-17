@@ -1,5 +1,6 @@
 ---
 title: 'Hej, ich bin Fabian'
+description: 'Fabian Wohlgemuths Initiativ-Bewerbung für das HOCH5 Büro in Bielefeld.'
 layout: 'layouts/page.html'
 pageHeaderSummary: 'Und dies ist meine <strong>Initiativ-Bewerbung</strong> für das HOCH5 Büro in Bielefeld.'
 permalink: '/hoch5/index.html'
