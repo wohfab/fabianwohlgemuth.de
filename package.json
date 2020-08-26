@@ -35,6 +35,7 @@
     "sass": "^1.26.10"
   },
   "devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "gulp-webp": "^4.0.1"
   }
 }

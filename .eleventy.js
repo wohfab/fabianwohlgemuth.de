@@ -1,4 +1,5 @@
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // Filters
 const dateFilter = require('./src/filters/date-filter.js');
@@ -24,6 +25,7 @@ module.exports = (config) => {
 
   // Plugins
   config.addPlugin(rssPlugin);
+  config.addPlugin(syntaxHighlight);
 
   // Returns project items, sorted by display order
   config.addCollection("projects", (collection) => {
