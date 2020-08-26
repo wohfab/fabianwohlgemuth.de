@@ -4,7 +4,7 @@ summary: 'A small selection of photos that I took with my new lenses. The selfma
 displayOrder: 2
 featured: true
 hero:
-  image: '/images/featured/wood.webp'
+  image: '/images/featured/wood'
   imageAlt: 'Wooden round building in Bielefeld, Germany, with a tree in the foreground and clear blue sky in the background.'
 keyFacts:
   - primary: 'Sony'
@@ -20,16 +20,16 @@ keyFacts:
 gallery:
   - title: 'Meet the cat'
     summary: 'Unfortunately not our cat. Just a guest over the summer. But we had a blast—and got incredible pictures!'
-    image: '/images/featured/cat.webp'
+    image: '/images/featured/cat'
   - title: 'Testing motion'
     summary: 'Sneaky street photography made me try the silent shutter on the camera. What a shame, that this resulted in rolling shutter effect and un-round bike tires. Still a very nice shot.'
-    image: '/images/featured/bike.webp'
+    image: '/images/featured/bike'
   - title: 'Meep meep'
     summary: 'Beautiful Opel. Not much more to say about this.'
-    image: '/images/featured/car.webp'
+    image: '/images/featured/car'
   - title: 'Vamos a la playa'
     summary: 'Not the beach, unfortunately. Just a rain retension basin (Regenrückhaltebecken) inmidst the city center of Bielefeld, Germany.'
-    image: '/images/featured/sea.webp'
+    image: '/images/featured/sea'
 team: [1]
 primaryCTA:
   title: 'You like what you see or need photos yourself? Shoot me a message'

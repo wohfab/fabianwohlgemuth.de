@@ -2,6 +2,7 @@ const {dest, src} = require('gulp');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 
+
 // Grabs all images, runs them through imagemin
 // and plops them in the dist folder
 const images = () => {

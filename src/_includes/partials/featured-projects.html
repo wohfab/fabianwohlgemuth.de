@@ -19,12 +19,17 @@
         class="[ featured-projects__item ] [ frame ]"
         data-frame="quaternary"
       >
-        <img
-          src="{{ item.data.hero.image }}"
+          <picture>
+      <source srcset="{{ item.data.hero.image }}.webp" type="image/webp">
+      <source srcset="{{ item.data.hero.image }}.jpg" type="image/jpeg">      
+              <img
+          src="{{ item.data.hero.image }}.jpg"
           alt="{{ item.data.hero.imageAlt }}"
           loading="lazy"
           class="radius"
         />
+    </picture>
+
       </a>
       {% endfor %}
     </div>

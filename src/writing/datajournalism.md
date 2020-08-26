@@ -2,7 +2,7 @@
 title: Data Journalism - COVID-19
 date: 2020-03-25
 description: Datenanalyse mit Python Pandas, auf den COVID-19 Daten des ECDC.
-thumbnail: /images/writing/datajournalism/plot_map_deaths.webp
+thumbnail: /images/writing/datajournalism/plot_map_deaths
 featured: false
 categories:
   - code
@@ -360,7 +360,7 @@ def plot_boxplot(plot_value, data=data_sum, width=600, date=date_used, plot_type
 plot_boxplot(plot_value='Cases', data=data_sum_top_c)
 ```
 
-![Boxplot - Infizierte](/images/writing/datajournalism/plot_box_cases.webp)
+![Boxplot - Infizierte](/images/writing/datajournalism/plot_box_cases.jpg)
 
 ##### Verteilung der Todeszahlen
 
@@ -368,7 +368,7 @@ plot_boxplot(plot_value='Cases', data=data_sum_top_c)
 plot_boxplot(plot_value='Deaths', data=data_sum_top_d)
 ```
 
-![Boxplot - Tode](/images/writing/datajournalism/plot_box_deaths.webp)
+![Boxplot - Tode](/images/writing/datajournalism/plot_box_deaths.jpg)
 
 ##### Verteilung des Verhältnisses zwischen Todes- und Infiziertenzahlen
 
@@ -376,7 +376,7 @@ plot_boxplot(plot_value='Deaths', data=data_sum_top_d)
 plot_boxplot(plot_value='Ratio')
 ```
 
-![Boxplot - Verhältnis](/images/writing/datajournalism/plot_box_ratio.webp)
+![Boxplot - Verhältnis](/images/writing/datajournalism/plot_box_ratio.jpg)
 
 #### Balkendiagramm
 
@@ -450,7 +450,7 @@ def plot_bar_horizontal(data=data_sum, sort=True, limit=15, ratio=False, date=da
 plot_bar_horizontal()
 ```
 
-![Balkendiagramm - Infizierte und Tode](/images/writing/datajournalism/plot_bar_cases_deaths.webp)
+![Balkendiagramm - Infizierte und Tode](/images/writing/datajournalism/plot_bar_cases_deaths.jpg)
 
 ##### Verhältnis zwischen Todes- und Infiziertenzahlen in %
 
@@ -460,7 +460,7 @@ Sortiert sind die Daten dennoch nach Infiziertenzahlen und nicht nach dem Verhä
 plot_bar_horizontal(ratio=True)
 ```
 
-![Balkendiagramm - Verhältnis](/images/writing/datajournalism/plot_bar_ratio.webp)
+![Balkendiagramm - Verhältnis](/images/writing/datajournalism/plot_bar_ratio.jpg)
 
 ### Verläufe
 
@@ -489,7 +489,7 @@ def plot_line(data, date=date_used):
 plot_line(data_subset_country('DEU'))
 ```
 
-![Liniendiagramm - Infizierte und Tode](/images/writing/datajournalism/plot_line_cases_deaths.webp)
+![Liniendiagramm - Infizierte und Tode](/images/writing/datajournalism/plot_line_cases_deaths.jpg)
 
 ### Karten
 
@@ -539,7 +539,7 @@ def plot_map(trend=True, plot_value='Cases', date=date_used):
 plot_map(trend=False)
 ```
 
-![Weltkarte - Infizierte](/images/writing/datajournalism/plot_map_cases.webp)
+![Weltkarte - Infizierte](/images/writing/datajournalism/plot_map_cases.jpg)
 
 ##### Gesamtzahlen der Todesfälle
 
@@ -547,7 +547,7 @@ plot_map(trend=False)
 plot_map(trend=False, plot_value='Deaths')
 ```
 
-![Weltkarte - Tode](/images/writing/datajournalism/plot_map_deaths.webp)
+![Weltkarte - Tode](/images/writing/datajournalism/plot_map_deaths.jpg)
 
 ##### Gesamtzahlen des Verhältnisses zwischen Todesfällen und Infizierten in %
 
@@ -555,7 +555,7 @@ plot_map(trend=False, plot_value='Deaths')
 plot_map(trend=False, plot_value='Ratio')
 ```
 
-![Weltkarte - Verhältnis](/images/writing/datajournalism/plot_map_ratio.webp)
+![Weltkarte - Verhältnis](/images/writing/datajournalism/plot_map_ratio.jpg)
 
 #### Verlaufs-Karten mit Zeitstrahl
 

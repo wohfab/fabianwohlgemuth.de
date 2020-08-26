@@ -13,11 +13,16 @@
         {% for item in collections.projects %}
         <figure class="[ gallery__item ] [ flow ]">
           <div class="[ gallery__media ] [ frame ]" data-frame="primary">
-            <img
+                <picture>
+      <source srcset="{{ item.data.hero.image }}.webp" type="image/webp">
+      <source srcset="{{ item.data.hero.image }}.jpg" type="image/jpeg"> 
+                  <img
               class="radius"
-              src="{{ item.data.hero.image }}"
+              src="{{ item.data.hero.image }}.jpg"
               alt="{{ item.data.hero.imageAlt }}"
             />
+    </picture>
+
           </div>
           <figcaption class="[ gallery__content ] [ flow ]">
             <h2 class="[ gallery__heading ] [ text-700 md:text-900 ]">
