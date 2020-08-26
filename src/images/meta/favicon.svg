@@ -1,11 +1,1 @@
-<svg aria-hidden="true" focusable="false" width="163" height="49" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-    <g id="Lambda" transform="matrix(1.1402,0,0,1.1402,-38.554,-28.3563)">
-        <path d="M188.6,132.459L253.073,244.129L188.6,355.799L253.073,244.129L317.545,355.799" style="fill:none;stroke:rgb(238,102,0);stroke-width:9.14px;"/>
-    </g>
-    <g id="Inner" transform="matrix(1.1402,0,0,1.1402,-38.554,-28.3563)">
-        <path d="M188.6,132.459L317.545,132.459L382.018,244.129L317.545,355.799L188.6,355.799L124.127,244.129L188.6,132.459" style="fill:none;stroke:rgb(238,102,0);stroke-width:9.14px;"/>
-    </g>
-    <g id="Outer" transform="matrix(1.26066,0,0,1.26537,-69.0386,-58.9124)">
-        <path d="M173.749,106.736L332.396,106.736L411.72,244.129L332.396,381.521L173.749,381.521L94.426,244.129L173.749,106.736Z" style="fill:none;stroke:rgb(238,102,0);stroke-width:6.6px;stroke-linecap:butt;stroke-linejoin:miter;"/>
-    </g>
-</svg>
+<svg height="49" viewBox="0 0 500 500" width="163" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#e60"><path d="m188.6 132.459 64.473 111.67-64.473 111.67 64.473-111.67 64.472 111.67" stroke-width="9.14" transform="matrix(1.1402 0 0 1.1402 -38.554 -28.3563)"/><path d="m188.6 132.459h128.945l64.473 111.67-64.473 111.67h-128.945l-64.473-111.67z" stroke-width="9.14" transform="matrix(1.1402 0 0 1.1402 -38.554 -28.3563)"/><path d="m173.749 106.736h158.647l79.324 137.393-79.324 137.392h-158.647l-79.323-137.392z" stroke-width="6.6" transform="matrix(1.26066 0 0 1.26537 -69.0386 -58.9124)"/></g></svg>
