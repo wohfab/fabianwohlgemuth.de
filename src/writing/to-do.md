@@ -2,6 +2,7 @@
 title: To do list
 date: '2020-08-06'
 tags: ['Organization', 'To Do']
+draft: true
 ---
 
 ## Who puts a to do list publicly on their website
