@@ -24,4 +24,4 @@ USt. wird nicht ausgewiesen, da der Dienstleister/Verkäufer Kleinunternehmer im
 
 Plattform der EU-Kommission zur Online-Streitbeilegung: ec.europa.eu/consumers/odr. Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
 
-Verantwortlicher i.S.d. § 55 Abs. 2 RStV: Fabian Wohlgemuth, Wilhelmstraße 6, D-33602 Bielefeld
+Verantwortlicher i.S.d. § 55 Abs. 2 RStV: Fabian Wohlgemuth, Mühlenstraße 19, D-33607 Bielefeld
