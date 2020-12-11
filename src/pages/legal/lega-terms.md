@@ -13,8 +13,8 @@ primaryCTA:
 Fabian Wohlgemuth  
 Fabian Wohlgemuth - digital creative.
 
-Wilhelmstraße 6  
-D-33602 Bielefeld
+Mühlenstraße 19  
+D-33607 Bielefeld
 
 fw@fabianwohlgemuth.de
 
