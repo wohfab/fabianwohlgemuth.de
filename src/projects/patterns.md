@@ -1,7 +1,7 @@
 ---
 title: 'Pattern experiments'
 summary: 'Here I thought about experimenting a little bit with some cute patterns. Those can be used as background images, wallpapers, post cards, or as wrapping paper.'
-displayOrder: 5
+displayOrder: 3
 featured: false
 hero:
   image: '/images/projects/patterns/guacamole'
