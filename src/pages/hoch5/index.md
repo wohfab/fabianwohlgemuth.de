@@ -3,7 +3,7 @@ title: 'Hej, ich bin Fabian'
 description: 'Fabian Wohlgemuths Initiativ-Bewerbung für das HOCH5 Büro in Bielefeld.'
 layout: 'layouts/page.html'
 pageHeaderSummary: 'Und dies ist meine <strong>Initiativ-Bewerbung</strong> für das HOCH5 Büro in Bielefeld.'
-permalink: '/hoch5/index.html'
+# permalink: '/hoch5/index.html'
 primaryCTA:
   title: 'Besten Dank für Eure Zeit und bis hoffentlich ganz bald'
   summary: 'Ich bin zeitlich spontan & flexibel und würde mich tierisch über eine Einladung zum persönlichen Gespräch freuen.'

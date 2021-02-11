@@ -1,7 +1,6 @@
 ---
 title: 'Photography'
 summary: 'A small selection of photos that I took with my new lenses. The selfmade restriction of going with prime lenses over the kit zoom lense was a small hurdle at the beginning but turned out to be an incredible motivation to get creative.'
-displayOrder: 2
 featured: true
 hero:
   image: '/images/featured/wood'
