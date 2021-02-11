@@ -1,11 +1,1 @@
-<svg aria-hidden="true" focusable="false" width="163" height="49" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-    <g id="Lambda" transform="matrix(1.1402,0,0,1.1402,-38.554,-28.3563)">
-        <path d="M188.6,132.459L253.073,244.129L188.6,355.799L253.073,244.129L317.545,355.799" style="fill:none;stroke:rgb(238,102,0);stroke-width:9.14px;"/>
-    </g>
-    <g id="Inner" transform="matrix(1.1402,0,0,1.1402,-38.554,-28.3563)">
-        <path d="M188.6,132.459L317.545,132.459L382.018,244.129L317.545,355.799L188.6,355.799L124.127,244.129L188.6,132.459" style="fill:none;stroke:rgb(238,102,0);stroke-width:9.14px;"/>
-    </g>
-    <g id="Outer" transform="matrix(1.26066,0,0,1.26537,-69.0386,-58.9124)">
-        <path d="M173.749,106.736L332.396,106.736L411.72,244.129L332.396,381.521L173.749,381.521L94.426,244.129L173.749,106.736Z" style="fill:none;stroke:rgb(238,102,0);stroke-width:6.6px;stroke-linecap:butt;stroke-linejoin:miter;"/>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="163" height="49" aria-hidden="true" focusable="false" viewBox="0 0 500 500"><g id="Lambda"><path d="M188.6,132.459L253.073,244.129L188.6,355.799L253.073,244.129L317.545,355.799" transform="matrix(1.1402,0,0,1.1402,-38.554,-28.3563)" style="fill:none;stroke:#e60;stroke-width:9.14px"/></g><g id="Inner"><path d="M188.6,132.459L317.545,132.459L382.018,244.129L317.545,355.799L188.6,355.799L124.127,244.129L188.6,132.459" transform="matrix(1.1402,0,0,1.1402,-38.554,-28.3563)" style="fill:none;stroke:#e60;stroke-width:9.14px"/></g><g id="Outer"><path d="M173.749,106.736L332.396,106.736L411.72,244.129L332.396,381.521L173.749,381.521L94.426,244.129L173.749,106.736Z" transform="matrix(1.26066,0,0,1.26537,-69.0386,-58.9124)" style="fill:none;stroke:#e60;stroke-width:6.6px;stroke-linecap:butt;stroke-linejoin:miter"/></g></svg>
