@@ -1,0 +1,31 @@
+{% if image.length %}
+<article class="[ image-feed ] [ dot-shadow panel ] [ bg-tertiary-glare ]">
+  <div class="[ wrapper ] [ flow flow-space-300 ]">
+    <h2
+      class="[ image-feed__heading ] [ headline ] [ md:measure-micro ]"
+      data-highlight="secondary"
+    >
+      {{ imageFeed.title }}
+    </h2>
+    <p class="" id="image-feed-desc">
+      You can view and download more photos on <a href="https://unsplash.com/@wohfab" rel="noopener">my Unsplash profile</a>. It would make me really happy, if you credit me, when using my photos. If you want to use my photos commercially, please also consider, <a href="mailto:fw@fabianwohlgemuth.de?subject=Photo%20License%20-%20">contacting me to buy licenses</a>.
+    </p>
+    <div class="[ image-feed__items ] [ flow-space-700 ]">
+      <ul class="image-feed__list">
+      {% for item in image %}
+        <li>
+          <a href="{{ item.links.html }}" rel="noopener" title="Download: {{ item.description }}" target="_blank">
+            <img
+            src="{{ item.urls.small }}"
+            alt="{{ item.id }}"
+            draggable="false"
+            class="radius"
+            />
+          </a>
+        </li>       
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</article>
+{% endif %}

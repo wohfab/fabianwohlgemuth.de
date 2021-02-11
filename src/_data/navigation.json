@@ -1,0 +1,44 @@
+{
+  "main": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "Writing",
+      "url": "/writing/"
+    },
+    {
+      "text": "Projects",
+      "url": "/projects/"
+    }
+  ],
+  "social": [
+    {
+      "text": "LinkedIn",
+      "url": "https://linkedin.com/in/fabianwohlgemuth"
+    },
+    {
+      "text": "Instagram",
+      "url": "https://instagram.com/fabianwohlgemuth"
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/wohfab"
+    },
+    {
+      "text": "GitHub",
+      "url": "https://github.com/wohfab"
+    }
+  ],
+  "legal": [
+    {
+      "text": "Legal terms",
+      "url": "/legal-terms"
+    },
+    {
+      "text": "Privacy Statement",
+      "url": "/privacy-policy"
+    }
+  ]
+}

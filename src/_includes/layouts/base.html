@@ -1,0 +1,60 @@
+{% set assetHash = global.random() %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    {% include "partials/meta-info.html" %}
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
+    <style>{% include "css/critical.css" %}</style>
+
+    {# Add facility for pages to delare an array of critical styles #}
+    {% if pageCriticalStyles %}
+      {% for item in pageCriticalStyles %}
+        <style>{% include item %}</style>
+      {% endfor %}
+    {% endif %}
+
+    <link rel="stylesheet" media="print" href="/fonts/fonts.css?{{ assetHash }}" onload="this.media='all'" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
+
+    {# Add facility for pages to declare an array of stylesheet paths #}
+    {% if pageStylesheets %}
+      {% for item in pageStylesheets %}
+        <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
+      {% endfor %}
+    {% endif %}
+  </head>
+  <body>
+    <div class="site-wrap">
+      {% include "partials/site-head.html" %}
+
+      <main tabindex="-1" id="main-content">
+        {% block content %}{% endblock %}
+      </main>
+
+      <footer role="contentinfo" class="site-foot">
+        <div class="wrapper">
+          <nav class="[ nav ] [ site-head__nav ] [ font-sans ]" aria-label="Footer">
+            <ul class="nav__list">
+              {% for item in navigation.social %}
+              <li>
+                <a href="{{ item.url }}" title="{{ item.text }}">{% include "partials/icons/" + item.text | lower + ".svg" %}</a>
+              </li>
+              {% endfor %}
+              {% for item in navigation.legal %}
+              <li>
+                <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+                  >{{ item.text }}</a
+                >
+              </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <!-- Built with Eleventy (11ty.dev) after the Learn Eleventy From Scratch course by Andy Bell (piccalil.li) -->
+  </body>
+</html>

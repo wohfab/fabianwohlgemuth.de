@@ -1,0 +1,29 @@
+{% if peopleItems %}
+<div class="people">
+  <ol class="auto-grid">
+    {% for item in peopleItems %}
+    <li>
+      <figure class="[ person ] [ frame ]" data-frame="quaternary">
+          <picture>
+      <source srcset="{{ item.data.image }}.webp" type="image/webp">
+      <source srcset="{{ item.data.image }}.jpg" type="image/jpeg"> 
+              <img
+          class="[ person__image ] [ radius ]"
+          src="{{ item.data.image }}.jpg"
+          alt="Image of {{ item.data.name }}"
+          draggable="false"
+        />
+    </picture>
+
+        <figcaption class="[ person__details ] [ leading-tight ]">
+          <span class="[ person__name ] [ font-sans weight-bold ]"
+            >{{ item.data.name }}</span
+          >
+          <span class="person__title">{{ item.data.title }}</span>
+        </figcaption>
+      </figure>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+{% endif %}

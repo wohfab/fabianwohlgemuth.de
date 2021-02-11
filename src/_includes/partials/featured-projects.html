@@ -1,0 +1,40 @@
+<article class="[ featured-projects ] [ dot-shadow panel ] [ bg-light-glare ]">
+  <div class="[ wrapper ] [ flow ]">
+    <div class="[ featured-projects__inner ] [ flow ]">
+      <div class="[ featured-projects__intro ] [ flow flow-space-300 ]">
+        <h2
+          class="[ featured-projects__heading ] [ headline ] [ color-quinary-shade lg:measure-micro ]"
+          data-highlight="dark"
+        >
+          {{ featuredProjects.title }}
+        </h2>
+        <p class="[ featured-projects__summary ] [ measure-compact ]">
+          {{ featuredProjects.summary }}
+        </p>
+      </div>
+      {% for item in collections.featuredProjects %}
+      <a
+        href="{{ item.url }}"
+        aria-label="See {{ item.data.title }}"
+        class="[ featured-projects__item ] [ frame ]"
+        data-frame="quaternary"
+      >
+          <picture>
+      <source srcset="{{ item.data.hero.image }}.webp" type="image/webp">
+      <source srcset="{{ item.data.hero.image }}.jpg" type="image/jpeg">      
+              <img
+          src="{{ item.data.hero.image }}.jpg"
+          alt="{{ item.data.hero.imageAlt }}"
+          loading="lazy"
+          class="radius"
+        />
+    </picture>
+
+      </a>
+      {% endfor %}
+    </div>
+    <div class="[ featured-projects__action ] [ flow-space-700 ]">
+      <a href="/projects/" class="button">See more projects</a>
+    </div>
+  </div>
+</article>
