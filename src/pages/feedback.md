@@ -108,5 +108,7 @@ primaryCTA:
   <p class="visually-hidden">
   <label>Bist Du ein Mensch? Füll dieses Feld bitte NICHT aus: <input name="lecker-honig" /></label>
   </p>
+  <p>
   <button class="button" type="submit">Send</button>
+  </p>
 </form>
