@@ -1,6 +1,6 @@
 ---
 title: "Peer Feedback für Fabian"
-description: "Peer Feedback für Fabian"
+metaDesc: "Peer Feedback für Fabian zum Ende seiner Probezeit"
 layout: "layouts/page.html"
 pageHeaderSummary: "Mein Feedback-Gespräch zum Ende meiner Probezeit bei der i22 steht an. Du kannst mich dabei unterstützen, indem Du mir hier Feedback hinterlässt. Ich freue mich auf jede Form von Kritik!"
 permalink: "/feedback/index.html"
