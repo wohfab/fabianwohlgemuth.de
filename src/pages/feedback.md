@@ -23,81 +23,81 @@ primaryCTA:
   <h2>Von 1 (gar nicht) bis 4 (Erwartungen übertroffen): Wie zufrieden bist Du mit:</h2>
   <fieldset>
   <legend>... meiner agilen Arbeitsweise?</legend>
-  <input type="radio" id="rateAgile1"
+  <label><input type="radio" id="rateAgile1"
     name="agile" value="1" required>
-  <label for="rateAgile1">1</label>
-  <input type="radio" id="rateAgile2"
+  1</label>
+  <label><input type="radio" id="rateAgile2"
     name="agile" value="2" required>
-  <label for="rateAgile2">2</label>
-  <input type="radio" id="rateAgile3"
+  2</label>
+  <label><input type="radio" id="rateAgile3"
     name="agile" value="3" required>
-  <label for="rateAgile3">3</label>
-  <input type="radio" id="rateAgile4"
+  3</label>
+  <label><input type="radio" id="rateAgile4"
     name="agile" value="4" required>
-  <label for="rateAgile4">4</label>
+  4</label>
   </fieldset>
   <fieldset>
   <legend>... meiner Eigeninitiative?</legend>
-  <input type="radio" id="rateInitiative1"
+  <label><input type="radio" id="rateInitiative1"
     name="initiative" value="1" required>
-  <label for="rateInitiative1">1</label>
-  <input type="radio" id="rateInitiative2"
+  1</label>
+  <label><input type="radio" id="rateInitiative2"
     name="initiative" value="2" required>
-  <label for="rateInitiative2">2</label>
-  <input type="radio" id="rateInitiative3"
+  2</label>
+  <label><input type="radio" id="rateInitiative3"
     name="initiative" value="3" required>
-  <label for="rateInitiative3">3</label>
-  <input type="radio" id="rateInitiative4"
+  3</label>
+  <label><input type="radio" id="rateInitiative4"
     name="initiative" value="4" required>
-  <label for="rateInitiative4">4</label>
+  4</label>
   </fieldset>
   <fieldset>
   <legend>... meiner Zuverlässigkeit?</legend>
-  <input type="radio" id="rateReliability1"
+  <label><input type="radio" id="rateReliability1"
     name="reliability" value="1" required>
-  <label for="rateReliability1">1</label>
-  <input type="radio" id="rateReliability2"
+  1</label>
+  <label><input type="radio" id="rateReliability2"
     name="reliability" value="2" required>
-  <label for="rateReliability2">2</label>
-  <input type="radio" id="rateReliability3"
+  2</label>
+  <label><input type="radio" id="rateReliability3"
     name="reliability" value="3" required>
-  <label for="rateReliability3">3</label>
-  <input type="radio" id="rateReliability4"
+  3</label>
+  <label><input type="radio" id="rateReliability4"
     name="reliability" value="4" required>
-  <label for="rateReliability4">4</label>
+  4</label>
   </fieldset>
   <fieldset>
   <legend>... meiner Kommunikation?</legend>
-  <input type="radio" id="rateCommunication1"
+  <label><input type="radio" id="rateCommunication1"
     name="communication" value="1" required>
-  <label for="rateCommunication1">1</label>
-  <input type="radio" id="rateCommunication2"
+  1</label>
+  <label><input type="radio" id="rateCommunication2"
     name="communication" value="2" required>
-  <label for="rateCommunication2">2</label>
-  <input type="radio" id="rateCommunication3"
+  2</label>
+  <label><input type="radio" id="rateCommunication3"
     name="communication" value="3" required>
-  <label for="rateCommunication3">3</label>
-  <input type="radio" id="rateCommunication4"
+  3</label>
+  <label><input type="radio" id="rateCommunication4"
     name="communication" value="4" required>
-  <label for="rateCommunication4">4</label>
+  4</label>
   </fieldset>
   <fieldset>
   <legend>Wie gut fühlst Du Dich von mir beraten?</legend>
-  <input type="radio" id="rateConsulting1"
+  <label><input type="radio" id="rateConsulting1"
     name="consulting" value="1" required>
-  <label for="rateConsulting1">1</label>
-  <input type="radio" id="rateConsulting2"
+  1</label>
+  <label><input type="radio" id="rateConsulting2"
     name="consulting" value="2" required>
-  <label for="rateConsulting2">2</label>
-  <input type="radio" id="rateConsulting3"
+  2</label>
+  <label><input type="radio" id="rateConsulting3"
     name="consulting" value="3" required>
-  <label for="rateConsulting3">3</label>
-  <input type="radio" id="rateConsulting4"
+  3</label>
+  <label><input type="radio" id="rateConsulting4"
     name="consulting" value="4" required>
-  <label for="rateConsulting4">4</label>
-  <input type="radio" id="rateConsultingNotApplicable"
+  4</label>
+  <label><input type="radio" id="rateConsultingNotApplicable"
     name="consulting" value="Not Applicable" required>
-  <label for="rateConsultingNotApplicable">Nicht zutreffend</label>  
+  Nicht zutreffend</label>  
   </fieldset>
   <h2>Zum Schluss</h2>
   <label>Was möchtest Du mir noch sagen? (optional)</label>
