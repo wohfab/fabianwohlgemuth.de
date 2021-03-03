@@ -21,8 +21,8 @@ primaryCTA:
   <label>Wie beurteilst Du meine (Selbst-)Organisation?</label>
   <input type="text" name="org" required />
   <h2>Von 1 (gar nicht) bis 4 (Erwartungen übertroffen): Wie zufrieden bist Du mit:</h2>
-  <div>
-  <p>... meiner agilen Arbeitsweise?</p>
+  <fieldset>
+  <legend>... meiner agilen Arbeitsweise?</legend>
   <input type="radio" id="rateAgile1"
     name="agile" value="1" required>
   <label for="rateAgile1">1</label>
@@ -35,9 +35,9 @@ primaryCTA:
   <input type="radio" id="rateAgile4"
     name="agile" value="4" required>
   <label for="rateAgile4">4</label>
-  </div>
-  <div>
-  <p>... meiner Eigeninitiative?</p>
+  </fieldset>
+  <fieldset>
+  <legend>... meiner Eigeninitiative?</legend>
   <input type="radio" id="rateInitiative1"
     name="initiative" value="1" required>
   <label for="rateInitiative1">1</label>
@@ -50,9 +50,9 @@ primaryCTA:
   <input type="radio" id="rateInitiative4"
     name="initiative" value="4" required>
   <label for="rateInitiative4">4</label>
-  </div>
-  <div>
-  <p>... meiner Zuverlässigkeit?</p>
+  </fieldset>
+  <fieldset>
+  <legend>... meiner Zuverlässigkeit?</legend>
   <input type="radio" id="rateReliability1"
     name="reliability" value="1" required>
   <label for="rateReliability1">1</label>
@@ -65,9 +65,9 @@ primaryCTA:
   <input type="radio" id="rateReliability4"
     name="reliability" value="4" required>
   <label for="rateReliability4">4</label>
-  </div>
-  <div>
-  <p>... meiner Kommunikation?</p>
+  </fieldset>
+  <fieldset>
+  <legend>... meiner Kommunikation?</legend>
   <input type="radio" id="rateCommunication1"
     name="communication" value="1" required>
   <label for="rateCommunication1">1</label>
@@ -80,9 +80,9 @@ primaryCTA:
   <input type="radio" id="rateCommunication4"
     name="communication" value="4" required>
   <label for="rateCommunication4">4</label>
-  </div>
-  <div>
-  <p>Wie gut fühlst Du Dich von mir beraten?</p>
+  </fieldset>
+  <fieldset>
+  <legend>Wie gut fühlst Du Dich von mir beraten?</legend>
   <input type="radio" id="rateConsulting1"
     name="consulting" value="1" required>
   <label for="rateConsulting1">1</label>
@@ -98,7 +98,7 @@ primaryCTA:
   <input type="radio" id="rateConsultingNotApplicable"
     name="consulting" value="Not Applicable" required>
   <label for="rateConsultingNotApplicable">Nicht zutreffend</label>  
-  </div>
+  </fieldset>
   <h2>Zum Schluss</h2>
   <label>Was möchtest Du mir noch sagen? (optional)</label>
   <input type="text" name="say-it" />
