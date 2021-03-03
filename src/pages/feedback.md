@@ -1,5 +1,6 @@
 ---
 title: "Peer Feedback für Fabian"
+description: "Peer Feedback für Fabian"
 layout: "layouts/page.html"
 pageHeaderSummary: "Mein Feedback-Gespräch zum Ende meiner Probezeit bei der i22 steht an. Du kannst mich dabei unterstützen, indem Du mir hier Feedback hinterlässt. Ich freue mich auf jede Form von Kritik!"
 permalink: "/feedback/index.html"
@@ -12,14 +13,14 @@ primaryCTA:
 
 <form name="feedback" method="POST" netlify-honeypot="lecker-honig"  style="display:flex; flex-direction:column; gap:1.5rem;" data-netlify="true">
   <h2>Schreib' was über mich</h2>
-  <label>Was sollte ich beibehalten oder vertiefen?</label>
-  <input type="text" name="good" required />
-  <label>Wo siehst Du bei mir noch Optimierungs-Potenziale?</label>
-  <input type="text" name="bad" required />
-  <label>Was hat Dich bei meiner Arbeit besonders beeindruckt?</label>
-  <input type="text" name="wow" required />
-  <label>Wie beurteilst Du meine (Selbst-)Organisation?</label>
-  <input type="text" name="org" required />
+  <label>Was sollte ich beibehalten oder vertiefen?
+  <input style="display:flex;" type="text" name="good" required /></label>
+  <label>Wo siehst Du bei mir noch Optimierungs-Potenziale?
+  <input style="display:flex;" type="text" name="bad" required /></label>
+  <label>Was hat Dich bei meiner Arbeit besonders beeindruckt?
+  <input style="display:flex;" type="text" name="wow" required /></label>
+  <label>Wie beurteilst Du meine (Selbst-)Organisation?
+  <input style="display:flex;" type="text" name="org" required /></label>
   <h2>Von 1 (gar nicht) bis 4 (Erwartungen übertroffen): Wie zufrieden bist Du mit:</h2>
   <fieldset>
   <legend>... meiner agilen Arbeitsweise?</legend>
@@ -100,10 +101,10 @@ primaryCTA:
   Nicht zutreffend</label>  
   </fieldset>
   <h2>Zum Schluss</h2>
-  <label>Was möchtest Du mir noch sagen? (optional)</label>
-  <input type="text" name="say-it" />
-  <label>Möchtest Du mir Deinen Namen verraten? (optional)</label>
-  <input type="text" name="name" />
+  <label>Was möchtest Du mir noch sagen? (optional)
+  <input style="display: flex;" type="text" name="say-it" /></label>
+  <label>Möchtest Du mir Deinen Namen verraten? (optional)
+  <input style="display: flex;" type="text" name="name" /></label>
   <p class="visually-hidden">
   <label>Bist Du ein Mensch? Füll dieses Feld bitte NICHT aus: <input name="lecker-honig" /></label>
   </p>
