@@ -14,13 +14,13 @@ primaryCTA:
 <form name="feedback" method="POST" netlify-honeypot="lecker-honig"  style="display:flex; flex-direction:column; gap:1.5rem;" data-netlify="true">
   <h2>Schreib' was über mich</h2>
   <label>Was sollte ich beibehalten oder vertiefen?
-  <input style="display:flex;" type="text" name="good" required /></label>
+  <textarea rows="2" style="display:flex; width:100%;" type="text" name="good" required></textarea></label>
   <label>Wo siehst Du bei mir noch Optimierungs-Potenziale?
-  <input style="display:flex;" type="text" name="bad" required /></label>
+  <textarea rows="2" style="display:flex; width:100%;" type="text" name="bad" required></textarea></label>
   <label>Was hat Dich bei meiner Arbeit besonders beeindruckt?
-  <input style="display:flex;" type="text" name="wow" required /></label>
+  <textarea rows="2" style="display:flex; width:100%;" type="text" name="wow" required></textarea></label>
   <label>Wie beurteilst Du meine (Selbst-)Organisation?
-  <input style="display:flex;" type="text" name="org" required /></label>
+  <textarea rows="2" style="display:flex; width:100%;" type="text" name="org" required></textarea></label>
   <h2>Von 1 (gar nicht) bis 4 (Erwartungen übertroffen): Wie zufrieden bist Du mit:</h2>
   <fieldset>
   <legend>... meiner agilen Arbeitsweise?</legend>
@@ -102,9 +102,9 @@ primaryCTA:
   </fieldset>
   <h2>Zum Schluss</h2>
   <label>Was möchtest Du mir noch sagen? (optional)
-  <input style="display: flex;" type="text" name="say-it" /></label>
+  <textarea rows="2" style="display: flex; width:100%;" type="text" name="say-it"></textarea></label>
   <label>Möchtest Du mir Deinen Namen verraten? (optional)
-  <input style="display: flex;" type="text" name="name" /></label>
+  <input style="display: flex; width:100%;" type="text" name="name" /></label>
   <p class="visually-hidden">
   <label>Bist Du ein Mensch? Füll dieses Feld bitte NICHT aus: <input name="lecker-honig" /></label>
   </p>
